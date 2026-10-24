@@ -1,4 +1,4 @@
-# 設計記録 0.1.0
+# 設計記録 0.1.1
 
 日付: 2026-10-24（Asia/Tokyo）。添付 `seed-prompt.md`、プロジェクト指示、IDAD原文を参照。現在の実装と判断は本書へ記録する。
 
@@ -12,9 +12,13 @@
 | ワークスペース外の一時ファイル | 成功時書込で可能 | 一時領域 | 基準パスが変わる | 相対リンク補正・後始末が増えるため不採用 |
 | 独自レンダラー | 可能 | 任意 | 独自管理 | 初期要件の対象外 |
 
-公開VS Code APIの `registerFileSystemProvider` と、内蔵Markdown拡張の `markdown.showLockedPreviewToSide` を用いる。独自Webview・Markdownレンダラー・自動変換イベントはない。標準拡張側のコマンド実装がURIを受け付け、ロック状態で開くことを公式ソースで確認した。VS Code 1.105.1配布物にも当該コマンドが存在する。
+公開VS Code APIの `registerFileSystemProvider` と `vscode.openWith` を用い、内蔵Markdown拡張のカスタムエディター `vscode.markdown.preview.editor` で表示する。これはVS Code標準のMarkdown Previewであり、独自Webview・Markdownレンダラー・自動変換イベントは作らない。VS Code 1.105.1の公式ソース・配布物から登録を確認した。エディターIDは標準拡張の実装に依存するため、VS Code更新時にも受入確認する。
 
-**工程1の実画面検証は未完了。** 小規模プローブを作成してVS Code 1.105.1を起動したが、実行環境が画面接続・必要なソケットを提供できず停止した。headlessでもGTKの表示接続が必要だった。API資料・標準拡張のソース確認と、模擬APIでの提供・更新試験を根拠に実装を進めた。標準プレビューの表示、ファイル変更イベントによる実エディター更新、リンク表示の受入は実機で行う。
+0.1.0は `markdown.showLockedPreviewToSide` を毎回呼んでいた。標準実装が現在のアクティブグループの横を選ぶため、プレビュー側から再実行するとさらに横へ開く。ユーザーの初回確認4番「新しいタブが開いた」に対応し、0.1.1で表示経路を変更した。
+
+`window.tabGroups.all` の `TabInputCustom` をURIとエディター種別で照合する。見つかったタブの `viewColumn` を `vscode.openWith` に渡して再利用し、ない場合のみ `ViewColumn.Beside` に開く。`preview: false` で一時プレビュータブへの置換を避ける。タブ移動や再起動後も毎回探索し、古いTabオブジェクトを保持しない。旧版の動的プレビュータブはURIを取得できないため自動判別・閉鎖せず、初回更新時に利用者が閉じる。
+
+0.1.0の初回確認1〜6はユーザー報告でokとなり、標準プレビュー表示、手動更新、保存時の非更新、再表示、再起動後復元の基礎経路を確認できた。報告にOS・VS Codeのバージョンはない。**0.1.1の表示経路と残り16項目の実機検証は未完了。** この実行環境のGUI統合テストは画面接続・ソケットの制約で実行できないため、模擬APIの合格と実画面での合格を分ける。
 
 ## モジュール
 
@@ -26,6 +30,7 @@
 | `src/runner.cjs` | Worker起動、制限時間・取消、終了待機、ログ上限 |
 | `src/worker.cjs` | 保存済みモジュールのimport、呼出し、出力検証 |
 | `src/preview.cjs` | 結果キャッシュ、変更通知、読み取り専用の資源読込 |
+| `src/open-preview.cjs` | 標準Markdown Previewの既存タブ探索と表示 |
 
 本番APIはコマンドだけ。テスト用のcontroller参照はExtensionModeがProductionでないときだけ返す。
 
@@ -75,7 +80,10 @@ FS Providerは書込み、改名、削除、フォルダ作成をすべて拒否
 - [VS Code FileSystemProvider API](https://code.visualstudio.com/api/references/vscode-api#FileSystemProvider)
 - [Virtual Documents](https://code.visualstudio.com/api/extension-guides/virtual-documents)
 - [Workspace Trust](https://code.visualstudio.com/api/extension-guides/workspace-trust)
-- [標準Markdownプレビューのコマンド実装](https://github.com/microsoft/vscode/blob/main/extensions/markdown-language-features/src/commands/showPreview.ts)
+- [VS CodeコマンドAPI（vscode.openWith）](https://code.visualstudio.com/api/references/commands)
+- [Custom Editor API](https://code.visualstudio.com/api/extension-guides/custom-editors)
+- [標準Markdown Previewの登録・再利用実装（1.105.1）](https://github.com/microsoft/vscode/blob/1.105.1/extensions/markdown-language-features/src/preview/previewManager.ts)
+- [旧表示コマンドの実装（1.105.1）](https://github.com/microsoft/vscode/blob/1.105.1/extensions/markdown-language-features/src/commands/showPreview.ts)
 - [標準Markdown資源のアクセス範囲](https://github.com/microsoft/vscode/blob/main/extensions/markdown-language-features/src/util/resources.ts)
 - [Node Worker threads / terminate](https://nodejs.org/api/worker_threads.html#workerterminate)
 - [VSIXのパッケージ化](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)

@@ -31,7 +31,7 @@ async function setup(t) {
   const v = {
     Uri, Disposable, EventEmitter: Emitter, FileType: { File: 1 }, FileChangeType: { Changed: 1, Created: 2 },
     FileSystemError: { NoPermissions: () => new Error('readonly'), FileNotFound: () => new Error('missing') },
-    ProgressLocation: { Notification: 1 }, version: 'mock',
+    ViewColumn: { Beside: -2 }, ProgressLocation: { Notification: 1 }, version: 'mock',
     commands: { executeCommand: async (...args) => commands.push(args) },
     workspace: {
       isTrusted: true, textDocuments: docs,
@@ -41,6 +41,7 @@ async function setup(t) {
       fs: { readFile: uri => fs.readFile(uri.fsPath), stat: uri => fs.stat(uri.fsPath), readDirectory: async () => [] }
     },
     window: {
+      tabGroups: { all: [] },
       activeTextEditor: { document: { uri: Uri.file(input) } },
       showInformationMessage: async message => notices.push(message),
       showErrorMessage: async message => { notices.push(message); },

@@ -2,6 +2,7 @@
 const path = require('node:path');
 const { discover, validatePair, inputExtensions } = require('./paths.cjs');
 const { runTransform, MAX_OUTPUT_BYTES } = require('./runner.cjs');
+const { openStandardPreview } = require('./open-preview.cjs');
 const STATE_KEY = 'lastSuccess.v1';
 
 function createController(v, context, preview, log) {
@@ -29,8 +30,7 @@ function createController(v, context, preview, log) {
   }
   async function show(record) {
     const uri = preview.uriFor(record.pair.input);
-    await v.workspace.openTextDocument(uri);
-    await v.commands.executeCommand('markdown.showLockedPreviewToSide', uri);
+    await openStandardPreview(v, uri);
     return uri;
   }
   async function lock(operation) {

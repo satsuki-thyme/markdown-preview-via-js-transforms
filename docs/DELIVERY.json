@@ -1,29 +1,45 @@
 {
   "date": "2026-10-24",
-  "version": "0.1.0",
-  "status": "awaiting Windows and real-preview acceptance",
+  "timezone": "Asia/Tokyo",
+  "version": "0.1.1",
+  "status": "0.1.0 initial six checks reported ok; 0.1.1 tab reuse and remaining 16 checks await user acceptance",
   "tests": {
     "node24": {
       "version": "24.19.0",
-      "passed": 17,
-      "failed": 0
+      "passed": 22,
+      "failed": 0,
+      "skipped": 0
     },
     "vscodeEmbeddedNode": {
       "vscode": "1.105.1",
       "node": "22.19.0",
-      "passed": 17,
-      "failed": 0
+      "passed": 22,
+      "failed": 0,
+      "skipped": 0
     },
-    "guiIntegration": "blocked by display/socket environment"
+    "guiIntegration": "Updated regression assertions and syntax-checked; not executed. Display/socket environment remains unavailable.",
+    "userReport": {
+      "file": "docs/USER_TESTING.md",
+      "appliesToVersion": "0.1.0",
+      "initialChecksPassed": 6,
+      "check4Note": "新しいタブが開いた",
+      "furtherChecks": 16,
+      "furtherChecksStatus": "unexecuted"
+    }
   },
   "package": {
-    "file": "dist/mdprev-via-jsproc-0.1.0.vsix",
-    "bytes": 27508,
-    "sha256": "27622965ea5d226f94221ec03fb9c007890afe8e644d4503533eb3050f107e54",
+    "file": "dist/mdprev-via-jsproc-0.1.1.vsix",
+    "bytes": 30248,
+    "sha256": "9f2bb1d6dd208b65a9e49df7613ae0e904fea9f654d4b301e316d313fea0d76c",
     "zipCrc": "passed",
-    "sourceMatch": "passed",
-    "linuxCliInstall": "passed"
+    "runtimeSourceMatch": "all 7 modules passed",
+    "linuxCliInstall": "passed on VS Code 1.105.1; installed version and all runtime modules matched",
+    "readmePackaging": "vsce rewrites relative README links to configured repository URLs; repository has not been pushed"
   },
-  "dropboxVerification": "recorded separately in docs/SAVE-VERIFICATION.json after independent readback",
+  "sourceArchive": {
+    "file": "dist/mdprev-via-jsproc-0.1.1-source.zip",
+    "hashRecord": "docs/SAVE-VERIFICATION-0.1.1.json"
+  },
+  "dropboxVerification": "recorded separately in docs/SAVE-VERIFICATION-0.1.1.json after independent readback",
   "remoteGitPush": false
 }

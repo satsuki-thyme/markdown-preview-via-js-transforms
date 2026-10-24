@@ -17,7 +17,9 @@ exports.run = async () => {
   assert.equal(resultDocument.languageId, 'markdown');
   assert.equal(resultDocument.getText(), '# First 🌿');
   await wait(750);
-  assert(v.window.tabGroups.all.flatMap(g => g.tabs).some(tab => tab.input instanceof v.TabInputWebview));
+  const previewTabs = () => v.window.tabGroups.all.flatMap(g => g.tabs).filter(tab => tab.input instanceof v.TabInputCustom && tab.input.viewType === 'vscode.markdown.preview.editor' && tab.input.uri.toString() === first.uri.toString());
+  assert.equal(previewTabs().length, 1);
+  const originalTab = previewTabs()[0];
   await fs.writeFile(input, '# Saved edit');
   await fs.writeFile(script, 'module.exports=({text})=>text+"\\n\\nChanged script"');
   await wait(750);
@@ -26,6 +28,19 @@ exports.run = async () => {
   assert.equal((await v.commands.executeCommand('mdprevViaJsproc.rerun')).status, 'success');
   for (let n = 0; n < 60 && !resultDocument.getText().includes('Changed script'); n++) await wait(50);
   assert.equal(resultDocument.getText(), '# Saved edit\n\nChanged script');
+  assert.equal(previewTabs().length, 1);
+  assert.strictEqual(previewTabs()[0], originalTab);
+  for (let i = 0; i < 3; i++) {
+    assert.equal((await v.commands.executeCommand('mdprevViaJsproc.rerun')).status, 'success');
+    assert.equal(previewTabs().length, 1);
+    assert.strictEqual(previewTabs()[0], originalTab);
+  }
+  await v.window.showTextDocument(inputDocument, v.ViewColumn.One);
+  await v.commands.executeCommand('mdprevViaJsproc.reopenPreview');
+  assert.strictEqual(previewTabs()[0], originalTab);
+  await v.window.tabGroups.close(originalTab);
+  await v.commands.executeCommand('mdprevViaJsproc.reopenPreview');
+  assert.equal(previewTabs().length, 1);
   await fs.writeFile(script, 'module.exports=()=>{while(true){}}');
   const pending = v.commands.executeCommand('mdprevViaJsproc.rerun');
   await wait(250);
