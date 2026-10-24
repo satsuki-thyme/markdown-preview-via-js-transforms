@@ -1,0 +1,40 @@
+{
+  "name": "mdprev-via-jsproc",
+  "displayName": "MDprev via JSproc",
+  "description": "ユーザーのJavaScriptでテキストを手動変換し、標準Markdownプレビューに表示します。",
+  "version": "0.1.0",
+  "publisher": "satsuki-thyme",
+  "license": "MIT",
+  "engines": { "vscode": "^1.105.0" },
+  "categories": ["Other"],
+  "repository": { "type": "git", "url": "https://github.com/satsuki-thyme/MDprev-via-JSproc.git" },
+  "main": "./src/extension.cjs",
+  "extensionKind": ["ui"],
+  "activationEvents": ["onFileSystem:mdpjsp"],
+  "capabilities": {
+    "untrustedWorkspaces": { "supported": "limited", "description": "結果の再表示のみ利用できます。JavaScriptの実行にはワークスペースの信頼が必要です。", "restrictedConfigurations": ["mdprevViaJsproc.transformsFolder"] },
+    "virtualWorkspaces": { "supported": false, "description": "ローカルのファイルとNode.jsで実行します。" }
+  },
+  "contributes": {
+    "commands": [
+      { "command": "mdprevViaJsproc.selectAndRun", "title": "変換処理を選択して実行", "category": "MDprev via JSproc" },
+      { "command": "mdprevViaJsproc.rerun", "title": "前回の変換を再実行", "category": "MDprev via JSproc" },
+      { "command": "mdprevViaJsproc.reopenPreview", "title": "前回の結果を再表示（変換しない）", "category": "MDprev via JSproc" },
+      { "command": "mdprevViaJsproc.cancel", "title": "実行中の変換を中断", "category": "MDprev via JSproc" },
+      { "command": "mdprevViaJsproc.showLog", "title": "診断ログを表示", "category": "MDprev via JSproc" }
+    ],
+    "configuration": {
+      "title": "MDprev via JSproc",
+      "properties": {
+        "mdprevViaJsproc.transformsFolder": { "type": "string", "default": "transforms", "scope": "resource", "description": "入力が属するワークスペースルートからの相対フォルダ。直下の .js / .cjs / .mjs を候補にします。" },
+        "mdprevViaJsproc.timeoutMs": { "type": "integer", "default": 10000, "minimum": 100, "maximum": 300000, "scope": "resource", "description": "変換を強制停止するまでの時間（ミリ秒）。同期ループにも適用します。" }
+      }
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.cjs",
+    "test:integration": "node test/run-integration.cjs",
+    "package": "node scripts/package.cjs"
+  },
+  "devDependencies": { "@vscode/test-electron": "2.5.2", "@vscode/vsce": "4.0.0" }
+}

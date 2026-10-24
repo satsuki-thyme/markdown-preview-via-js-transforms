@@ -1,0 +1,16 @@
+.git/**
+node_modules/**
+.vscode-test/**
+scripts/**
+.vscode/**
+docs/DELIVERY.json
+dist/**
+test/**
+scripts/**
+.vscode/**
+docs/DELIVERY.json
+test-results/**
+**/*.backup-*
+package-lock.json
+docs/PROCESS_CHART.md
+MGMT.md

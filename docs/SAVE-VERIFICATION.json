@@ -1,0 +1,246 @@
+{
+  "verified_at": "2026-10-24 (Asia/Tokyo)",
+  "project": "MDprev via JSproc",
+  "version": "0.1.0",
+  "dropbox_root": "/www/studio/MDprev-via-JSproc",
+  "files_verified": 29,
+  "new_files": 28,
+  "preexisting_license_unchanged": true,
+  "method": "Independent Dropbox download of every file; compare byte size, SHA-256, and Dropbox Content Hash against prepared local files",
+  "files": [
+    {
+      "relative": ".gitignore",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/.gitignore",
+      "bytes": 70,
+      "sha256": "f66be8400411e3db7a120285a8e5dcf147436fc1c073a8ed18f162d4b3916634",
+      "dropbox_content_hash": "e11d843c41661b30e068cec3ce3e06929ab7bc495709f1bf28578495dcc010bf",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": ".vscode/launch.json",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/.vscode/launch.json",
+      "bytes": 225,
+      "sha256": "fbb3363113c341a65eb04b1c852b226952211a266e473b133324c199fbbf5adf",
+      "dropbox_content_hash": "35843b0e033b6feef6c17ff7f3c0ed5bfb6951b4582d2c9159e0d2b18feb6348",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": ".vscodeignore",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/.vscodeignore",
+      "bytes": 216,
+      "sha256": "e25b700026d520ba1cc3941e4ac05989157b5312a211d948e102e521ea21ce96",
+      "dropbox_content_hash": "8eb822638502b295e459367e7104f5aaabad3350d7a40382e9d57bc24ba99a16",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "CHANGELOG.md",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/CHANGELOG.md",
+      "bytes": 431,
+      "sha256": "1fe471e92d2b76b0c2cfd5eb644667ab18291ecd71394918c35804eedb6c9b6d",
+      "dropbox_content_hash": "87a222539c11c545bb779533052a6c4f0c9b59e8d99233fdf39df8e528d6f136",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "LICENSE",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/LICENSE",
+      "bytes": 1070,
+      "sha256": "4bead12a57a52389408f6294de01857d37558521a55733350629ece3dd73adb0",
+      "dropbox_content_hash": "e3c3149441290a77742d61aa736d25404cda685b092c4178944ed5d0b0921818",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "MGMT.md",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/MGMT.md",
+      "bytes": 2503,
+      "sha256": "1f6202d61f45327c11365506b6738816caf04e2f1b2786726ecb21d1cf867ee7",
+      "dropbox_content_hash": "36d74bdb436e05005f192113847fc70f1e009717e9d1c8796eb76c9f5e1e69b7",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "README.md",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/README.md",
+      "bytes": 10084,
+      "sha256": "507387b7ac7f9e88d98d49b2faabb4561dd2444f3430ec53893e4f410be874f3",
+      "dropbox_content_hash": "aa39bbad05b89a396bd017c6592ca38b801eaf5b6e1d87f5188111f6dfd3bf36",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "docs/ACCEPTANCE.md",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/docs/ACCEPTANCE.md",
+      "bytes": 5066,
+      "sha256": "42f5e098bfab860f2adb012fb7c09c017ce78ebf7b37fde00a531c05e1c6ff24",
+      "dropbox_content_hash": "5547c3fab41801e94e56f76683c0bdf503608d29c5bbfa192a3cca06cb53946e",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "docs/DELIVERY.json",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/docs/DELIVERY.json",
+      "bytes": 791,
+      "sha256": "ad59ebd4b2a6a69d0a0f6971aa8cc717e0f9a175221444515f46762ee7f57f8b",
+      "dropbox_content_hash": "96fdd1f9c551b10afca6fd3877f0a93a27cb5e634335cb452e7bf8c5013f1fdd",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "docs/DESIGN.md",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/docs/DESIGN.md",
+      "bytes": 8479,
+      "sha256": "6fa8fbd4a4ed876f1d6623c56c887600f57664d6bf5a8407f6d1e4c1cb7a1311",
+      "dropbox_content_hash": "e6f63b5708d6e0bc835b35c7653ca3fc6ab8db0ad2fca3bf59e696752c23e1d6",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "docs/PROCESS_CHART.md",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/docs/PROCESS_CHART.md",
+      "bytes": 2160,
+      "sha256": "8a68f3fb22fc948aec79e16ac540b9c23392bb3d2ac53edab34cd798c9186778",
+      "dropbox_content_hash": "18e5df20efc44d0e10011876ce9fb14dd6c1da51a0a31aac66e2c4580dd9966c",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "docs/TESTING.md",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/docs/TESTING.md",
+      "bytes": 4883,
+      "sha256": "fec264030c21d2689c60e5d37865429a1a6f1119309605dc37208401d8339d6a",
+      "dropbox_content_hash": "a080f9b260e809759aa2d857f0c6a4327a0935808745864b5774e228ebddd318",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "examples/input.md",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/examples/input.md",
+      "bytes": 316,
+      "sha256": "3c8ae69970e0cb1b62c836a827fd15ede01e5c9e651e14b22780820b8bf65000",
+      "dropbox_content_hash": "929913d9e1b72d38f1b4f03768726b69aea213fa526d0bcc8bff0ccadb5af8ce",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "examples/transforms/identity.cjs",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/examples/transforms/identity.cjs",
+      "bytes": 163,
+      "sha256": "4eae9d987a28d6be96ba10f06a0c7e48ff2758500342df8af29158dc3e1e61c0",
+      "dropbox_content_hash": "47f4912c08c0919c0ee567bc00d4bfeb6b494f1669776644db88aca7e397ff0f",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "package-lock.json",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/package-lock.json",
+      "bytes": 79330,
+      "sha256": "2f79f4aa1139aca76dd3fb742582c46c89a25146366bc77f4b6c40e0b5c183f3",
+      "dropbox_content_hash": "42802e06100fb11c741e7a9dac63395cbe0cb0fc6fce10999769247b15a333dc",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "package.json",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/package.json",
+      "bytes": 2494,
+      "sha256": "74e380a55c5ffb73c65f7bc22d50ffd97fae9e5a70058e6b34bfdcc0ba501164",
+      "dropbox_content_hash": "571343eea3ad3b06643e05cc781b861af4d3852ab0a05e402c31288f9897e3b9",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "scripts/package.cjs",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/scripts/package.cjs",
+      "bytes": 2142,
+      "sha256": "94055db8f686be3688ca65decb60eeb4c57efd45ccfd4aca00f2aaad978373df",
+      "dropbox_content_hash": "eebd58fdd4d406c14dd31ac5ee6133803b17a548bafaa6ad7cbd366875c756db",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "src/controller.cjs",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/src/controller.cjs",
+      "bytes": 7671,
+      "sha256": "bed184966e712ad34a96a97d0d050b5f37b887b06683a82ea28207976d0bd1a8",
+      "dropbox_content_hash": "4d82539b1367cd1903fe0621de3e99317037674eaaad743ae130e195185cbb89",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "src/extension.cjs",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/src/extension.cjs",
+      "bytes": 1028,
+      "sha256": "087079dbf17cace6fb52c2b7199144009d3f88ee6691dcba88c97a14d0365ed4",
+      "dropbox_content_hash": "5aef624f3e66b92f94b65bfe5f281fee620bee627f633dd46b3b1d083ee9004e",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "src/paths.cjs",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/src/paths.cjs",
+      "bytes": 2834,
+      "sha256": "37aa3113a430b50f63cb18a7b8067057dbee788179c6d7822ebd72525854601b",
+      "dropbox_content_hash": "6798dea596ac33857f981b5fb07b3915e6fb5233cdecf012c3e38a62ba0067c8",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "src/preview.cjs",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/src/preview.cjs",
+      "bytes": 2114,
+      "sha256": "a94a279c75096876482e93e64098e8380e2ceef400f1a7d24cb2df619b10a6d5",
+      "dropbox_content_hash": "53e2853c2489bc290f3c46e475250e2e71f2a52079e1b63fe430a62bea65a976",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "src/runner.cjs",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/src/runner.cjs",
+      "bytes": 2648,
+      "sha256": "53a169134e4e36076a6dd8b072e8a71df05e3d005295eb08024880e5a1654421",
+      "dropbox_content_hash": "b30fcc5f79c62acd9d53958af634067c3ea5b20745248e61148776e430e9d81c",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "src/worker.cjs",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/src/worker.cjs",
+      "bytes": 1267,
+      "sha256": "d1b4c9e0159b6890233ee811c7a0ce860578e439f5cff2e84705fdccb990342b",
+      "dropbox_content_hash": "15eff439990c2e7011039070272e101953cccad9528aa43575cb820cfab774cf",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "test/controller.test.cjs",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/test/controller.test.cjs",
+      "bytes": 10469,
+      "sha256": "4f631429df326ce8406e7fb4f3b04dd6993e3ed6b46bc107ab7d73f9d646a8ee",
+      "dropbox_content_hash": "f589fa34aa3e6e3bba1b3fda283f68c59de8edce16967fa0b94a3f5aa0cba675",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "test/integration.cjs",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/test/integration.cjs",
+      "bytes": 2061,
+      "sha256": "888faee3db851099b44f02cc5e8911f8c180c1364e81ff7c52b20d3c94c38c49",
+      "dropbox_content_hash": "857af6ab960cd511876ee16996d04f7b9637556f6f1361fbd9865b990a2d111c",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "test/run-integration.cjs",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/test/run-integration.cjs",
+      "bytes": 1142,
+      "sha256": "0a982cab323c5118efbac7efc7fa5c9c21c83bc121bbef8f300e9655e1b93f15",
+      "dropbox_content_hash": "eb23178c4b5e4922625f045d49a416f9df0ce98799f8e0637207e253cb99206b",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "test/runner.test.cjs",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/test/runner.test.cjs",
+      "bytes": 5868,
+      "sha256": "59b85f6a6db1f2ee959418d6fea222852554555e2a509831013b5ee61f912dad",
+      "dropbox_content_hash": "f88c05645cc59784ba8b1ac390077654703da3bd629584cff741c5d11b2b0fc1",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "dist/mdprev-via-jsproc-0.1.0.vsix",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/dist/mdprev-via-jsproc-0.1.0.vsix",
+      "bytes": 27508,
+      "sha256": "27622965ea5d226f94221ec03fb9c007890afe8e644d4503533eb3050f107e54",
+      "dropbox_content_hash": "7f82c7da6c6438b2d6c954c43c5fc7ec4000f0d769fc513a1a67f63754435e42",
+      "downloaded_bytes_match": true
+    },
+    {
+      "relative": "dist/mdprev-via-jsproc-0.1.0-source.zip",
+      "dropbox_path": "/www/studio/MDprev-via-JSproc/dist/mdprev-via-jsproc-0.1.0-source.zip",
+      "bytes": 56869,
+      "sha256": "5224c9a22bcf4ca293261a303e340bab726c3f2191195fa92634a8e3ddaff301",
+      "dropbox_content_hash": "f4dfc3ba72e855d6906d509ace6988b63e891590e601d92a3f301fd012a1e087",
+      "downloaded_bytes_match": true
+    }
+  ],
+  "acceptance_status": "Windows installation, standard-preview UI and image/link behavior remain unverified",
+  "note": "This verification record is saved and separately downloaded after these 29 files. Source ZIP was generated before this record and does not contain it."
+}

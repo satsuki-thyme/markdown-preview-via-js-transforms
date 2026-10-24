@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-24",
+  "version": "0.1.0",
+  "status": "awaiting Windows and real-preview acceptance",
+  "tests": {
+    "node24": {
+      "version": "24.19.0",
+      "passed": 17,
+      "failed": 0
+    },
+    "vscodeEmbeddedNode": {
+      "vscode": "1.105.1",
+      "node": "22.19.0",
+      "passed": 17,
+      "failed": 0
+    },
+    "guiIntegration": "blocked by display/socket environment"
+  },
+  "package": {
+    "file": "dist/mdprev-via-jsproc-0.1.0.vsix",
+    "bytes": 27508,
+    "sha256": "27622965ea5d226f94221ec03fb9c007890afe8e644d4503533eb3050f107e54",
+    "zipCrc": "passed",
+    "sourceMatch": "passed",
+    "linuxCliInstall": "passed"
+  },
+  "dropboxVerification": "recorded separately in docs/SAVE-VERIFICATION.json after independent readback",
+  "remoteGitPush": false
+}
