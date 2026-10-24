@@ -2,7 +2,7 @@
   "date": "2026-10-24",
   "timezone": "Asia/Tokyo",
   "version": "0.1.1",
-  "status": "0.1.0 initial six checks reported ok; 0.1.1 tab reuse and remaining 16 checks await user acceptance",
+  "status": "0.1.0 initial six checks and 0.1.1 rechecks A-D reported ok; remaining 16 checks await user acceptance",
   "tests": {
     "node24": {
       "version": "24.19.0",
@@ -25,6 +25,31 @@
       "check4Note": "新しいタブが開いた",
       "furtherChecks": 16,
       "furtherChecksStatus": "unexecuted"
+    },
+    "userRecheck": {
+      "file": "docs/USER_TESTING.md",
+      "appliesToVersion": "0.1.1",
+      "reportedAt": "2026-10-24",
+      "checks": {
+        "A": "ok",
+        "B": "ok",
+        "C": "ok",
+        "D": "ok"
+      },
+      "environment": {
+        "osEdition": "Windows 11 Pro",
+        "osVersion": "26H2",
+        "osBuild": "26300.9711",
+        "vscode": "1.143.1 (user setup)",
+        "vscodeCommit": "e646868227c3e3a9e3f24277c8c7220be42c0be7",
+        "electron": "43.7.7",
+        "embeddedNode": "24.21.0",
+        "platform": "Windows_NT x64 10.0.26300"
+      },
+      "evidenceType": "user report; no additional agent-run GUI test",
+      "optionalTabMove": "not separately specified in report",
+      "furtherChecks": 16,
+      "furtherChecksStatus": "unexecuted"
     }
   },
   "package": {
@@ -41,5 +66,15 @@
     "hashRecord": "docs/SAVE-VERIFICATION-0.1.1.json"
   },
   "dropboxVerification": "recorded separately in docs/SAVE-VERIFICATION-0.1.1.json after independent readback",
-  "remoteGitPush": false
+  "remoteGitPush": false,
+  "acceptanceDocumentationUpdate": {
+    "date": "2026-10-24",
+    "codeChanged": false,
+    "versionChanged": false,
+    "artifactsRebuilt": false,
+    "automatedTestsRerun": false,
+    "artifactPolicy": "Existing VSIX/source ZIP remain release snapshots; current acceptance status lives in root documents",
+    "review": "docs/USER_TESTING_RECHECK-0.1.1-2026-10-24.md",
+    "saveVerification": "docs/SAVE-VERIFICATION-0.1.1-RECHECK-2026-10-24.json"
+  }
 }

@@ -4,7 +4,7 @@
 
 ## 現在地
 
-0.1.0の初回ユーザーテスト1〜6はすべてok。4番の「新しいタブが開いた」へ対応した0.1.1を作成。標準Markdown Previewを既存タブで再利用するよう表示経路を変更した。自動テスト22件を2ランタイムで確認。0.1.1の実機再確認A〜Dと、継続確認16項目は未実施。合否・数値は `docs/TESTING.md` を正本とする。
+0.1.0の初回ユーザーテスト1〜6はすべてok。4番の「新しいタブが開いた」へ対応した0.1.1を作成。標準Markdown Previewを既存タブで再利用するよう表示経路を変更した。自動テスト22件を2ランタイムで確認。0.1.1の実機再確認A〜Dはユーザー報告ですべてok。タブ増加への修正は受入済み。継続確認16項目は未実施。今回の報告環境はWindows 11 Pro 26H2（26300.9711）／VS Code 1.143.1／内蔵Node.js 24.21.0。今回は受入文書のみ更新する。合否・数値は `docs/TESTING.md` を正本とする。
 
 ## 開始時に確認したもの
 
@@ -14,7 +14,8 @@
 - `.git/config` から `https://github.com/satsuki-thyme/MDprev-via-JSproc` / `main` を確認。GitHub側は初期コミット `fb1988c`、LICENSEのみ。
 - LICENSEはMIT、Copyright (c) 2026 SATSUKI Thyme。内容・ライセンスは変更しない。
 - 受渡し手順 `/references/chatgpt-file-handoff-to-dropbox.md` を取得。現在のupload仕様は絶対ローカルパスを正式に受け付ける。
-- 今回は `docs/USER_TESTING.md` のユーザー記入版を取得し、対象ソース・文書が前回納品物と一致することを確認した。ユーザー報告原本は変更しない。
+- 0.1.1作成時に `docs/USER_TESTING.md` の初回結果を取得し、対象ソース・文書を前回納品物と照合した。
+- 今回は同ファイルの再確認結果と実機環境を取得し、更新対象文書を前回保存物と照合した。中断後の旧版のローカル作業コピーは、保存済み0.1.1配布物のハッシュ検証後、改名保全して復元した。ユーザー報告原本は変更しない。
 
 ## 実装上の判断
 
@@ -26,8 +27,8 @@
 
 作業対象はこの開発ルート。既存LICENSEやGit設定は変更しない。変更候補を別領域で作成・検証した後、旧実ファイルを同じディレクトリの未使用の `.backup-2026-10-24-NN` へ改名して保全し、新版を配置する。バックアップはGit追跡・VSIXの対象外。0.1.0のVSIX・ソースZIPとユーザー報告原本は保持する。
 
-GitHubへのpush、PR、Release、Marketplace公開は行っていない。Dropbox上の作業フォルダへ配置する。成果物のハッシュは `docs/DELIVERY.json`、独立読戻しの実績とバックアップ対応は `docs/SAVE-VERIFICATION-0.1.1.json` を参照。`docs/SAVE-VERIFICATION.json` は0.1.0の保存実績として残す。
+GitHubへのpush、PR、Release、Marketplace公開は行っていない。Dropbox上の作業フォルダへ配置する。成果物のハッシュは `docs/DELIVERY.json`、独立読戻しの実績とバックアップ対応は `docs/SAVE-VERIFICATION-0.1.1.json` を参照。`docs/SAVE-VERIFICATION.json` は0.1.0の保存実績として残す。今回の受入文書更新は `docs/SAVE-VERIFICATION-0.1.1-RECHECK-2026-10-24.json` に別途記録する。既存VSIX・ソースZIPは作成時点の配布物として保持し、文書更新のために作り直さない。
 
 ## 次の作業
 
-`docs/ACCEPTANCE.md` の0.1.1再確認A〜Dをユーザー実機で行い、タブ増加の改善を確認する。その後、未実施16項目を確認する。0.1.0で確認済みの基礎経路を作り直さず、工程5の残項目から継続する。今回の報告評価は `docs/USER_TESTING_REVIEW-2026-10-24.md`。
+同じ0.1.1で `docs/ACCEPTANCE.md` の「続けて確認する項目」16件をユーザー実機で確認する。工程5の残項目から継続する。初回評価は `docs/USER_TESTING_REVIEW-2026-10-24.md`、今回の評価は `docs/USER_TESTING_RECHECK-0.1.1-2026-10-24.md`。結果は `docs/USER_TESTING.md` に項目ごとに追記する。

@@ -1,0 +1,260 @@
+{
+  "version": "0.1.1",
+  "record": "user-recheck-acceptance",
+  "verifiedAt": "2026-10-24T23:56:53.593939+09:00",
+  "status": "9 updated/new documents and 8 renamed original documents independently downloaded and verified",
+  "counts": {
+    "updatedDocuments": 8,
+    "newReviewDocuments": 1,
+    "renamedOriginals": 8,
+    "verifiedFilesBeforeReceipt": 17
+  },
+  "scope": "This receipt is an additional new file and is independently read back separately; no circular self-hash is embedded.",
+  "method": "Fresh Dropbox download links followed by actual GET. Size, SHA-256 and Dropbox Content Hash matched. Renamed originals retain their original file IDs.",
+  "userReport": {
+    "path": "/www/studio/MDprev-via-JSproc/docs/USER_TESTING.md",
+    "file_id": "id:pdXqx4wRBdMAAAAAAAK-tw",
+    "rev": "65e8ff7be12bf1bc8f115",
+    "bytes": 1395,
+    "sha256": "ef6eaf4783b4afa38cfcb7a6fc97bcc7d79704bb33b68f74f06a1a8c627c05e1",
+    "status": "unchanged; revision verified after document saves",
+    "rechecks": {
+      "A": "ok",
+      "B": "ok",
+      "C": "ok",
+      "D": "ok"
+    },
+    "remainingChecks": 16,
+    "remainingStatus": "unexecuted"
+  },
+  "backupMapping": [
+    {
+      "file": "/www/studio/MDprev-via-JSproc/CHANGELOG.md",
+      "backup": "/www/studio/MDprev-via-JSproc/CHANGELOG.backup-2026-10-24-02.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK-_w"
+    },
+    {
+      "file": "/www/studio/MDprev-via-JSproc/MGMT.md",
+      "backup": "/www/studio/MDprev-via-JSproc/MGMT.backup-2026-10-24-02.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_AA"
+    },
+    {
+      "file": "/www/studio/MDprev-via-JSproc/README.md",
+      "backup": "/www/studio/MDprev-via-JSproc/README.backup-2026-10-24-02.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_AQ"
+    },
+    {
+      "file": "/www/studio/MDprev-via-JSproc/docs/ACCEPTANCE.md",
+      "backup": "/www/studio/MDprev-via-JSproc/docs/ACCEPTANCE.backup-2026-10-24-02.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_Ag"
+    },
+    {
+      "file": "/www/studio/MDprev-via-JSproc/docs/DELIVERY.json",
+      "backup": "/www/studio/MDprev-via-JSproc/docs/DELIVERY.backup-2026-10-24-02.json",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_Aw"
+    },
+    {
+      "file": "/www/studio/MDprev-via-JSproc/docs/DESIGN.md",
+      "backup": "/www/studio/MDprev-via-JSproc/docs/DESIGN.backup-2026-10-24-02.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_BA"
+    },
+    {
+      "file": "/www/studio/MDprev-via-JSproc/docs/PROCESS_CHART.md",
+      "backup": "/www/studio/MDprev-via-JSproc/docs/PROCESS_CHART.backup-2026-10-24-02.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_BQ"
+    },
+    {
+      "file": "/www/studio/MDprev-via-JSproc/docs/TESTING.md",
+      "backup": "/www/studio/MDprev-via-JSproc/docs/TESTING.backup-2026-10-24-02.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_Bg"
+    }
+  ],
+  "backups": [
+    {
+      "relative": "CHANGELOG.backup-2026-10-24-02.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/CHANGELOG.backup-2026-10-24-02.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-_w",
+      "bytes": 923,
+      "sha256": "b1922e56fc2050d44c5a70c29f04ddd3e0a60a54affdd79db4062f75228ab6cc",
+      "content_hash": "e557efc8ba7d37ed2074c36da6191f979b90a5dca0bcb49378777cbb6bb6f6e0",
+      "verified": true,
+      "original_relative": "CHANGELOG.md"
+    },
+    {
+      "relative": "MGMT.backup-2026-10-24-02.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/MGMT.backup-2026-10-24-02.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_AA",
+      "bytes": 3201,
+      "sha256": "ba8b5bdf96fabaa4dae33bdf85ad13dc279582673f4dcc67a210b6d1990ddc88",
+      "content_hash": "ee539a32bf51a5bfd5b9e8f063aab01a6afd3d9893d126b45b6085b9875e4ea5",
+      "verified": true,
+      "original_relative": "MGMT.md"
+    },
+    {
+      "relative": "README.backup-2026-10-24-02.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/README.backup-2026-10-24-02.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_AQ",
+      "bytes": 10533,
+      "sha256": "297b4d8254d6ea751e40e6579d213f155298e2d89d50d1770210ffd957292c3d",
+      "content_hash": "e307c5ecf92dbba98e2a12a371a57d64bfbb84f9551c70972022e0dfd7a7c2bd",
+      "verified": true,
+      "original_relative": "README.md"
+    },
+    {
+      "relative": "docs/ACCEPTANCE.backup-2026-10-24-02.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/docs/ACCEPTANCE.backup-2026-10-24-02.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Ag",
+      "bytes": 6695,
+      "sha256": "ae3a8c693136aae70a8cb4a62f9bac28de0b02db8e37fc258f0d679f5b8e7508",
+      "content_hash": "94564fdba52b1a2fd0c82bca25acb9659ffaa6a4c4ff189dacbc210cf5de7b14",
+      "verified": true,
+      "original_relative": "docs/ACCEPTANCE.md"
+    },
+    {
+      "relative": "docs/DELIVERY.backup-2026-10-24-02.json",
+      "remote_path": "/www/studio/MDprev-via-JSproc/docs/DELIVERY.backup-2026-10-24-02.json",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Aw",
+      "bytes": 1596,
+      "sha256": "8b72d84d909ebb41c77d823537264226c6d2995480948263706a1d97a9fbf345",
+      "content_hash": "386bd745f64a18aea4c0b31427b99a484718cd90a2db51ba893809493799af22",
+      "verified": true,
+      "original_relative": "docs/DELIVERY.json"
+    },
+    {
+      "relative": "docs/DESIGN.backup-2026-10-24-02.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/docs/DESIGN.backup-2026-10-24-02.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_BA",
+      "bytes": 9885,
+      "sha256": "75e99b53bd226e40d9e3e683d3d32fdf47adae22080b61064411dbe003fce2d6",
+      "content_hash": "152d7cf70332fc743a49dbd6ec9fe6c2be41a10202c219eac97145a158694525",
+      "verified": true,
+      "original_relative": "docs/DESIGN.md"
+    },
+    {
+      "relative": "docs/PROCESS_CHART.backup-2026-10-24-02.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/docs/PROCESS_CHART.backup-2026-10-24-02.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_BQ",
+      "bytes": 2262,
+      "sha256": "f25ae34e863a89e50d1681555ade3794c18e6c76e1ffb35347acbd7a88faae7d",
+      "content_hash": "50fde939b541f0d675d1276dfcbeef22acbe4c10742efaf51122eecb54184d0f",
+      "verified": true,
+      "original_relative": "docs/PROCESS_CHART.md"
+    },
+    {
+      "relative": "docs/TESTING.backup-2026-10-24-02.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/docs/TESTING.backup-2026-10-24-02.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Bg",
+      "bytes": 6372,
+      "sha256": "c79bb61ee34def372d6510a84ff5da2e47928f30c32cff923ca4327e8b4b8c52",
+      "content_hash": "a9d2d6c832612a72f8d5b773b05fb14ae7c314fa4a853ea4d9ec7bca92290ecb",
+      "verified": true,
+      "original_relative": "docs/TESTING.md"
+    }
+  ],
+  "savedFiles": [
+    {
+      "relative": "CHANGELOG.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/CHANGELOG.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Ow",
+      "bytes": 1018,
+      "sha256": "575846c4e266923a08d35f105d04db7f28d01ad3c7dfdb7515edc562b1f23613",
+      "content_hash": "3716d0ef8aa09ab305e51fb34647e7aff1ea886cc83bda5c529ec684ceb004bf",
+      "verified": true,
+      "original_relative": "CHANGELOG.md"
+    },
+    {
+      "relative": "MGMT.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/MGMT.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_PA",
+      "bytes": 3920,
+      "sha256": "f5a1283224e149bf0c3debe5f046fe23e51da367b143db8b8c61f629019cf674",
+      "content_hash": "555df97660c0fcbd49b86e753964f30b9747077ca472594bebaf208fd9ac81da",
+      "verified": true,
+      "original_relative": "MGMT.md"
+    },
+    {
+      "relative": "README.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/README.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_PQ",
+      "bytes": 10772,
+      "sha256": "0c2cb44c74f30d30dc0b7f591bf33f85e9400bb6f76870924e462dfbaf76b786",
+      "content_hash": "04a35e1ccd1f7bbd36399620ce53ff4b6af0f39729f274195f5b6d0e80bcac2b",
+      "verified": true,
+      "original_relative": "README.md"
+    },
+    {
+      "relative": "docs/ACCEPTANCE.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/docs/ACCEPTANCE.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Pg",
+      "bytes": 6852,
+      "sha256": "956c7fd988a1e301d0a0179433cb93046729bf22846fe1f7c65635246e93bdf8",
+      "content_hash": "6da66a60738e3cc80f89a8c0788454498ac955ae1c3116d57437bd337972c9f9",
+      "verified": true,
+      "original_relative": "docs/ACCEPTANCE.md"
+    },
+    {
+      "relative": "docs/DELIVERY.json",
+      "remote_path": "/www/studio/MDprev-via-JSproc/docs/DELIVERY.json",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Pw",
+      "bytes": 2851,
+      "sha256": "72bb357f72df6c37bc010b3a6a321159f2ecc22ea7ca8ef5125e23a96e56619e",
+      "content_hash": "c15d8686e1fc18b30aceabe41a15091d2e0d0e71f8e40a04f75f9871e8969e53",
+      "verified": true,
+      "original_relative": "docs/DELIVERY.json"
+    },
+    {
+      "relative": "docs/DESIGN.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/docs/DESIGN.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_QA",
+      "bytes": 10053,
+      "sha256": "5ff32a6e219f8d83d22adb51e5cea00b900074645e6446cd912e99b97923a008",
+      "content_hash": "4e99d7f8206754413c3445c9c9433368578feae69cffff8bc48ef2ade2cde2d5",
+      "verified": true,
+      "original_relative": "docs/DESIGN.md"
+    },
+    {
+      "relative": "docs/PROCESS_CHART.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/docs/PROCESS_CHART.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_QQ",
+      "bytes": 2675,
+      "sha256": "0188488ba53ee6262dbcf2638b752face78cf8e60df6f5dd98160617d8b90b28",
+      "content_hash": "5a912047816d3cda53e9b192900717552d32a50a6d03d4c52017ce35dbf6d93a",
+      "verified": true,
+      "original_relative": "docs/PROCESS_CHART.md"
+    },
+    {
+      "relative": "docs/TESTING.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/docs/TESTING.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Qg",
+      "bytes": 7476,
+      "sha256": "142ce831d041f7aa84fda379243633e57adcaf263a123ffec74d45aa706ef040",
+      "content_hash": "d14de85905259dbd8f6e7ac82eb39400d3c481eab14bf3337a07c6d78d308bc6",
+      "verified": true,
+      "original_relative": "docs/TESTING.md"
+    },
+    {
+      "relative": "docs/USER_TESTING_RECHECK-0.1.1-2026-10-24.md",
+      "remote_path": "/www/studio/MDprev-via-JSproc/docs/USER_TESTING_RECHECK-0.1.1-2026-10-24.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Qw",
+      "bytes": 3617,
+      "sha256": "a719005bc1e4c975f3166859eeb0c0af85d9a0732fd6a731bdfcd22c3bef9e92",
+      "content_hash": "58f8965abff4fb0298928858e82a4b75b5af8ae94a0086d5c05750eb9d8338e4",
+      "verified": true,
+      "original_relative": "docs/USER_TESTING_RECHECK-0.1.1-2026-10-24.md"
+    }
+  ],
+  "validation": {
+    "acceptance": "A-D results and reported Windows/VS Code/runtime values matched USER_TESTING.md; all 16 pending checks retained; document links checked",
+    "automatedTestsRerun": false,
+    "previousUnitTests": "22 passed in each of Node 24.19.0 and VS Code 1.105.1 embedded Node 22.19.0",
+    "agentGuiIntegration": "not executed",
+    "codeChanged": false,
+    "extensionVersionChanged": false,
+    "vsixOrSourceZipRebuilt": false,
+    "localRecovery": "After interruption, the old local working copy was restored from independently verified 0.1.1 release files. Changed local originals were renamed before replacement. All 7 runtime modules match the released source archive and VSIX.",
+    "releaseVsixSha256": "9f2bb1d6dd208b65a9e49df7613ae0e904fea9f654d4b301e316d313fea0d76c",
+    "releaseSourceZipSha256": "90cbbb733ce17e8d6369484d44461b5134504e3ede37170613b845ef3f16ac7f"
+  },
+  "rollback": "First rename each current document to an unused backup name; then rename the corresponding preserved original to its original name. Existing 0.1.1 installation is unaffected by this document-only update.",
+  "remoteGitPush": false
+}

@@ -1,5 +1,38 @@
 # ユーザーテスト
 
+## テスト環境
+
+### OS
+
+エディション	Windows 11 Pro
+バージョン	26H2
+インストール日	‎2024-‎11-‎22
+OS ビルド	26300.9711
+エクスペリエンス	Windows 機能エクスペリエンス パック 1000.26100.372.0
+
+### VS Code
+
+Version: 1.143.1 (user setup)
+Commit: e646868227c3e3a9e3f24277c8c7220be42c0be7
+Date: 2026-10-22T17:23:22Z
+Electron: 43.7.7
+ElectronBuildId: 15743441
+Chromium: 150.0.7871.250
+Node.js: 24.21.0
+V8: 15.0.245.31-electron.0
+@github/copilot: 1.0.100-1
+@github/copilot-sdk: 1.0.23-preview.5
+OS: Windows_NT x64 10.0.26300
+
+## 0.1.1の再確認（今回はこちらから）
+
+| # | 結果 | 備考 |
+|---|---|---|
+| A | ok |  |
+| B | ok |  |
+| C | ok |  |
+| D | ok |  |
+
 ## 初回の確認（まずここまで）
 
 | # | 結果 | 備考 |
