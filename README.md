@@ -1,33 +1,35 @@
-# MDprev via JSproc
+# Markdown Preview via JS Transforms
 
 YAML・Markdown・Plaintextを、自分で書いたJavaScriptでMarkdownへ変換し、VS Code標準のMarkdownプレビューに表示する拡張機能です。
 
 **変換はコマンド実行時だけ。入力やJavaScriptを保存・自動保存しても、変換しません。**
 
-バージョン: 0.1.1。デスクトップVS Code 1.105.0以降、ローカルフォルダのワークスペースが対象です。0.1.0の初回確認1〜6はユーザー報告でok。4番で報告された再実行時のタブ増加に修正を入れました。0.1.1の再確認A〜Dもユーザー報告でokとなり、タブ増加の改善を確認しました（Windows 11 Pro 26H2／VS Code 1.143.1）。残り16項目の受入確認は未実施です。確認済みの範囲は [TESTING.md](docs/TESTING.md) を参照してください。
+バージョン: **0.2.0**。デスクトップVS Code 1.105.0以降、ローカルフォルダのワークスペースが対象です。正式名称と内部識別子を一式変更しました。旧版を使っている場合は、先に [0.2.0への移行手順](docs/MIGRATION_0.2.0.md) を参照してください。拡張機能IDが変わるため、旧版とは別の拡張機能として導入されます。旧設定・ショートカット・前回結果は自動移行しません。
+
+0.1.0の初回確認1〜6と0.1.1の再確認A〜Dはユーザー報告でok。**0.2.0の実機移行確認、および以前から残る16項目は未実施です。** 自動テストと実機確認の範囲は [TESTING.md](docs/TESTING.md) を参照してください。
 
 ## インストールと最初の実行
 
-1. VS Codeのコマンドパレットで `Extensions: Install from VSIX...`（拡張機能: VSIXからのインストール）を選び、`dist/mdprev-via-jsproc-0.1.1.vsix` を指定します。
+1. VS Codeのコマンドパレットで `Extensions: Install from VSIX...`（拡張機能: VSIXからのインストール）を選び、`dist/markdown-preview-via-js-transforms-0.2.0.vsix` を指定します。
 2. 入力文書を置くフォルダをVS Codeで開きます。これが**利用ワークスペース**です。開発ソースのフォルダである必要はありません。
 3. 利用ワークスペース直下に `transforms` フォルダを作り、同名ファイルがないことを確認して `examples/transforms/identity.cjs` を配置します。既存ファイルを置き換える場合は、元ファイルそのものを同じフォルダの未使用の `identity.backup-YYYY-MM-DD-NN.cjs` に改名して保全してから配置してください。
 4. `.yaml` / `.yml` / `.md` / `.txt` のどれかを開きます。新規文書は一度保存してパスを確定させます。
-5. `MDprev via JSproc: 変換処理を選択して実行` → `identity.cjs` を選びます。標準Markdownプレビューが横に開く設計です。
-6. 入力を編集・保存した後、`MDprev via JSproc: 前回の変換を再実行` で更新します。プレビュー側にフォーカスがあっても前回の入力を使います。
+5. `Markdown Preview via JS Transforms: 変換処理を選択して実行` → `identity.cjs` を選びます。標準Markdownプレビューが横に開く設計です。
+6. 入力を編集・保存した後、`Markdown Preview via JS Transforms: 前回の変換を再実行` で更新します。プレビュー側にフォーカスがあっても前回の入力を使います。
 
-0.1.0から更新する場合は、既に開いているMDprevのプレビューを一度閉じ、VSIXを導入して「Developer: Reload Window」を実行してください。その後、[実機確認手順](docs/ACCEPTANCE.md) の「0.1.1の再確認」へ進んでください。初めて使う場合は同書の初回確認1〜6から始めます。A〜Dを確認済みの場合は、同じ0.1.1で「続けて確認する項目」へ進んでください。
+旧版から移行する場合は、旧プレビューを閉じ、旧拡張機能を無効化してから新版をインストールし、「Developer: Reload Window」を実行します。初回は「変換処理を選択して実行」で入力と処理を選び直します。その後、[実機確認手順](docs/ACCEPTANCE.md) のM1〜M6と残り16項目へ進んでください。
 
 ## コマンド
 
-| 表示名（すべて `MDprev via JSproc:`） | コマンドID | 動作 |
+| 表示名（すべて `Markdown Preview via JS Transforms:`） | コマンドID | 動作 |
 |---|---|---|
-| 変換処理を選択して実行 | `mdprevViaJsproc.selectAndRun` | アクティブな入力を固定し、候補を選んで実行 |
-| 前回の変換を再実行 | `mdprevViaJsproc.rerun` | 最後に成功した入力と処理を再利用 |
-| 前回の結果を再表示（変換しない） | `mdprevViaJsproc.reopenPreview` | 保存済みの結果だけを開く |
-| 実行中の変換を中断 | `mdprevViaJsproc.cancel` | 実行スレッドの終了を待って中断 |
-| 診断ログを表示 | `mdprevViaJsproc.showLog` | ファイルパス、例外、実行環境、console出力を確認 |
+| 変換処理を選択して実行 | `markdownPreviewViaJsTransforms.selectAndRun` | アクティブな入力を固定し、候補を選んで実行 |
+| 前回の変換を再実行 | `markdownPreviewViaJsTransforms.rerun` | 最後に成功した入力と処理を再利用 |
+| 前回の結果を再表示（変換しない） | `markdownPreviewViaJsTransforms.reopenPreview` | 保存済みの結果だけを開く |
+| 実行中の変換を中断 | `markdownPreviewViaJsTransforms.cancel` | 実行スレッドの終了を待って中断 |
+| 診断ログを表示 | `markdownPreviewViaJsTransforms.showLog` | ファイルパス、例外、実行環境、console出力を確認 |
 
-ショートカットの初期割り当てはありません。VS Codeのキーボードショートカット画面で `MDprev via JSproc` を検索し、好みのキーを割り当ててください。
+ショートカットの初期割り当てはありません。VS Codeのキーボードショートカット画面で `Markdown Preview via JS Transforms` を検索し、好みのキーを割り当ててください。
 
 ## 何が実行されるか
 
@@ -72,14 +74,14 @@ module.exports = async function ({ text, filePath }) {
 
 | 設定 | 初期値 | 意味 |
 |---|---|---|
-| `mdprevViaJsproc.transformsFolder` | `transforms` | 入力ルート内の相対フォルダ。ワークスペース外は不可 |
-| `mdprevViaJsproc.timeoutMs` | `10000` | 強制停止までの時間。100〜300000ミリ秒 |
+| `markdownPreviewViaJsTransforms.transformsFolder` | `transforms` | 入力ルート内の相対フォルダ。ワークスペース外は不可 |
+| `markdownPreviewViaJsTransforms.timeoutMs` | `10000` | 強制停止までの時間。100〜300000ミリ秒 |
 
 設定を変更しても変換しません。前回の再実行は、フォルダ設定変更後も記録済みの組を使います。別の処理に切り替える場合は「選択して実行」を使います。
 
 ## プレビュー、リンク、保持範囲
 
-生成Markdownは `mdpjsp:` の読み取り専用仮想ファイルとして保持します。利用ワークスペースに生成Markdownや一時ファイルを作りません。VS Code内蔵のMarkdown Previewエディターで開き、表示対象を生成結果のURIに固定します。別のMarkdownタブへは追従しません。同じ結果のプレビューが開いていれば、そのタブを再利用します。閉じている場合だけ横に開きます。
+生成Markdownは `markdown-preview-via-js-transforms:` の読み取り専用仮想ファイルとして保持します。利用ワークスペースに生成Markdownや一時ファイルを作りません。VS Code内蔵のMarkdown Previewエディターで開き、表示対象を生成結果のURIに固定します。別のMarkdownタブへは追従しません。同じ結果のプレビューが開いていれば、そのタブを再利用します。閉じている場合だけ横に開きます。
 
 相対パスは入力文書の場所を基準に扱います。仮想ファイルの画像・リンク先の読込を元ファイルへ接続する設計です。ただし **実画面でのリンク・画像表示は未検証** です。同じフォルダ以下の画像を初期対応範囲とし、`../` で入力フォルダの外へ出る画像や絶対 `file:` 画像は標準プレビューのアクセス制限により表示できない場合があります。ワークスペース外への読込は提供しません。仮想パス経由で開くリンク先は読み取り専用です。
 

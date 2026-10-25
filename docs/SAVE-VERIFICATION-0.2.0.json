@@ -1,0 +1,625 @@
+{
+  "version": "0.2.0",
+  "verifiedAt": "2026-10-25T07:01:23.835791+09:00",
+  "status": "All 28 saved files and 22 renamed backups plus original seed independently downloaded and verified; this receipt is verified separately after upload.",
+  "method": "Dropbox downloads compared to prepared bytes and original baselines: byte length, SHA-256 and Dropbox 4 MiB-block content hash. File IDs also checked for renamed originals.",
+  "counts": {
+    "savedFiles": 28,
+    "renamedBackups": 22,
+    "preservedSeed": 1,
+    "unchangedOriginalMetadataChecks": 7
+  },
+  "scope": {
+    "developmentRoot": "/www/studio/markdown-preview-via-js-transforms",
+    "instructionRoot": "/ai/ChatGPT/project/markdown-preview-via-js-transforms",
+    "index": "/ai/etc/sources.md"
+  },
+  "folderRename": {
+    "from": "/ai/ChatGPT/project/MDprev-via-JSproc",
+    "to": "/ai/ChatGPT/project/markdown-preview-via-js-transforms",
+    "file_id": "id:pdXqx4wRBdMAAAAAAAK-Kw",
+    "status": "completed"
+  },
+  "seedRename": {
+    "from": "seed-prompt-mdpjsp.md",
+    "to": "seed-prompt.md",
+    "file_id": "id:pdXqx4wRBdMAAAAAAAK-Mg",
+    "contentChanged": false
+  },
+  "backupMapping": [
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/.vscode/launch.json",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/.vscode/launch.backup-2026-10-25-01.json",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK-TA"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/.vscodeignore",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/.vscodeignore.backup-2026-10-25-01",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK-_g"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/CHANGELOG.md",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/CHANGELOG.backup-2026-10-25-01.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_Ow"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/MGMT.md",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/MGMT.backup-2026-10-25-01.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_PA"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/README.md",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/README.backup-2026-10-25-01.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_PQ"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/docs/ACCEPTANCE.md",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/docs/ACCEPTANCE.backup-2026-10-25-01.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_Pg"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/docs/DELIVERY.json",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/docs/DELIVERY.backup-2026-10-25-01.json",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_Pw"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/docs/DESIGN.md",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/docs/DESIGN.backup-2026-10-25-01.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_QA"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.md",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.backup-2026-10-25-01.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_QQ"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/docs/TESTING.md",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/docs/TESTING.backup-2026-10-25-01.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK_Qg"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/package-lock.json",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/package-lock.backup-2026-10-25-01.json",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK--g"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/package.json",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/package.backup-2026-10-25-01.json",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK--Q"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/src/controller.cjs",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/src/controller.backup-2026-10-25-01.cjs",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK--A"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/src/extension.cjs",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/src/extension.backup-2026-10-25-01.cjs",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK-jA"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/src/preview.cjs",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/src/preview.backup-2026-10-25-01.cjs",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK-jg"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/test/controller.test.cjs",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/test/controller.test.backup-2026-10-25-01.cjs",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK--w"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/test/integration.cjs",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/test/integration.backup-2026-10-25-01.cjs",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK-_A"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/test/open-preview.test.cjs",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/test/open-preview.test.backup-2026-10-25-01.cjs",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK-_Q"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/test/run-integration.cjs",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/test/run-integration.backup-2026-10-25-01.cjs",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK-kw"
+    },
+    {
+      "original": "/www/studio/markdown-preview-via-js-transforms/test/runner.test.cjs",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/test/runner.test.backup-2026-10-25-01.cjs",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK-lA"
+    },
+    {
+      "original": "/ai/etc/sources.md",
+      "backup": "/ai/etc/sources.backup-2026-10-25-01.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAKKTg"
+    },
+    {
+      "original": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mdpjsp.md",
+      "backup": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mdpjsp.backup-2026-10-25-01.md",
+      "original_file_id": "id:pdXqx4wRBdMAAAAAAAK-QQ"
+    }
+  ],
+  "backupsAndSeed": [
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/.vscode/launch.backup-2026-10-25-01.json",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-TA",
+      "bytes": 225,
+      "sha256": "fbb3363113c341a65eb04b1c852b226952211a266e473b133324c199fbbf5adf",
+      "content_hash": "35843b0e033b6feef6c17ff7f3c0ed5bfb6951b4582d2c9159e0d2b18feb6348",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/.vscodeignore.backup-2026-10-25-01",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-_g",
+      "bytes": 267,
+      "sha256": "14ff2019fc9ce8f08f9ed806904f51bf3452e23d81539e963752acc8c1436409",
+      "content_hash": "fab6c2e086a148aaf9a352e81bd9bf178a96bac52c37fdba52920268c242c9ac",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/CHANGELOG.backup-2026-10-25-01.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Ow",
+      "bytes": 1018,
+      "sha256": "575846c4e266923a08d35f105d04db7f28d01ad3c7dfdb7515edc562b1f23613",
+      "content_hash": "3716d0ef8aa09ab305e51fb34647e7aff1ea886cc83bda5c529ec684ceb004bf",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/MGMT.backup-2026-10-25-01.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_PA",
+      "bytes": 3920,
+      "sha256": "f5a1283224e149bf0c3debe5f046fe23e51da367b143db8b8c61f629019cf674",
+      "content_hash": "555df97660c0fcbd49b86e753964f30b9747077ca472594bebaf208fd9ac81da",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/README.backup-2026-10-25-01.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_PQ",
+      "bytes": 10772,
+      "sha256": "0c2cb44c74f30d30dc0b7f591bf33f85e9400bb6f76870924e462dfbaf76b786",
+      "content_hash": "04a35e1ccd1f7bbd36399620ce53ff4b6af0f39729f274195f5b6d0e80bcac2b",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/ACCEPTANCE.backup-2026-10-25-01.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Pg",
+      "bytes": 6852,
+      "sha256": "956c7fd988a1e301d0a0179433cb93046729bf22846fe1f7c65635246e93bdf8",
+      "content_hash": "6da66a60738e3cc80f89a8c0788454498ac955ae1c3116d57437bd337972c9f9",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/DELIVERY.backup-2026-10-25-01.json",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Pw",
+      "bytes": 2851,
+      "sha256": "72bb357f72df6c37bc010b3a6a321159f2ecc22ea7ca8ef5125e23a96e56619e",
+      "content_hash": "c15d8686e1fc18b30aceabe41a15091d2e0d0e71f8e40a04f75f9871e8969e53",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/DESIGN.backup-2026-10-25-01.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_QA",
+      "bytes": 10053,
+      "sha256": "5ff32a6e219f8d83d22adb51e5cea00b900074645e6446cd912e99b97923a008",
+      "content_hash": "4e99d7f8206754413c3445c9c9433368578feae69cffff8bc48ef2ade2cde2d5",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.backup-2026-10-25-01.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_QQ",
+      "bytes": 2675,
+      "sha256": "0188488ba53ee6262dbcf2638b752face78cf8e60df6f5dd98160617d8b90b28",
+      "content_hash": "5a912047816d3cda53e9b192900717552d32a50a6d03d4c52017ce35dbf6d93a",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/TESTING.backup-2026-10-25-01.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Qg",
+      "bytes": 7476,
+      "sha256": "142ce831d041f7aa84fda379243633e57adcaf263a123ffec74d45aa706ef040",
+      "content_hash": "d14de85905259dbd8f6e7ac82eb39400d3c481eab14bf3337a07c6d78d308bc6",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/package-lock.backup-2026-10-25-01.json",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK--g",
+      "bytes": 79330,
+      "sha256": "9b9d1a1027e274c06c414546856979e0fe8fe6b8064208a71b0841458fdd27fa",
+      "content_hash": "50b65ea5f1cb109162bca5d0de3fd374f0122dfaf3a9f6590d6685787fcfc883",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/package.backup-2026-10-25-01.json",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK--Q",
+      "bytes": 2864,
+      "sha256": "490b29d80a0d42b04948c111e4fc52c9763a6d428ee49bc9703dd2768139f616",
+      "content_hash": "03e4b8f5014aa4ac64946fc58ee19c949dc3b6337a499c56cc5dad16374bb830",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/src/controller.backup-2026-10-25-01.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK--A",
+      "bytes": 7650,
+      "sha256": "20bbf181469b1c0133c4a391d12412a4f5a154684df5090b56e7451c99668811",
+      "content_hash": "6a4d70fcae9c0127ce342a3316e719f0815b1eac283cf4e50570257b1963d06c",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/src/extension.backup-2026-10-25-01.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-jA",
+      "bytes": 1028,
+      "sha256": "087079dbf17cace6fb52c2b7199144009d3f88ee6691dcba88c97a14d0365ed4",
+      "content_hash": "5aef624f3e66b92f94b65bfe5f281fee620bee627f633dd46b3b1d083ee9004e",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/src/preview.backup-2026-10-25-01.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-jg",
+      "bytes": 2114,
+      "sha256": "a94a279c75096876482e93e64098e8380e2ceef400f1a7d24cb2df619b10a6d5",
+      "content_hash": "53e2853c2489bc290f3c46e475250e2e71f2a52079e1b63fe430a62bea65a976",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/test/controller.test.backup-2026-10-25-01.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK--w",
+      "bytes": 10527,
+      "sha256": "5d0b24ea5e0b19b1d1f6b158f27cfe9e21f1e49ffe4d727b7eedd12b119f200c",
+      "content_hash": "0b56255846bcc3d2c27e1a45c7489ac739f4788da77c40c66775c2fef1c1bfe1",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/test/integration.backup-2026-10-25-01.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-_A",
+      "bytes": 2942,
+      "sha256": "9b652273a291c0958c2770e001c20c3248480aa4e0100b3945b67482b8e646a7",
+      "content_hash": "2bf577f1eb9b3fbdd9f31af7023dc6d235ed0bb646828d7e54de193a429830dd",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/test/open-preview.test.backup-2026-10-25-01.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-_Q",
+      "bytes": 4334,
+      "sha256": "14cc8106d32b79c305e0de0fa00204255bedf6e9b6ef6dcf51ab5a2a5eb844a0",
+      "content_hash": "5d2191c52df3069e74719d3b5daa3dca03e35db4bd9a0c825067ae116d82595b",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/test/run-integration.backup-2026-10-25-01.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-kw",
+      "bytes": 1142,
+      "sha256": "0a982cab323c5118efbac7efc7fa5c9c21c83bc121bbef8f300e9655e1b93f15",
+      "content_hash": "eb23178c4b5e4922625f045d49a416f9df0ce98799f8e0637207e253cb99206b",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/test/runner.test.backup-2026-10-25-01.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-lA",
+      "bytes": 5868,
+      "sha256": "59b85f6a6db1f2ee959418d6fea222852554555e2a509831013b5ee61f912dad",
+      "content_hash": "f88c05645cc59784ba8b1ac390077654703da3bd629584cff741c5d11b2b0fc1",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/ai/etc/sources.backup-2026-10-25-01.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAKKTg",
+      "bytes": 6504,
+      "sha256": "7f16be727690b85d7ca889d4355bfbb578936c367383c4515c8fc368bd33c8e9",
+      "content_hash": "fc0fb6d794fedb997b35f680ed83d4486aa0fa25365beab416f7ea27dcc74a36",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mdpjsp.backup-2026-10-25-01.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-QQ",
+      "bytes": 16108,
+      "sha256": "e232975e7c4789d349031d57c0ae4dfc5b6b532034c8470b4e72001ee0a07e88",
+      "content_hash": "49745e14dd622fd2ae9446d546c94412b13efff1c459f3e054bff1cfae9fc3b4",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/seed-prompt.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-Mg",
+      "bytes": 7853,
+      "sha256": "98f6a518c9aed34d307ee250d1c7e8452a44bd24e396663e911cfbd0a79392f6",
+      "content_hash": "a58fd152ccc9afe552c1f67912cd8031f1aaf8656f6871fb9d7fe1eca7d84a78",
+      "verification": "independent_download_matched"
+    }
+  ],
+  "savedFiles": [
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/.vscode/launch.json",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_xg",
+      "bytes": 242,
+      "sha256": "c9041f1576e949152ef184b56a648dafec96dcbca02d46a058ed6429105618e1",
+      "content_hash": "e4d51f99eea136f1c1c83b6d00f5222285bf5f13056c96b8af1f1aec9ed5a594",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/.vscodeignore",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_xw",
+      "bytes": 249,
+      "sha256": "f581b0cf9d6a03ccda51533c0b286d64c9504f2b984bfe52be4016869341851f",
+      "content_hash": "d1815f958830539c5dce934808ca6d3579d283e117e22c9c2cc2887786148abb",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/CHANGELOG.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_yA",
+      "bytes": 1922,
+      "sha256": "ca21711e8cf78606920e3a3d669a3eff28affffde7be65e60bae1d4ec0601484",
+      "content_hash": "a19bdc672c6c3b2404e3b55d0587e1a850867fb1a299a46e0c19bac699cab79b",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/MGMT.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_yQ",
+      "bytes": 3500,
+      "sha256": "ef030e767fbec6f0c8ca9aaebb75bd5785b197885b02d4c64ecfe278c261ed55",
+      "content_hash": "640dfeefd3ee27fb6abd14117d096d84cb1732b365d5fc265dcad1cf2b45750a",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/README.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_yg",
+      "bytes": 11149,
+      "sha256": "8e9c62734c015a2a4f917a3cd7d4a6ea8bd7868fefb2e48c765e299302e268c4",
+      "content_hash": "0fa427227ae8c158fc1b4841167a2cc00e3eaccb6b3ef037c9245888837986d4",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/dist/markdown-preview-via-js-transforms-0.2.0-source.zip",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_yw",
+      "bytes": 72338,
+      "sha256": "9d0dec483759e95fb6192cae4d35c99c55fa85ce554708df42c1d6cba6f54d33",
+      "content_hash": "c6570e6ecc6e203eca090d65dc90699cfb5413346a16fa0f3f9f80ca3a0a3274",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/dist/markdown-preview-via-js-transforms-0.2.0.vsix",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_zA",
+      "bytes": 36636,
+      "sha256": "27c19864ffd07c930223a939544b462f0da444cebec1cf5d6c544aed4f60338d",
+      "content_hash": "64ee6152b3468992ef4989aa78a24a4b582abfbc2d0cc168211fecdf21b5cb7e",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/ACCEPTANCE.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_zQ",
+      "bytes": 6642,
+      "sha256": "bf3669bf2e9e95580a2db41386232ff0d182205d7d697a77488d3b666beaa9d8",
+      "content_hash": "6774e20cb9995b9d0494097bedd62704d5f02fcfe97555a6877ef7bbbe2d62ab",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/DELIVERY.json",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_zg",
+      "bytes": 3941,
+      "sha256": "074ab603f2bfb6d0ec16f1772ea89b981ac18f9db8029c889ee72b8191620203",
+      "content_hash": "7adaf7599220f0b7a18c4abe3a59ca349b9ce4ca48995708cee17e3c3d5f177c",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/DESIGN.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_zw",
+      "bytes": 11999,
+      "sha256": "8022289e08700c6fbf0f2eda84c450b4b5788e12ed02aa46862015b421924952",
+      "content_hash": "9ee424d0bbac3f983dd41427907ef60c10c03d8ea29e24036381a6a1513096e3",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/MIGRATION_0.2.0.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_0A",
+      "bytes": 7184,
+      "sha256": "191cc5adcfb7bb19b451f733383b8b5097545cfc7d826e391e5d1855fb427b4f",
+      "content_hash": "9bb6e896b5c023cb1ccbe7bb3c8c4b61119a8ee463d694563d9751770ec58c98",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_4Q",
+      "bytes": 2577,
+      "sha256": "3576d050c8b09088bed40fc063a283119dc90081016796cbe779c9fafaaf9784",
+      "content_hash": "2ae9be9b423f80ac8769b4d7330abd35b8a6f3553789e3fe5f4cd56ee4bf3f00",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/TESTING.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_4g",
+      "bytes": 8453,
+      "sha256": "b9d19f36878b3ce0bb8ce8e3200cc0f93bc35baf121c2ebe148bcc08a81f1bda",
+      "content_hash": "9cd8fadf9540f1c2377530f81c50f74868c70ba9de598d81779acbb2b85d0e8e",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/package-lock.json",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_4w",
+      "bytes": 79364,
+      "sha256": "b8cbfde2680fb6a626d1e9d8253eed549549b81c8555acedea2aa52ffb4db405",
+      "content_hash": "32274342b65139c5b7338ca9b49c266f9b34c90cc216adbc6c66acc86cf58c39",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/package.json",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_5A",
+      "bytes": 3165,
+      "sha256": "02551c1b0223d07d8c27731117b51d3a79ee7791ac36a04b4165e3f0431b26b0",
+      "content_hash": "649ff673fb5608ec69cae22d0875e8a1285705a1566b26c24cfde6ec5c87ea0a",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/src/controller.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_5Q",
+      "bytes": 7677,
+      "sha256": "30777076607c1186fecc8c80028de98b550e80c7973c6f78457a150111e95e38",
+      "content_hash": "86710b5ff895fe43adaaad5def6a201f7e815a8347bc35a235265948675d64a9",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/src/extension.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_5g",
+      "bytes": 1103,
+      "sha256": "085d8e20974ab3062ffd262fb54c0524cb5ee95450ae7eef52dba35140c5a5f6",
+      "content_hash": "0c670eac808ae888087dd6a474c8d45c3ff9f361ecc95ccb223a278ca985ac94",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/src/identity.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_5w",
+      "bytes": 385,
+      "sha256": "bddc70b0517dcf3a239726eecfefa1a0bdb522f517c9d1dd909e42ca711773e1",
+      "content_hash": "aca6b7c780a68209e8d2fb646c99a7e24536490b6c029e74f269e63dfad233b5",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/src/preview.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_6A",
+      "bytes": 2189,
+      "sha256": "c36b79e75cbb2c291b0532402857d2daac2c33c81c156eca985f5b006159a876",
+      "content_hash": "9cab11d39f9db1a9d3ee79c34358136f0d80433b2aae0af0cfe5d21b25c9e8d9",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/test/controller.test.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_-Q",
+      "bytes": 12128,
+      "sha256": "01eac3604840f93a5d637e79e158fe7625242ef0079abc02961ed88b7047d7ac",
+      "content_hash": "5120a8c78b618dd4797f602a1ec095e2993817be4dbc79bd8c1843cb17d86d1a",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/test/identity.test.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_-g",
+      "bytes": 3112,
+      "sha256": "8d54bcb52a1ee8a69c5a9e6089729e56c408df5d8a158de35ba3afd8de9a99bb",
+      "content_hash": "eca08827d658ca227a8afb27596d8b4e28d02b3f0853d4f655349112b6734300",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/test/integration.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_-w",
+      "bytes": 3062,
+      "sha256": "13c36a97764a946b8e24e973589fa35c7764e27733087c05a60746b3b899ebde",
+      "content_hash": "295c1dd3d92c89cddfab63a83b7338723174aec544ce1330b232f183b85f88b5",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/test/open-preview.test.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK__A",
+      "bytes": 4404,
+      "sha256": "8d2fe7891b94c6b262cf8b03bcdab1b46c9ea26affb866e1f9bd2bfeeafc743a",
+      "content_hash": "73509183217ec320bfd1ba8f5d00513ef2a62b768e2a788e6e2db5ffa47cb203",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/test/run-integration.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK__Q",
+      "bytes": 1166,
+      "sha256": "5ee323f06b7d3979699b6ee18ae581be64b05c67fa09dff40ce2b65753e8ff70",
+      "content_hash": "0161d026f17fd57a4be862807c36a4bca65b7470300ab7786d4929909a1d1fb5",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/test/runner.test.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK__g",
+      "bytes": 5896,
+      "sha256": "73174f6e33b0db4c26f3a83170c818aa624d2ee52744ba4029277b8b63ac8c57",
+      "content_hash": "d3b07c48f0f17b87e3413fc6f29c6114b4abb59df7d237b4821c5043d9b46beb",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/ai/etc/sources.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK__w",
+      "bytes": 6555,
+      "sha256": "85e28a0adc894ae7df1133698e515160380a528d3812cf278856ff2dad1b004c",
+      "content_hash": "cf39a4c3444f046f7d60c4a34f7ce7a3bf410d9ecef57a73c3dc958ae72bf715",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mdpjsp.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAALAAA",
+      "bytes": 652,
+      "sha256": "978f9c306eb56098b4de0f69436df767b9fc112c5ba292927dc048381aa11b6e",
+      "content_hash": "4ea68ed28ac0fe36b1cd72e899e2e0dcae275c46bf1d03ce35c49c42420199bc",
+      "verification": "independent_download_matched"
+    },
+    {
+      "path": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAALAAQ",
+      "bytes": 17432,
+      "sha256": "dc2560fdc7405d726e8fab0ed4b7ac83a01ea88904061923606c5df0eef8a0e4",
+      "content_hash": "0e614a327ff9e7893d0297bfe737229a09e58dab31fbaf99e74766eed475654a",
+      "verification": "independent_download_matched"
+    }
+  ],
+  "preservedOriginals": [
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/USER_TESTING.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-tw",
+      "bytes": 1395,
+      "content_hash": "a325fdf78e84f3502bfb8e707b925e1e5afc885d83a8f9613af6b38ff08193de",
+      "verification": "current Dropbox ID, size and content hash match previously independently verified baseline"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/USER_TESTING_REVIEW-2026-10-24.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Bw",
+      "bytes": 4463,
+      "content_hash": "85effe2dfdec145c7e9a47cd242f41819b5beef8585cce47e98a0d99b561564e",
+      "verification": "current Dropbox ID, size and content hash match previously independently verified baseline"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/docs/USER_TESTING_RECHECK-0.1.1-2026-10-24.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_Qw",
+      "bytes": 3617,
+      "content_hash": "58f8965abff4fb0298928858e82a4b75b5af8ae94a0086d5c05750eb9d8338e4",
+      "verification": "current Dropbox ID, size and content hash match previously independently verified baseline"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/LICENSE",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-Dw",
+      "bytes": 1070,
+      "content_hash": "e3c3149441290a77742d61aa736d25404cda685b092c4178944ed5d0b0921818",
+      "verification": "current Dropbox ID, size and content hash match previously independently verified baseline"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/input.md",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK-3Q",
+      "bytes": 310,
+      "content_hash": "8ae3e59b03a7f61541ce3bb2f5addec66c80ed1f60ac97191e65b647cb57df44",
+      "verification": "current Dropbox ID, size and content hash match previously independently verified baseline"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/dist/mdprev-via-jsproc-0.1.1.vsix",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_CQ",
+      "bytes": 30248,
+      "content_hash": "9c8f28e485391469faffd05917f2348f8a93ab39907d3f7d1304fec2817149fd",
+      "verification": "current Dropbox ID, size and content hash match previously independently verified baseline"
+    },
+    {
+      "path": "/www/studio/markdown-preview-via-js-transforms/dist/mdprev-via-jsproc-0.1.1-source.zip",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_CA",
+      "bytes": 68422,
+      "content_hash": "ad5d9de804453df5836dd7861b0203282990d8e489c7ac1bef59d07b88c90310",
+      "verification": "current Dropbox ID, size and content hash match previously independently verified baseline"
+    }
+  ],
+  "validation": {
+    "unitTests": {
+      "node24.22.1": 24,
+      "vscode1.105.1_node22.19.0": 24,
+      "failures": 0,
+      "skipped": 0
+    },
+    "standardNpmTest": "24 passed, 0 failed; final full summary captured",
+    "syntax": "passed",
+    "gitDiffCheck": "passed",
+    "vsixCrc": "passed",
+    "runtimeSourceMatch": "8 modules in VSIX and installed extension",
+    "isolatedCliInstall": "old and new IDs listed separately",
+    "guiIntegration": "unexecuted",
+    "migrationAcceptance": "M1-M6 unexecuted",
+    "continuingAcceptance": "16 unexecuted"
+  },
+  "transferRecovery": "test/controller.test.cjs initially failed FETCH_FAILED; destination confirmed absent, identical local project source verified and only that file retried successfully; final independent readback matched.",
+  "rollback": "更新版も削除せず別の未使用バックアップ名へ改名して保全した後、該当する旧バックアップを元名へ戻す。新版で追加したファイル・配布物・旧原案を削除しない。拡張機能は新プレビューを閉じ、新版を無効化し、旧版を有効化して再読み込みする。必要な設定・キー割当も現在の実ファイルを改名保全してから戻す。フォルダ名を戻す場合は索引・参照先も揃える。",
+  "remoteGitPush": false,
+  "chatgptProjectSettingsUi": "Not modified; use canonical instructions.md if the project settings contain a pasted copy."
+}

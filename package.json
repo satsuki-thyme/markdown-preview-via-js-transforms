@@ -1,8 +1,8 @@
 {
-  "name": "mdprev-via-jsproc",
-  "displayName": "MDprev via JSproc",
+  "name": "markdown-preview-via-js-transforms",
+  "displayName": "Markdown Preview via JS Transforms",
   "description": "ユーザーのJavaScriptでテキストを手動変換し、標準Markdownプレビューに表示します。",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "publisher": "satsuki-thyme",
   "license": "MIT",
   "engines": {
@@ -13,21 +13,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/satsuki-thyme/MDprev-via-JSproc.git"
+    "url": "https://github.com/satsuki-thyme/markdown-preview-via-js-transforms.git"
   },
   "main": "./src/extension.cjs",
   "extensionKind": [
     "ui"
   ],
   "activationEvents": [
-    "onFileSystem:mdpjsp"
+    "onFileSystem:markdown-preview-via-js-transforms"
   ],
   "capabilities": {
     "untrustedWorkspaces": {
       "supported": "limited",
       "description": "結果の再表示のみ利用できます。JavaScriptの実行にはワークスペースの信頼が必要です。",
       "restrictedConfigurations": [
-        "mdprevViaJsproc.transformsFolder"
+        "markdownPreviewViaJsTransforms.transformsFolder"
       ]
     },
     "virtualWorkspaces": {
@@ -38,41 +38,41 @@
   "contributes": {
     "commands": [
       {
-        "command": "mdprevViaJsproc.selectAndRun",
+        "command": "markdownPreviewViaJsTransforms.selectAndRun",
         "title": "変換処理を選択して実行",
-        "category": "MDprev via JSproc"
+        "category": "Markdown Preview via JS Transforms"
       },
       {
-        "command": "mdprevViaJsproc.rerun",
+        "command": "markdownPreviewViaJsTransforms.rerun",
         "title": "前回の変換を再実行",
-        "category": "MDprev via JSproc"
+        "category": "Markdown Preview via JS Transforms"
       },
       {
-        "command": "mdprevViaJsproc.reopenPreview",
+        "command": "markdownPreviewViaJsTransforms.reopenPreview",
         "title": "前回の結果を再表示（変換しない）",
-        "category": "MDprev via JSproc"
+        "category": "Markdown Preview via JS Transforms"
       },
       {
-        "command": "mdprevViaJsproc.cancel",
+        "command": "markdownPreviewViaJsTransforms.cancel",
         "title": "実行中の変換を中断",
-        "category": "MDprev via JSproc"
+        "category": "Markdown Preview via JS Transforms"
       },
       {
-        "command": "mdprevViaJsproc.showLog",
+        "command": "markdownPreviewViaJsTransforms.showLog",
         "title": "診断ログを表示",
-        "category": "MDprev via JSproc"
+        "category": "Markdown Preview via JS Transforms"
       }
     ],
     "configuration": {
-      "title": "MDprev via JSproc",
+      "title": "Markdown Preview via JS Transforms",
       "properties": {
-        "mdprevViaJsproc.transformsFolder": {
+        "markdownPreviewViaJsTransforms.transformsFolder": {
           "type": "string",
           "default": "transforms",
           "scope": "resource",
           "description": "入力が属するワークスペースルートからの相対フォルダ。直下の .js / .cjs / .mjs を候補にします。"
         },
-        "mdprevViaJsproc.timeoutMs": {
+        "markdownPreviewViaJsTransforms.timeoutMs": {
           "type": "integer",
           "default": 10000,
           "minimum": 100,

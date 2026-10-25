@@ -1,6 +1,6 @@
-# 設計記録 0.1.1
+# 設計記録 0.2.0
 
-日付: 2026-10-24（Asia/Tokyo）。添付 `seed-prompt.md`、プロジェクト指示、IDAD原文を参照。現在の実装と判断は本書へ記録する。
+日付: 2026-10-25（Asia/Tokyo）。添付 `seed-prompt.md`、プロジェクト指示、IDAD原文を参照。現在の実装と判断は本書へ記録する。
 
 ## 方式選定
 
@@ -20,10 +20,21 @@
 
 0.1.0の初回確認1〜6はユーザー報告でokとなり、標準プレビュー表示、手動更新、保存時の非更新、再表示、再起動後復元の基礎経路を確認できた。初回提出時の報告にOS・VS Codeのバージョンはなかった。2026-10-24の追加報告ではWindows 11 Pro 26H2／VS Code 1.143.1の環境と0.1.1再確認A〜Dのokを受領し、表示経路の変更を受入済みとした。**残り16項目の実機検証は未完了。** この実行環境のGUI統合テストは画面接続・ソケットの制約で実行できないため、模擬APIの合格と実画面での合格を分ける。
 
+## 0.2.0の識別子移行
+
+正式名称はMarkdown Preview via JS Transforms。拡張機能IDは `satsuki-thyme.markdown-preview-via-js-transforms`、コマンドと設定の名前空間は `markdownPreviewViaJsTransforms`。URIスキーム、仮想パス接尾辞、状態保存キー、開発用環境変数も変更した。全対応表と導入順序は [MIGRATION_0.2.0.md](MIGRATION_0.2.0.md)。標準VS Code側の `vscode.markdown.preview.editor` は製品の識別子ではないため維持する。
+
+旧IDのエイリアスや自動実行・自動移行は登録しない。新しい拡張機能として状態領域を分離し、初回の手動選択で新しい記録を作る。別拡張機能の内部状態DBには触れず、旧版の設定・状態を削除しない。利用者は旧版を無効化し、設定値とキー割当を新IDへ明示的に移す。互換性変更を表すため版を0.2.0とする。0.1.1のタブ再利用方式・Worker実行契約は維持した。
+
+新しい登録IDとmanifestの整合、および旧保存キーを変更せず新保存キーだけで保持・復元するテストを追加した。これらは模擬VS Code APIと実Workerによる検証であり、実エディター上の移行・画像表示の合格を意味しない。
+
+根拠（2026-10-25確認）: [Extension Manifest](https://code.visualstudio.com/api/references/extension-manifest)、[ExtensionContext API](https://code.visualstudio.com/api/references/vscode-api#ExtensionContext)、[Common Capabilities / Data Storage](https://code.visualstudio.com/api/extension-capabilities/common-capabilities)。公式APIの公開範囲に基づき、他拡張機能の私有状態へ依存しない方針を採用した。
+
 ## モジュール
 
 | ファイル | 役割 |
 |---|---|
+| `src/identity.cjs` | 表示名、拡張機能ID、名前空間、URI、保存キーの共通定義 |
 | `src/extension.cjs` | コマンド、FS Provider、診断出力の登録と破棄 |
 | `src/controller.cjs` | 対象決定、信頼確認、入力の取得、排他、前回の組、状態保存 |
 | `src/paths.cjs` | 拡張子、候補列挙、実パスとルートの確認 |
@@ -45,18 +56,18 @@
 7. 戻り値が文字列か、UTF-8換算16 MiB以下かを検証する。空文字列は成功である。
 8. 成否にかかわらず `await worker.terminate()` でWorkerの実終了を確認する。処理が返った後の残留タイマーも終了する。
 9. 取消を確認し、コミット区間へ入る。この区間では実行処理は終了済みなので新しい中断は受け付けない。
-10. `workspaceState.update('lastSuccess.v1', {pair, markdown, time})` 成功後にメモリー結果と前回の組を差し替える。状態保存失敗では前回結果を維持する。
+10. `workspaceState.update('markdownPreviewViaJsTransforms.lastSuccess.v1', {pair, markdown, time})` 成功後にメモリー結果と前回の組を差し替える。状態保存失敗では前回結果を維持する。
 11. `onDidChangeFile` を通知し、標準プレビューを開く。プレビュー表示だけが失敗した場合は「変換成功・表示失敗」を明示し、結果再表示へ案内する。
 
 取消と時間切れはWorkerの実停止を待つ。結果を返すPromiseだけ放置して終了扱いにしない。ネイティブ呼出し・外部子プロセスまでの強制終了保証は提供しない。
 
 ## 前回の記録と結果
 
-- `lastSuccess.v1` は入力絶対パス、JavaScript絶対パス、所属ルート、Markdown、時刻を1件保存する。入力本文は結果と同じ場合を除き別には保存しない。
+- `markdownPreviewViaJsTransforms.lastSuccess.v1` は入力絶対パス、JavaScript絶対パス、所属ルート、Markdown、時刻を1件保存する。入力本文は結果と同じ場合を除き別には保存しない。
 - 一覧キャンセル、失敗、停止、候補なしは前回の組を変えない。
 - 再実行時は現在のアクティブエディターを参照しない。ルート構成変更や対象消失は明示的に失敗する。
 - 再起動は最後の成功結果を復元するだけ。importも変換も走らない。
-- 同じ入力の仮想URIは `<入力の絶対URIパス>.mdpjsp-preview.md`、schemeは `mdpjsp`。
+- 同じ入力の仮想URIは `<入力の絶対URIパス>.js-transforms-preview.md`、schemeは `markdown-preview-via-js-transforms`。
 - 入力が違う場合の旧スナップショットはメモリーに保持する。永続復元は最後の1件に限定する。
 
 ## 資源と安全性

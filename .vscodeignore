@@ -6,9 +6,6 @@ scripts/**
 docs/DELIVERY.json
 dist/**
 test/**
-scripts/**
-.vscode/**
-docs/DELIVERY.json
 test-results/**
 **/*.backup-*
 package-lock.json
@@ -16,3 +13,5 @@ docs/PROCESS_CHART.md
 MGMT.md
 docs/USER_TESTING*.md
 docs/SAVE-VERIFICATION*.json
+input.md
+transforms/**

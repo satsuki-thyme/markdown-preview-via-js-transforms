@@ -6,7 +6,7 @@ const os = require('node:os');
 const path = require('node:path');
 const { runTransform } = require('../src/runner.cjs');
 async function fixture(t) {
-  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'mdpjsp-runner-'));
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'markdown-preview-via-js-transforms-runner-'));
   t.after(() => fs.rm(root, { recursive: true, force: true }));
   return root;
 }

@@ -8,7 +8,7 @@ class TabInputCustom {
 }
 const uri = text => ({ toString: () => text });
 function fixture() {
-  const target = uri('mdpjsp:/workspace/input.md.mdpjsp-preview.md');
+  const target = uri('markdown-preview-via-js-transforms:/workspace/input.md.js-transforms-preview.md');
   const groups = [{ viewColumn: 1, tabs: [] }];
   const calls = [];
   const v = {
@@ -68,7 +68,7 @@ test('Closing a preview permits one new tab and subsequent reopen reuses it', as
 test('Same tab label, another URI, or another custom editor cannot be mistaken for this result', async () => {
   const f = fixture();
   f.groups[0].tabs.push(
-    { label: 'preview', input: new TabInputCustom(uri('mdpjsp:/elsewhere/input.md.mdpjsp-preview.md'), MARKDOWN_PREVIEW_EDITOR) },
+    { label: 'preview', input: new TabInputCustom(uri('markdown-preview-via-js-transforms:/elsewhere/input.md.js-transforms-preview.md'), MARKDOWN_PREVIEW_EDITOR) },
     { label: 'preview', input: new TabInputCustom(f.target, 'another.editor') },
     { label: 'preview', input: { uri: f.target, viewType: MARKDOWN_PREVIEW_EDITOR } }
   );

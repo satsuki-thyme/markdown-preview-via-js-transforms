@@ -1,24 +1,31 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "timezone": "Asia/Tokyo",
-  "version": "0.1.1",
-  "status": "0.1.0 initial six checks and 0.1.1 rechecks A-D reported ok; remaining 16 checks await user acceptance",
+  "version": "0.2.0",
+  "displayName": "Markdown Preview via JS Transforms",
+  "extensionId": "satsuki-thyme.markdown-preview-via-js-transforms",
+  "baselineGitCommit": "ce8991ae0834ae6c6fa3f99223a254ce22cfe678",
+  "status": "Rename implemented and automated checks passed; 0.2.0 migration M1-M6 and 16 continuing acceptance checks remain unexecuted",
   "tests": {
     "node24": {
-      "version": "24.19.0",
-      "passed": 22,
+      "version": "24.22.1",
+      "passed": 24,
       "failed": 0,
-      "skipped": 0
+      "skipped": 0,
+      "seconds": 5.056
     },
     "vscodeEmbeddedNode": {
       "vscode": "1.105.1",
       "node": "22.19.0",
-      "passed": 22,
+      "passed": 24,
       "failed": 0,
-      "skipped": 0
+      "skipped": 0,
+      "seconds": 5.459
     },
-    "guiIntegration": "Updated regression assertions and syntax-checked; not executed. Display/socket environment remains unavailable.",
-    "userReport": {
+    "arguments": "--test --test-concurrency=1 --test-reporter=tap test/*.test.cjs",
+    "syntax": "All src, test, and scripts .cjs files passed node --check",
+    "guiIntegration": "New IDs and syntax checked only; not executed. Display/socket environment unavailable.",
+    "priorUserReport": {
       "file": "docs/USER_TESTING.md",
       "appliesToVersion": "0.1.0",
       "initialChecksPassed": 6,
@@ -26,7 +33,7 @@
       "furtherChecks": 16,
       "furtherChecksStatus": "unexecuted"
     },
-    "userRecheck": {
+    "priorUserRecheck": {
       "file": "docs/USER_TESTING.md",
       "appliesToVersion": "0.1.1",
       "reportedAt": "2026-10-24",
@@ -50,31 +57,52 @@
       "optionalTabMove": "not separately specified in report",
       "furtherChecks": 16,
       "furtherChecksStatus": "unexecuted"
+    },
+    "migrationAcceptance": {
+      "appliesToVersion": "0.2.0",
+      "M1": "unexecuted",
+      "M2": "unexecuted",
+      "M3": "unexecuted",
+      "M4": "unexecuted",
+      "M5": "unexecuted",
+      "M6": "unexecuted"
+    },
+    "furtherAcceptance": {
+      "count": 16,
+      "status": "unexecuted"
     }
   },
   "package": {
-    "file": "dist/mdprev-via-jsproc-0.1.1.vsix",
-    "bytes": 30248,
-    "sha256": "9f2bb1d6dd208b65a9e49df7613ae0e904fea9f654d4b301e316d313fea0d76c",
+    "file": "dist/markdown-preview-via-js-transforms-0.2.0.vsix",
+    "bytes": 36636,
+    "sha256": "27c19864ffd07c930223a939544b462f0da444cebec1cf5d6c544aed4f60338d",
     "zipCrc": "passed",
-    "runtimeSourceMatch": "all 7 modules passed",
-    "linuxCliInstall": "passed on VS Code 1.105.1; installed version and all runtime modules matched",
-    "readmePackaging": "vsce rewrites relative README links to configured repository URLs; repository has not been pushed"
+    "runtimeSourceMatch": "all 8 modules passed",
+    "linuxCliInstall": "passed on VS Code 1.105.1; new extension ID, version, and installed runtime source matched",
+    "coexistence": "Isolated CLI lists old 0.1.1 and new 0.2.0 as separate extensions; new runtime files remain unchanged. GUI enablement/state not tested.",
+    "readmePackaging": "vsce rewrites relative README links to the renamed repository. Changes have not been pushed; use the source archive for current bundled documents."
   },
   "sourceArchive": {
-    "file": "dist/mdprev-via-jsproc-0.1.1-source.zip",
-    "hashRecord": "docs/SAVE-VERIFICATION-0.1.1.json"
+    "file": "dist/markdown-preview-via-js-transforms-0.2.0-source.zip",
+    "hashRecord": "docs/SAVE-VERIFICATION-0.2.0.json",
+    "exclusions": [
+      ".git",
+      "node_modules",
+      "dist",
+      "backups",
+      "user root input.md and transforms/",
+      "user reports and historical save receipts"
+    ]
   },
-  "dropboxVerification": "recorded separately in docs/SAVE-VERIFICATION-0.1.1.json after independent readback",
+  "migration": {
+    "guide": "docs/MIGRATION_0.2.0.md",
+    "legacyAliases": false,
+    "automaticStateImport": false,
+    "automaticExecution": false,
+    "legacyDataDeleted": false,
+    "settingsAndKeybindings": "Explicit user migration; same scope and values"
+  },
+  "dropboxVerification": "Recorded separately after independent readback in docs/SAVE-VERIFICATION-0.2.0.json",
   "remoteGitPush": false,
-  "acceptanceDocumentationUpdate": {
-    "date": "2026-10-24",
-    "codeChanged": false,
-    "versionChanged": false,
-    "artifactsRebuilt": false,
-    "automatedTestsRerun": false,
-    "artifactPolicy": "Existing VSIX/source ZIP remain release snapshots; current acceptance status lives in root documents",
-    "review": "docs/USER_TESTING_RECHECK-0.1.1-2026-10-24.md",
-    "saveVerification": "docs/SAVE-VERIFICATION-0.1.1-RECHECK-2026-10-24.json"
-  }
+  "chatgptProjectUiInstructions": "Not changed through UI; canonical instructions.md file prepared for project settings"
 }

@@ -1,34 +1,28 @@
 # 開発・進捗記録
 
-更新: 2026-10-24（Asia/Tokyo）
+更新: 2026-10-25（Asia/Tokyo）
 
 ## 現在地
 
-0.1.0の初回ユーザーテスト1〜6はすべてok。4番の「新しいタブが開いた」へ対応した0.1.1を作成。標準Markdown Previewを既存タブで再利用するよう表示経路を変更した。自動テスト22件を2ランタイムで確認。0.1.1の実機再確認A〜Dはユーザー報告ですべてok。タブ増加への修正は受入済み。継続確認16項目は未実施。今回の報告環境はWindows 11 Pro 26H2（26300.9711）／VS Code 1.143.1／内蔵Node.js 24.21.0。今回は受入文書のみ更新する。合否・数値は `docs/TESTING.md` を正本とする。
+Markdown Preview via JS Transforms 0.2.0。旧名MDprev via JSprocから表示名・拡張機能ID・コマンドID・設定ID・URIスキーム・保存キー・開発用識別子を変更した。既存の手動変換、標準プレビューのタブ再利用、失敗時の保持、Worker停止の契約は維持する。自動テストはNode.js 24.22.1とVS Code 1.105.1内蔵Node.js 22.19.0で各24件成功。配布物とCLI導入の詳細は `docs/DELIVERY.json`。
 
-## 開始時に確認したもの
+0.1.0初回1〜6と0.1.1再確認A〜Dはユーザー報告ですべてok。タブ増加への修正は旧版で受入済み。報告環境はWindows 11 Pro 26H2（26300.9711）／VS Code 1.143.1／内蔵Node.js 24.21.0。**0.2.0の実機移行M1〜M6と従来の継続確認16項目は未実施。** 合否は `docs/TESTING.md` を正本とする。
 
-- 添付の最新版 `seed-prompt.md`。
-- `Dropbox/ai/development-and-operations-model/idad-v1.md` と `Dropbox/ai/etc/sources.md`。
-- 開発ルート直下には `LICENSE` と `.git` のみ。README、MGMT、既存実装・テストは存在しなかった。
-- `.git/config` から `https://github.com/satsuki-thyme/MDprev-via-JSproc` / `main` を確認。GitHub側は初期コミット `fb1988c`、LICENSEのみ。
-- LICENSEはMIT、Copyright (c) 2026 SATSUKI Thyme。内容・ライセンスは変更しない。
-- 受渡し手順 `/references/chatgpt-file-handoff-to-dropbox.md` を取得。現在のupload仕様は絶対ローカルパスを正式に受け付ける。
-- 0.1.1作成時に `docs/USER_TESTING.md` の初回結果を取得し、対象ソース・文書を前回納品物と照合した。
-- 今回は同ファイルの再確認結果と実機環境を取得し、更新対象文書を前回保存物と照合した。中断後の旧版のローカル作業コピーは、保存済み0.1.1配布物のハッシュ検証後、改名保全して復元した。ユーザー報告原本は変更しない。
+## 再開時に確認したもの
 
-## 実装上の判断
+- IDAD、`Dropbox\ai\etc\sources.md`、旧プロジェクト指示書、原案、開発ルートの実ファイルと受入報告。
+- 改名済み開発ルート `Dropbox\www\studio\markdown-preview-via-js-transforms` とGitHub `satsuki-thyme/markdown-preview-via-js-transforms`。mainの `ce8991ae0834ae6c6fa3f99223a254ce22cfe678` と取得した36ファイルが一致した。
+- 指示書フォルダは取得時点で旧名だったため、新しい指定先へフォルダごと改名する。正本は `Dropbox\ai\ChatGPT\project\markdown-preview-via-js-transforms\instructions.md`。旧指示書名は正本への案内、原案は内容不変の `seed-prompt.md` とする。
+- 旧版ユーザー報告 `docs/USER_TESTING.md` の残16行は未のまま。ユーザーの原本と日付付き評価書は変更しない。
 
-読み取り専用の仮想FSとVS Code標準Markdown Preview。0.1.1では `vscode.openWith` と標準のカスタムエディターを使い、URIで既存タブを再利用する。毎回新しいWorker。入力はエディターの最新内容、JavaScriptは保存済み内容。前回の組は成功コミット時のみ更新。競合は追加実行を断る。最後の成功結果をVS Codeワークスペース状態へ保存。具体的なAPI・限界は `docs/DESIGN.md`。
+## 判断と保全
 
-入力変換の用途固有コードは作成せず、公開サンプルはそのまま返す `identity.cjs` のみ。異常系はテストの一時ファイルとして生成。
+内部識別子も一式変更するという明示依頼に従う。別IDとして導入し、旧版を無効化する。互換エイリアスや他拡張機能の内部DB操作は行わず、設定・キー割当は利用者が対応表に基づき移す。初回は現在のパスで手動選択し、新版の状態を作る。詳細は `docs/MIGRATION_0.2.0.md` と `docs/DESIGN.md`。
 
-## 保全と公開範囲
+既存ファイルは完成・検証済みの新版を用意してから、元そのものを同じディレクトリの未使用の `.backup-2026-10-25-NN` へ改名して保全する。バックアップを検証してから元パスへ新規作成する。旧配布物、ユーザー入力、LICENSE、Git設定は変更しない。配布物にはルートの利用者用 `input.md`・`transforms/`、バックアップ、ユーザー報告・過去の照合記録を含めない。公開サンプルは `examples/` のidentityのみ。
 
-作業対象はこの開発ルート。既存LICENSEやGit設定は変更しない。変更候補を別領域で作成・検証した後、旧実ファイルを同じディレクトリの未使用の `.backup-2026-10-24-NN` へ改名して保全し、新版を配置する。バックアップはGit追跡・VSIXの対象外。0.1.0のVSIX・ソースZIPとユーザー報告原本は保持する。
-
-GitHubへのpush、PR、Release、Marketplace公開は行っていない。Dropbox上の作業フォルダへ配置する。成果物のハッシュは `docs/DELIVERY.json`、独立読戻しの実績とバックアップ対応は `docs/SAVE-VERIFICATION-0.1.1.json` を参照。`docs/SAVE-VERIFICATION.json` は0.1.0の保存実績として残す。今回の受入文書更新は `docs/SAVE-VERIFICATION-0.1.1-RECHECK-2026-10-24.json` に別途記録する。既存VSIX・ソースZIPは作成時点の配布物として保持し、文書更新のために作り直さない。
+GitHubへのpush、PR、Release、Marketplace公開は今回行わない。改名済みDropbox作業フォルダへ保存し、独立読戻しのサイズ・SHA-256・Dropboxハッシュを照合する。今回の実績は `docs/SAVE-VERIFICATION-0.2.0.json`。以前の同種記録は履歴として保持する。指示書ファイルの更新とChatGPTプロジェクト設定欄への反映は区別する。
 
 ## 次の作業
 
-同じ0.1.1で `docs/ACCEPTANCE.md` の「続けて確認する項目」16件をユーザー実機で確認する。工程5の残項目から継続する。初回評価は `docs/USER_TESTING_REVIEW-2026-10-24.md`、今回の評価は `docs/USER_TESTING_RECHECK-0.1.1-2026-10-24.md`。結果は `docs/USER_TESTING.md` に項目ごとに追記する。
+`docs/MIGRATION_0.2.0.md` に従って旧版を無効化し新版を導入。`docs/ACCEPTANCE.md` のM1〜M6と残り16項目をユーザー実機で確認し、新しい `docs/USER_TESTING_0.2.0.md` に結果を記録する。工程5は継続中。GUI統合テストは表示可能な環境でのみ実施し、未実施を合格にしない。

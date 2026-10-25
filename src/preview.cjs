@@ -1,11 +1,12 @@
 'use strict';
 const { ensureInside } = require('./paths.cjs');
+const { PREVIEW_SCHEME, PREVIEW_SUFFIX } = require('./identity.cjs');
 
 function createPreviewStore(vscode) {
   const snapshots = new Map();
   const changed = new vscode.EventEmitter();
   const key = uri => uri.with({ query: '', fragment: '' }).toString();
-  const uriFor = input => vscode.Uri.file(input).with({ scheme: 'mdpjsp', path: `${vscode.Uri.file(input).path}.mdpjsp-preview.md` });
+  const uriFor = input => vscode.Uri.file(input).with({ scheme: PREVIEW_SCHEME, path: `${vscode.Uri.file(input).path}${PREVIEW_SUFFIX}` });
   const denied = () => { throw vscode.FileSystemError.NoPermissions('変換プレビューは読み取り専用です。'); };
   async function underlying(uri) {
     const target = uri.with({ scheme: 'file', query: '', fragment: '' });
