@@ -1,0 +1,1113 @@
+{
+  "schema": "markdown-preview-via-js-transforms.github-acceptance-sync-verification.v1",
+  "date": "2026-10-25",
+  "timezone": "Asia/Tokyo",
+  "version": "0.2.0",
+  "verificationCompletedAt": "2026-10-25T12:43:36.770123+09:00",
+  "status": "acceptance_document_git_sync_and_status_document_saves_verified",
+  "repository": "satsuki-thyme/markdown-preview-via-js-transforms",
+  "branch": "main",
+  "baselineCommit": "863aefaa0426724c3cec4cd5ef15c0158d25b524",
+  "commits": [
+    {
+      "purpose": "sync 9 acceptance documents and original save receipt byte-for-byte from Dropbox",
+      "sha": "9d14d548e247c9e2ac54f60b83652ad1041bc7ee"
+    },
+    {
+      "purpose": "record completed synchronization and remaining checks in 7 documents",
+      "sha": "914bfd131679709e88cd4f0fed7aa5c53959c746"
+    }
+  ],
+  "scope": {
+    "acceptanceDocuments": [
+      "MGMT.md",
+      "README.md",
+      "docs/ACCEPTANCE.md",
+      "docs/TESTING.md",
+      "docs/PROCESS_CHART.md",
+      "docs/DESIGN.md",
+      "docs/MIGRATION_0.2.0.md",
+      "CHANGELOG.md",
+      "docs/DELIVERY.json"
+    ],
+    "historicalAcceptanceSaveReceipt": "docs/SAVE-VERIFICATION-0.2.0-ACCEPTANCE-2026-10-25.json",
+    "statusDocumentsUpdated": [
+      "MGMT.md",
+      "README.md",
+      "CHANGELOG.md",
+      "docs/ACCEPTANCE.md",
+      "docs/TESTING.md",
+      "docs/PROCESS_CHART.md",
+      "docs/DELIVERY.json"
+    ],
+    "thisReceipt": "docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json",
+    "historicalReceiptRewritten": false
+  },
+  "acceptance": {
+    "migrationPassed": 5,
+    "migrationNotApplicable": [
+      "M2"
+    ],
+    "continuingPassed": 16,
+    "guiIntegrationRun": false,
+    "acceptanceJudgmentsChangedBySync": false
+  },
+  "githubInitialReadback": {
+    "commit": "9d14d548e247c9e2ac54f60b83652ad1041bc7ee",
+    "verifiedAt": "2026-10-25T12:31:47.836039+09:00",
+    "status": "all_10_files_match_dropbox_source_bytes",
+    "files": [
+      {
+        "path": "MGMT.md",
+        "bytes": 5947,
+        "sha256": "15983def9976dd514809d1f5ce81718dbaea5c6aac97f43797e9a0b6d750a721",
+        "gitBlobSha": "443b98401e0b02ed277760d6d7412de481e8aad3",
+        "matchesDropboxSourceBytes": true
+      },
+      {
+        "path": "README.md",
+        "bytes": 11984,
+        "sha256": "31633d9be889c82b105ec24d7cb237a15c3eafb98e0f5af0dda476994f996bdc",
+        "gitBlobSha": "78028b4c11e50e4f851de07e9133d7ad0d3efd02",
+        "matchesDropboxSourceBytes": true
+      },
+      {
+        "path": "docs/ACCEPTANCE.md",
+        "bytes": 9912,
+        "sha256": "1c8f8878872a7329d17e7a9066fadd625df46cade68c810c3a5f29806698603a",
+        "gitBlobSha": "3d9a21ed7cb339260d3f86fdaa788f2595468551",
+        "matchesDropboxSourceBytes": true
+      },
+      {
+        "path": "docs/TESTING.md",
+        "bytes": 12230,
+        "sha256": "5174e619a141c66cd332be42967ae832fd05a4e8d325e3e65af0fd13bb4cf24c",
+        "gitBlobSha": "07c4a9b04b9e1287c90764a43a17a30e9f9fa8cc",
+        "matchesDropboxSourceBytes": true
+      },
+      {
+        "path": "docs/PROCESS_CHART.md",
+        "bytes": 5767,
+        "sha256": "bf169bc101d0a61ecf6524112ca7b5c923b53501129bcb0162959aef4c8ce0fc",
+        "gitBlobSha": "ba073f377668d9291b4cf7240866b2f106d572d1",
+        "matchesDropboxSourceBytes": true
+      },
+      {
+        "path": "docs/DESIGN.md",
+        "bytes": 12314,
+        "sha256": "3f072145af41c829a01fe2f6494730aee404433dab7c601f6efdb72629578adb",
+        "gitBlobSha": "40512f8faa8622f984e14f6f3f3226d215a50508",
+        "matchesDropboxSourceBytes": true
+      },
+      {
+        "path": "docs/MIGRATION_0.2.0.md",
+        "bytes": 7684,
+        "sha256": "be9a23fe67fdf4d56f23142ff5c8aa95afadfa7a3df3d69c61cd947131ea8cb7",
+        "gitBlobSha": "27edb5903d34ae336e6a40a645dbc11011ea7caa",
+        "matchesDropboxSourceBytes": true
+      },
+      {
+        "path": "CHANGELOG.md",
+        "bytes": 2695,
+        "sha256": "85e36a8e05c823711b47a0fcd36f70f81e78381a6f7a597d646f989fe3c7fb67",
+        "gitBlobSha": "f0d09c3a3b188e46b7c977b5e0af8742625378f7",
+        "matchesDropboxSourceBytes": true
+      },
+      {
+        "path": "docs/DELIVERY.json",
+        "bytes": 8124,
+        "sha256": "34b2d9af58b2a2378beec8a7dac0db1a0698b908af36b7635fe46f266a2d0594",
+        "gitBlobSha": "2aa63d392a000c14345c5974a9db63b553eaca57",
+        "matchesDropboxSourceBytes": true
+      },
+      {
+        "path": "docs/SAVE-VERIFICATION-0.2.0-ACCEPTANCE-2026-10-25.json",
+        "bytes": 15123,
+        "sha256": "bbc8641737085093abd4a97a0991501e27e8b0d942d03cf2c425005f9c3d0cf3",
+        "gitBlobSha": "49c2d562905ee8e6714aa059faca45617ad63912",
+        "matchesDropboxSourceBytes": true
+      }
+    ]
+  },
+  "githubStatusReadback": {
+    "commit": "914bfd131679709e88cd4f0fed7aa5c53959c746",
+    "verifiedAt": "2026-10-25T12:42:44.178970+09:00",
+    "status": "all_10_files_match_final_dropbox_bytes",
+    "files": [
+      {
+        "path": "MGMT.md",
+        "bytes": 6881,
+        "sha256": "3527c0880c6db14ea2af0fe7f79505a1a254720eecdeba0524e9b0d2a5619b86",
+        "gitBlobSha": "f739a51ff977f14bd8c53f2f31415c1f9db8b18c",
+        "matchesFinalDropboxBytes": true
+      },
+      {
+        "path": "README.md",
+        "bytes": 12136,
+        "sha256": "78a3ec098df6694d81fb6dbcf42f403c3a66d55816adf9966c1fe85240f4ffc7",
+        "gitBlobSha": "bbc55b19b6070a6a9550f385506e045525264e45",
+        "matchesFinalDropboxBytes": true
+      },
+      {
+        "path": "docs/ACCEPTANCE.md",
+        "bytes": 10025,
+        "sha256": "2b9774a433ec855ca043a5bfceaf1c659d18ac27cb65483661df0ed456d0f142",
+        "gitBlobSha": "24b626034f0adfdce6b79501babd3e3e438b9373",
+        "matchesFinalDropboxBytes": true
+      },
+      {
+        "path": "docs/TESTING.md",
+        "bytes": 13330,
+        "sha256": "b13f97385715aa0ad95cd9d73593ae0884ec34fb02d1c6c7b47a797aacc4eeaa",
+        "gitBlobSha": "6cd57e757d061cfad29dcd14034d973960291347",
+        "matchesFinalDropboxBytes": true
+      },
+      {
+        "path": "docs/PROCESS_CHART.md",
+        "bytes": 6175,
+        "sha256": "3a56ac5a2ba789a4070626f4784f5a050c6beacba15e665bb918a71af5a1e834",
+        "gitBlobSha": "267cb9048fc9f7391ed18e16195f289c1093f7d5",
+        "matchesFinalDropboxBytes": true
+      },
+      {
+        "path": "docs/DESIGN.md",
+        "bytes": 12314,
+        "sha256": "3f072145af41c829a01fe2f6494730aee404433dab7c601f6efdb72629578adb",
+        "gitBlobSha": "40512f8faa8622f984e14f6f3f3226d215a50508",
+        "matchesFinalDropboxBytes": true
+      },
+      {
+        "path": "docs/MIGRATION_0.2.0.md",
+        "bytes": 7684,
+        "sha256": "be9a23fe67fdf4d56f23142ff5c8aa95afadfa7a3df3d69c61cd947131ea8cb7",
+        "gitBlobSha": "27edb5903d34ae336e6a40a645dbc11011ea7caa",
+        "matchesFinalDropboxBytes": true
+      },
+      {
+        "path": "CHANGELOG.md",
+        "bytes": 3356,
+        "sha256": "88bc4f2cef0f66d78a53aa046c15c010bf8ba285992f739e630041f9102bc858",
+        "gitBlobSha": "ce0634076cf411c4a06f64e6cee0847b4f770bd9",
+        "matchesFinalDropboxBytes": true
+      },
+      {
+        "path": "docs/DELIVERY.json",
+        "bytes": 8741,
+        "sha256": "fe08917763203208c24df63f29df7166749fdf06188f32e6bd41a722582d70c0",
+        "gitBlobSha": "8e83509b7b401306dc792a2c9ac299005fa088db",
+        "matchesFinalDropboxBytes": true
+      },
+      {
+        "path": "docs/SAVE-VERIFICATION-0.2.0-ACCEPTANCE-2026-10-25.json",
+        "bytes": 15123,
+        "sha256": "bbc8641737085093abd4a97a0991501e27e8b0d942d03cf2c425005f9c3d0cf3",
+        "gitBlobSha": "49c2d562905ee8e6714aa059faca45617ad63912",
+        "matchesFinalDropboxBytes": true
+      }
+    ]
+  },
+  "unrelatedGitHubFiles": {
+    "count": 102,
+    "allGitBlobShasAndModesMatchBaseline": true,
+    "newFilesOutsideScope": false,
+    "treeListingTruncated": false,
+    "files": [
+      {
+        "path": ".gitignore",
+        "sha": "9a8c35fe29a7ca645982add23db55c57fd37426e",
+        "mode": "100644"
+      },
+      {
+        "path": ".vscode/launch.json",
+        "sha": "786d69e471f2fbde40ab26bff23fbc3c9020d401",
+        "mode": "100644"
+      },
+      {
+        "path": ".vscodeignore",
+        "sha": "3c062d5cfdc45dd0ef6fb0af28854513c256fb38",
+        "mode": "100644"
+      },
+      {
+        "path": "LICENSE",
+        "sha": "edcfb7588d396745d4458a8680bb34a4e74f10e2",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/SAVE-VERIFICATION-0.1.1-RECHECK-2026-10-24.json",
+        "sha": "c37fcf26914bb3f2dc68dfeef8536542f8263e8b",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/SAVE-VERIFICATION-0.1.1.json",
+        "sha": "8cdc3ad9d2b6685008067b43f2c772a26377e097",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/SAVE-VERIFICATION-0.2.0.json",
+        "sha": "bceac2c618b579f41a9aae9ef759944a0803cf78",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/SAVE-VERIFICATION.json",
+        "sha": "7b48a58577619339234ae4009abdd9a266d0c4fe",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/USER_TESTING.md",
+        "sha": "d06e288c95abbd441010c5d974ecf03c8b60fcb4",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/USER_TESTING_0.2.0-2.md",
+        "sha": "1c019796551c4e50ff6f41aa67e276a9603ac7bb",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/USER_TESTING_0.2.0.md",
+        "sha": "1c9260d8e6f3fe09dce41d915ac2959724097fc9",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/USER_TESTING_RECHECK-0.1.1-2026-10-24.md",
+        "sha": "91791cc3a937bcfeab12b33f01da5d0f0ac4e798",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/USER_TESTING_REVIEW-2026-10-24.md",
+        "sha": "57d0ea64ab241d0b98fb615600965af2f6febfae",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_14_54.png",
+        "sha": "e43efb34173c80aead7f107cda99c69529c50c13",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_18_00.png",
+        "sha": "85d24cb31c344debf81cc363ee7f19c084343981",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_18_49.png",
+        "sha": "c4f95ed4e4d07496e700a73e337e45aceb9df0d9",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_22_03.png",
+        "sha": "20d33adbea563384a8bd16f3127c623d0dbb3608",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_23_51.png",
+        "sha": "309211cb29b28427516194d4ceca0153284ddcc8",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_26_48.png",
+        "sha": "c67807839d828fc0e1ae40f00df1f8ce830ea4f6",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_27_49.png",
+        "sha": "45dcef0880efe13bcdb2c420d75676b09e088834",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_28_25.png",
+        "sha": "f508d6021d94770118fb08add02c5a7a3d2e6806",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_32_15.png",
+        "sha": "078dadf35c23ed9c5f37e40fa4fe4d67b6238a38",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_35_22.png",
+        "sha": "51acfca9aa5fb0c509d1c52e49053a95e737ee56",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_35_40.png",
+        "sha": "08f68d71898189b097c77497206d64176d28c6ae",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_37_58.png",
+        "sha": "2380c673da2589356e938717ef0027478ac6fcc4",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_38_13.png",
+        "sha": "8cb8cc8dd4c8124c6ee540c1e68554aea5801e82",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_38_40.png",
+        "sha": "61d54417fceda50e0145f8f37517f97032e32095",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_38_52.png",
+        "sha": "d6fc06f24dfd1d0a1fa2511e5024da06d2f7be91",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_39_25.png",
+        "sha": "1201a643f6f236ef680944a74bebcacc7196d283",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_39_34.png",
+        "sha": "978e88ce18e146bd6dd3cff794f785995326bc46",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_40_56.png",
+        "sha": "beb3f5de2cc957d95a6060a563d83b9e87f97d9a",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_41_02.png",
+        "sha": "e92ca599c651c3a77f985635e0a13a883b61b3d8",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_41_30.png",
+        "sha": "e7296fb8d70e6c7838cda26ee030dc313de57398",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_41_35.png",
+        "sha": "e1386210fc35a0955fd24c27f99b487d75bb573a",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_41_57.png",
+        "sha": "c09592e60c23b23265600d5c9c7771ed310d8349",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_41_59.png",
+        "sha": "eb35c7c6467b93acfe7628257c1c67c663bd15e3",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_42_30.png",
+        "sha": "3a9bb147c3334f449160399bd8a266d52a8abe5d",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_42_40.png",
+        "sha": "87566e3c4ad48e92c8daae88a7f800ad2fd38fdf",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_42_44.png",
+        "sha": "a899c13277db77b52b4e72e183f3a4e6660e004a",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_57_05.png",
+        "sha": "73aa837bec2ef2a90db6b5415901dac363ab150a",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_57_21.png",
+        "sha": "3402cf7aaf68c9c9f7872544a4c6a120377a31e5",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_57_36.png",
+        "sha": "836f75d9a9815629ba5b646329c97fae5787308c",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 07_57_47.png",
+        "sha": "6964ff761cfe0b83f27ab9dbbb79d056ceb657e1",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_11_32.png",
+        "sha": "bd39f5d2e67bf52ff08a12d38aa811b8488b9fb5",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_14_35.png",
+        "sha": "baffe36f4ed57f512af4277968228b83ce5f770e",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_16_21.png",
+        "sha": "57697e3bc216b10d16824416be2373cecfa882a7",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_16_51.png",
+        "sha": "bf30d3e0b5e30f5a13d9589235e1e51fe02734b9",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_17_01.png",
+        "sha": "2808e6911b1004b4eb9acab2efa1c85e34b4c0e8",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_19_12.png",
+        "sha": "95129f3af31990ca08691f66011c5b5298846817",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_21_23.png",
+        "sha": "2ca37449b24293c0c442a388ecc179709c68140d",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_23_08.png",
+        "sha": "9a6e0830e263dca7863408fd131dd7bc85b7f9df",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_25_33.png",
+        "sha": "3f8d4784112ca79bfb083371cb7cb8fbfc2d4785",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_37_36.png",
+        "sha": "dc138d750dfdfdf1b95b9564096714dc77ee234e",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_37_49.png",
+        "sha": "2a0fdfba07deee0e1007f85acb84a68e72e52aa5",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_37_52.png",
+        "sha": "482c59d8560f30b91991c021db249fe1c72d6b4a",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_38_33.png",
+        "sha": "3d3372b42dedfcc3473ba03b5e36628f35b29158",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_45_07.png",
+        "sha": "48365f0350242ed9c2fbbdaa23c18c4d7ed20175",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_48_52.png",
+        "sha": "213677bab440255d323ef8f3972ba03fa61d0f4d",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_49_17.png",
+        "sha": "4d60ab9c54fe6404d20abb40804c1353d627b1fb",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 08_49_23.png",
+        "sha": "3c88fd76963f00781bee01ae1e7a50cb266d9db1",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 09_53_09.png",
+        "sha": "91086377fa42654982cd76d41cb772ce555ca298",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 10_57_21.png",
+        "sha": "e9dba4aa1908cfe0147228e1e18bcade93b2fb57",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 10_57_43.png",
+        "sha": "e2f70e0ec8e66c331f691acfdbc1d1d2ee04734c",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 10_58_26.png",
+        "sha": "159ab4c2c94d309f613afaea7684c02e7b70eb5e",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 10_59_09.png",
+        "sha": "2063d43aa4a9e73d78a0ae9ebf37be9e35e1a976",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/images/2026-10-25 10_59_24.png",
+        "sha": "13c6027bfba50e44d4ae5b076e82e4622787d7ff",
+        "mode": "100644"
+      },
+      {
+        "path": "examples/input.md",
+        "sha": "f06a41e7ec39d7f6091b2b30b7dd5d6d9b07b724",
+        "mode": "100644"
+      },
+      {
+        "path": "examples/transforms/identity.cjs",
+        "sha": "b9a2596f9fd669f0306ead24ff1eb4a890f43472",
+        "mode": "100644"
+      },
+      {
+        "path": "input-copy.md",
+        "sha": "81363c44613b32be076069b4c693d302feb48eaa",
+        "mode": "100644"
+      },
+      {
+        "path": "input.md",
+        "sha": "88116488404827b5654e1f646dbfa0485210c9aa",
+        "mode": "100644"
+      },
+      {
+        "path": "input.txt",
+        "sha": "e09146704ac196e6955a99d2c64f960f8704f049",
+        "mode": "100644"
+      },
+      {
+        "path": "input.yaml",
+        "sha": "0b451e5e3d0cd4d4f2be1d0bef180810f23dbe2b",
+        "mode": "100644"
+      },
+      {
+        "path": "input.yml",
+        "sha": "be486d77dd29f201b7cc7d80fbcf569a70a41c85",
+        "mode": "100644"
+      },
+      {
+        "path": "package-lock.json",
+        "sha": "b440baf86ee78f401892fa3e11b6eecca6c3dcdc",
+        "mode": "100644"
+      },
+      {
+        "path": "package.json",
+        "sha": "d9af0d7e3b773d3a64ace9bf6635dcb56e8ca78c",
+        "mode": "100644"
+      },
+      {
+        "path": "scripts/package.cjs",
+        "sha": "048d350f1de92c70da5bc4cff44feb2e70b3cf90",
+        "mode": "100644"
+      },
+      {
+        "path": "src/controller.cjs",
+        "sha": "28cbb94d7121c028e181b6ed5c4005758f4769ed",
+        "mode": "100644"
+      },
+      {
+        "path": "src/extension.cjs",
+        "sha": "ef7db8dc18aa3f259db3347050da6365f46556ec",
+        "mode": "100644"
+      },
+      {
+        "path": "src/identity.cjs",
+        "sha": "00a42daac140a90763efff3d92e7eba3495a070f",
+        "mode": "100644"
+      },
+      {
+        "path": "src/open-preview.cjs",
+        "sha": "dd7d69f20215ed828136b8ae2c43af77ac484adb",
+        "mode": "100644"
+      },
+      {
+        "path": "src/paths.cjs",
+        "sha": "3b7cf7cefb6a5eedd159aeaa162346ec2de1df8c",
+        "mode": "100644"
+      },
+      {
+        "path": "src/preview.cjs",
+        "sha": "665d5de6b045ae363b0002a3edb2ea5936040ce7",
+        "mode": "100644"
+      },
+      {
+        "path": "src/runner.cjs",
+        "sha": "01bc5fc61391b383be5e5f15ccb94ed899e256f1",
+        "mode": "100644"
+      },
+      {
+        "path": "src/worker.cjs",
+        "sha": "2c385cf62da2457e34285c22f1926edff65e9646",
+        "mode": "100644"
+      },
+      {
+        "path": "test/controller.test.cjs",
+        "sha": "3b95b0c317a8fadd6fb89be7c84bd85fde97dcd4",
+        "mode": "100644"
+      },
+      {
+        "path": "test/identity.test.cjs",
+        "sha": "0afcca29006b6eb9150ccff9c51de130fcccd3a6",
+        "mode": "100644"
+      },
+      {
+        "path": "test/integration.cjs",
+        "sha": "9b43caebdc903b33a465c0c43f2355105d9c16c4",
+        "mode": "100644"
+      },
+      {
+        "path": "test/open-preview.test.cjs",
+        "sha": "9107c2f8d27b0cb87526e78f92562397a1a4e0c3",
+        "mode": "100644"
+      },
+      {
+        "path": "test/run-integration.cjs",
+        "sha": "68099015a56abad60b683a056c7ecf5e65241979",
+        "mode": "100644"
+      },
+      {
+        "path": "test/runner.test.cjs",
+        "sha": "93c2e21e4e3f01161f6ca555d3f95ebaab3f2e9e",
+        "mode": "100644"
+      },
+      {
+        "path": "transforms/controller.test.cjs",
+        "sha": "3b95b0c317a8fadd6fb89be7c84bd85fde97dcd4",
+        "mode": "100644"
+      },
+      {
+        "path": "transforms/identity copy 2.cjs",
+        "sha": "651c830b084629d32a28f2d014b680ca0330e036",
+        "mode": "100644"
+      },
+      {
+        "path": "transforms/identity copy 3.cjs",
+        "sha": "cc58bba071c6ed6db13b46d735e97bff99004eae",
+        "mode": "100644"
+      },
+      {
+        "path": "transforms/identity copy.cjs",
+        "sha": "651c830b084629d32a28f2d014b680ca0330e036",
+        "mode": "100644"
+      },
+      {
+        "path": "transforms/identity.cjs",
+        "sha": "b9a2596f9fd669f0306ead24ff1eb4a890f43472",
+        "mode": "100644"
+      },
+      {
+        "path": "transforms/identity.test.cjs",
+        "sha": "0afcca29006b6eb9150ccff9c51de130fcccd3a6",
+        "mode": "100644"
+      },
+      {
+        "path": "transforms/integration.cjs",
+        "sha": "9b43caebdc903b33a465c0c43f2355105d9c16c4",
+        "mode": "100644"
+      },
+      {
+        "path": "transforms/open-preview.test.cjs",
+        "sha": "9107c2f8d27b0cb87526e78f92562397a1a4e0c3",
+        "mode": "100644"
+      },
+      {
+        "path": "transforms/run-integration.cjs",
+        "sha": "68099015a56abad60b683a056c7ecf5e65241979",
+        "mode": "100644"
+      },
+      {
+        "path": "transforms/runner.test.cjs",
+        "sha": "93c2e21e4e3f01161f6ca555d3f95ebaab3f2e9e",
+        "mode": "100644"
+      },
+      {
+        "path": "transforms/test-infinite-loop.cjs",
+        "sha": "1bedeeba72178777f56264be39313149b7d8555e",
+        "mode": "100644"
+      },
+      {
+        "path": "transforms/test-pending-promise.cjs",
+        "sha": "30bd1ff86cf3ce5b4afc09d698e35ea3fce5a077",
+        "mode": "100644"
+      }
+    ]
+  },
+  "existingGitHubOriginalPreservation": {
+    "count": 9,
+    "method": "Existing same-directory Dropbox renamed originals were independently downloaded and matched all exact GitHub baseline bytes. Backups were not added to GitHub.",
+    "files": [
+      {
+        "document": "MGMT.md",
+        "backupPath": "/www/studio/markdown-preview-via-js-transforms/MGMT.backup-2026-10-25-02.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_yQ",
+        "bytes": 3500,
+        "sha256": "ef030e767fbec6f0c8ca9aaebb75bd5785b197885b02d4c64ecfe278c261ed55",
+        "dropboxContentHash": "640dfeefd3ee27fb6abd14117d096d84cb1732b365d5fc265dcad1cf2b45750a",
+        "matchesGitHubBaselineBytes": true
+      },
+      {
+        "document": "README.md",
+        "backupPath": "/www/studio/markdown-preview-via-js-transforms/README.backup-2026-10-25-02.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_yg",
+        "bytes": 11149,
+        "sha256": "8e9c62734c015a2a4f917a3cd7d4a6ea8bd7868fefb2e48c765e299302e268c4",
+        "dropboxContentHash": "0fa427227ae8c158fc1b4841167a2cc00e3eaccb6b3ef037c9245888837986d4",
+        "matchesGitHubBaselineBytes": true
+      },
+      {
+        "document": "docs/ACCEPTANCE.md",
+        "backupPath": "/www/studio/markdown-preview-via-js-transforms/docs/ACCEPTANCE.backup-2026-10-25-02.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_zQ",
+        "bytes": 6652,
+        "sha256": "37f4e68149989c333f569dff223a005110fe3754e0eb80410d652bb4a4efe0aa",
+        "dropboxContentHash": "eefb484812a9a240f4daf41cad7cb1d5eca523c44f1a031df2bf9f9ab502f106",
+        "matchesGitHubBaselineBytes": true
+      },
+      {
+        "document": "docs/TESTING.md",
+        "backupPath": "/www/studio/markdown-preview-via-js-transforms/docs/TESTING.backup-2026-10-25-02.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_4g",
+        "bytes": 8453,
+        "sha256": "b9d19f36878b3ce0bb8ce8e3200cc0f93bc35baf121c2ebe148bcc08a81f1bda",
+        "dropboxContentHash": "9cd8fadf9540f1c2377530f81c50f74868c70ba9de598d81779acbb2b85d0e8e",
+        "matchesGitHubBaselineBytes": true
+      },
+      {
+        "document": "docs/PROCESS_CHART.md",
+        "backupPath": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.backup-2026-10-25-02.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_4Q",
+        "bytes": 2577,
+        "sha256": "3576d050c8b09088bed40fc063a283119dc90081016796cbe779c9fafaaf9784",
+        "dropboxContentHash": "2ae9be9b423f80ac8769b4d7330abd35b8a6f3553789e3fe5f4cd56ee4bf3f00",
+        "matchesGitHubBaselineBytes": true
+      },
+      {
+        "document": "docs/DESIGN.md",
+        "backupPath": "/www/studio/markdown-preview-via-js-transforms/docs/DESIGN.backup-2026-10-25-02.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_zw",
+        "bytes": 11999,
+        "sha256": "8022289e08700c6fbf0f2eda84c450b4b5788e12ed02aa46862015b421924952",
+        "dropboxContentHash": "9ee424d0bbac3f983dd41427907ef60c10c03d8ea29e24036381a6a1513096e3",
+        "matchesGitHubBaselineBytes": true
+      },
+      {
+        "document": "docs/MIGRATION_0.2.0.md",
+        "backupPath": "/www/studio/markdown-preview-via-js-transforms/docs/MIGRATION_0.2.0.backup-2026-10-25-01.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_0A",
+        "bytes": 7184,
+        "sha256": "191cc5adcfb7bb19b451f733383b8b5097545cfc7d826e391e5d1855fb427b4f",
+        "dropboxContentHash": "9bb6e896b5c023cb1ccbe7bb3c8c4b61119a8ee463d694563d9751770ec58c98",
+        "matchesGitHubBaselineBytes": true
+      },
+      {
+        "document": "CHANGELOG.md",
+        "backupPath": "/www/studio/markdown-preview-via-js-transforms/CHANGELOG.backup-2026-10-25-02.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_yA",
+        "bytes": 1922,
+        "sha256": "ca21711e8cf78606920e3a3d669a3eff28affffde7be65e60bae1d4ec0601484",
+        "dropboxContentHash": "a19bdc672c6c3b2404e3b55d0587e1a850867fb1a299a46e0c19bac699cab79b",
+        "matchesGitHubBaselineBytes": true
+      },
+      {
+        "document": "docs/DELIVERY.json",
+        "backupPath": "/www/studio/markdown-preview-via-js-transforms/docs/DELIVERY.backup-2026-10-25-02.json",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_zg",
+        "bytes": 3941,
+        "sha256": "074ab603f2bfb6d0ec16f1772ea89b981ac18f9db8029c889ee72b8191620203",
+        "dropboxContentHash": "7adaf7599220f0b7a18c4abe3a59ca349b9ce4ca48995708cee17e3c3d5f177c",
+        "matchesGitHubBaselineBytes": true
+      }
+    ]
+  },
+  "dropboxStatusDocumentUpdates": [
+    {
+      "path": "MGMT.md",
+      "status": "verified",
+      "backup": {
+        "path": "MGMT.md",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/MGMT.backup-2026-10-25-03.md",
+        "kind": "renamed_original",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFtA",
+        "bytes": 5947,
+        "sha256": "15983def9976dd514809d1f5ce81718dbaea5c6aac97f43797e9a0b6d750a721",
+        "dropboxContentHash": "c279ef538646c3dd6e32885d3a5144f7e83508beab403af8631252990f08d1f5",
+        "byteMatch": true,
+        "method": "rename original in the same directory",
+        "identityPreserved": true
+      },
+      "saved": {
+        "path": "MGMT.md",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/MGMT.md",
+        "kind": "saved_update",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFvg",
+        "bytes": 6881,
+        "sha256": "3527c0880c6db14ea2af0fe7f79505a1a254720eecdeba0524e9b0d2a5619b86",
+        "dropboxContentHash": "b90426b7ff2ebda29219c538c9438c759783dfda070849cb6a7883a568fca9ba",
+        "byteMatch": true,
+        "revision": "65ea1e23282981bc8f115",
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "README.md",
+      "status": "verified",
+      "backup": {
+        "path": "README.md",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/README.backup-2026-10-25-03.md",
+        "kind": "renamed_original",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFtQ",
+        "bytes": 11984,
+        "sha256": "31633d9be889c82b105ec24d7cb237a15c3eafb98e0f5af0dda476994f996bdc",
+        "dropboxContentHash": "727fb5b5d40a48dc587d57e3010ac0753df673bcc8bc93bf5307ad3767dae214",
+        "byteMatch": true,
+        "method": "rename original in the same directory",
+        "identityPreserved": true
+      },
+      "saved": {
+        "path": "README.md",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/README.md",
+        "kind": "saved_update",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFvw",
+        "bytes": 12136,
+        "sha256": "78a3ec098df6694d81fb6dbcf42f403c3a66d55816adf9966c1fe85240f4ffc7",
+        "dropboxContentHash": "fd8c6eb38d9bf610d85fbadf114cea5dcd5372a9289177ea01c336757f218b4c",
+        "byteMatch": true,
+        "revision": "65ea1e3a68eb41bc8f115",
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "CHANGELOG.md",
+      "status": "verified",
+      "backup": {
+        "path": "CHANGELOG.md",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/CHANGELOG.backup-2026-10-25-03.md",
+        "kind": "renamed_original",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFuw",
+        "bytes": 2695,
+        "sha256": "85e36a8e05c823711b47a0fcd36f70f81e78381a6f7a597d646f989fe3c7fb67",
+        "dropboxContentHash": "1ae916cadd188f8e15f33a79dbf2c00a492311093e763767c7df80cf73da128d",
+        "byteMatch": true,
+        "method": "rename original in the same directory",
+        "identityPreserved": true
+      },
+      "saved": {
+        "path": "CHANGELOG.md",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/CHANGELOG.md",
+        "kind": "saved_update",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFwA",
+        "bytes": 3356,
+        "sha256": "88bc4f2cef0f66d78a53aa046c15c010bf8ba285992f739e630041f9102bc858",
+        "dropboxContentHash": "4bf5c6d79a1aff996af74e9351919b6b72472decf97cf49a75f7cc07344f6c23",
+        "byteMatch": true,
+        "revision": "65ea1e41cd17d1bc8f115",
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "status": "verified",
+      "backup": {
+        "path": "docs/ACCEPTANCE.md",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/docs/ACCEPTANCE.backup-2026-10-25-03.md",
+        "kind": "renamed_original",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFtg",
+        "bytes": 9912,
+        "sha256": "1c8f8878872a7329d17e7a9066fadd625df46cade68c810c3a5f29806698603a",
+        "dropboxContentHash": "e5cb1a1136e50865e8e1ffbb015b97f46b130a1edcd404e73fe3eae04d4e9d25",
+        "byteMatch": true,
+        "method": "rename original in the same directory",
+        "identityPreserved": true
+      },
+      "saved": {
+        "path": "docs/ACCEPTANCE.md",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/docs/ACCEPTANCE.md",
+        "kind": "saved_update",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFwQ",
+        "bytes": 10025,
+        "sha256": "2b9774a433ec855ca043a5bfceaf1c659d18ac27cb65483661df0ed456d0f142",
+        "dropboxContentHash": "5b6e748c81d0226b8dedad64668a571e4b4a829a7645d66a0da61c594c25dbea",
+        "byteMatch": true,
+        "revision": "65ea1e4cf16151bc8f115",
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "docs/TESTING.md",
+      "status": "verified",
+      "backup": {
+        "path": "docs/TESTING.md",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/docs/TESTING.backup-2026-10-25-03.md",
+        "kind": "renamed_original",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFtw",
+        "bytes": 12230,
+        "sha256": "5174e619a141c66cd332be42967ae832fd05a4e8d325e3e65af0fd13bb4cf24c",
+        "dropboxContentHash": "749a0183a8c30fcc7c905bcacf14233da9d708b13fee1120c9fcf8f949d86c05",
+        "byteMatch": true,
+        "method": "rename original in the same directory",
+        "identityPreserved": true
+      },
+      "saved": {
+        "path": "docs/TESTING.md",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/docs/TESTING.md",
+        "kind": "saved_update",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFxA",
+        "bytes": 13330,
+        "sha256": "b13f97385715aa0ad95cd9d73593ae0884ec34fb02d1c6c7b47a797aacc4eeaa",
+        "dropboxContentHash": "7f7a0b4b6cb885107e2ba59ba16baf20f1b11aa3cc56ea92d361c95c27f3d6f3",
+        "byteMatch": true,
+        "revision": "65ea1fc7f28bc1bc8f115",
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "docs/PROCESS_CHART.md",
+      "status": "verified",
+      "backup": {
+        "path": "docs/PROCESS_CHART.md",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.backup-2026-10-25-03.md",
+        "kind": "renamed_original",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFuA",
+        "bytes": 5767,
+        "sha256": "bf169bc101d0a61ecf6524112ca7b5c923b53501129bcb0162959aef4c8ce0fc",
+        "dropboxContentHash": "4ee2a3010dac291ec05ba84ab2fb4ec41e5f277a199e0049779cc9995ec9d9eb",
+        "byteMatch": true,
+        "method": "rename original in the same directory",
+        "identityPreserved": true
+      },
+      "saved": {
+        "path": "docs/PROCESS_CHART.md",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.md",
+        "kind": "saved_update",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFwg",
+        "bytes": 6175,
+        "sha256": "3a56ac5a2ba789a4070626f4784f5a050c6beacba15e665bb918a71af5a1e834",
+        "dropboxContentHash": "f768e2245b14626d35bc41f3eed1b40f391efd5b8a2654fbd8951f0bf9811dc3",
+        "byteMatch": true,
+        "revision": "65ea1ed3ded2f1bc8f115",
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "docs/DELIVERY.json",
+      "status": "verified",
+      "backup": {
+        "path": "docs/DELIVERY.json",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/docs/DELIVERY.backup-2026-10-25-03.json",
+        "kind": "renamed_original",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFvA",
+        "bytes": 8124,
+        "sha256": "34b2d9af58b2a2378beec8a7dac0db1a0698b908af36b7635fe46f266a2d0594",
+        "dropboxContentHash": "77b1ad1574ddee0e9a546ca5f608e6b4333f4d660e41bd763b3dc9d72ce14ea4",
+        "byteMatch": true,
+        "method": "rename original in the same directory",
+        "identityPreserved": true
+      },
+      "saved": {
+        "path": "docs/DELIVERY.json",
+        "dropboxPath": "/www/studio/markdown-preview-via-js-transforms/docs/DELIVERY.json",
+        "kind": "saved_update",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFww",
+        "bytes": 8741,
+        "sha256": "fe08917763203208c24df63f29df7166749fdf06188f32e6bd41a722582d70c0",
+        "dropboxContentHash": "1796d5c79ab9185fb49c17139b305c5847c7d2f6bf2e5f03f577647e9f23af3b",
+        "byteMatch": true,
+        "revision": "65ea1ee511c361bc8f115",
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    }
+  ],
+  "unchangedDropboxFilesIndependentlyVerified": [
+    {
+      "path": "docs/SAVE-VERIFICATION-0.2.0-ACCEPTANCE-2026-10-25.json",
+      "fileId": "id:pdXqx4wRBdMAAAAAAALFvQ",
+      "bytes": 15123,
+      "sha256": "bbc8641737085093abd4a97a0991501e27e8b0d942d03cf2c425005f9c3d0cf3",
+      "dropboxContentHash": "63a605947aa53742b0a4622b47f5b0d4dec699be6a0cdbb06e467f20e70e17e2",
+      "matchesInitialRecord": true
+    },
+    {
+      "path": "docs/USER_TESTING_0.2.0.md",
+      "fileId": "id:pdXqx4wRBdMAAAAAAALEjQ",
+      "bytes": 2986,
+      "sha256": "2e79ebd40f87236db85aeb1b22c7499792c60e006faa6e1d64f1faf5efb3eab7",
+      "dropboxContentHash": "893fe62eb541c33ef7a61508791071d238198572b75542c9b5e1d705a31b6cff",
+      "matchesInitialRecord": true
+    },
+    {
+      "path": "docs/USER_TESTING_0.2.0-2.md",
+      "fileId": "id:pdXqx4wRBdMAAAAAAALFEQ",
+      "bytes": 434,
+      "sha256": "b644264fedd711bc55fb7b9759322f9202cfde12d52d9a8defc5c395e3b34889",
+      "dropboxContentHash": "6e5389181afc8ae0ec6b2382c51a9349bf8f5e9414c21088472986c5c81c6591",
+      "matchesInitialRecord": true
+    },
+    {
+      "path": "dist/markdown-preview-via-js-transforms-0.2.0.vsix",
+      "fileId": "id:pdXqx4wRBdMAAAAAAAK_zA",
+      "bytes": 36636,
+      "sha256": "27c19864ffd07c930223a939544b462f0da444cebec1cf5d6c544aed4f60338d",
+      "dropboxContentHash": "64ee6152b3468992ef4989aa78a24a4b582abfbc2d0cc168211fecdf21b5cb7e",
+      "matchesInitialRecord": true
+    },
+    {
+      "path": "dist/markdown-preview-via-js-transforms-0.2.0-source.zip",
+      "fileId": "id:pdXqx4wRBdMAAAAAAAK_yw",
+      "bytes": 72338,
+      "sha256": "9d0dec483759e95fb6192cae4d35c99c55fa85ce554708df42c1d6cba6f54d33",
+      "dropboxContentHash": "c6570e6ecc6e203eca090d65dc90699cfb5413346a16fa0f3f9f80ca3a0a3274",
+      "matchesInitialRecord": true
+    }
+  ],
+  "documentValidation": {
+    "files": [
+      "MGMT.md",
+      "README.md",
+      "CHANGELOG.md",
+      "docs/ACCEPTANCE.md",
+      "docs/TESTING.md",
+      "docs/PROCESS_CHART.md",
+      "docs/DELIVERY.json"
+    ],
+    "relativeLinksChecked": 41,
+    "acceptanceUnchanged": true,
+    "priorTestsUnchanged": true,
+    "artifactHashesUnchanged": true
+  },
+  "testingRenameRetry": {
+    "initialPathBasedRequestAcknowledgement": "in_progress",
+    "sourceFileId": "id:pdXqx4wRBdMAAAAAAALFtw",
+    "identityBasedRetryStatus": "completed",
+    "sameBackupDestination": "/www/studio/markdown-preview-via-js-transforms/docs/TESTING.backup-2026-10-25-03.md",
+    "autorename": false,
+    "backupIdentityAndBytesVerified": true,
+    "updatedFileUploadAndReadbackVerified": true,
+    "explanation": "The initial path-based request kept returning in_progress without renaming the file. After confirming the original ID, path and revision, retrying with the pinned original file ID to the identical unused destination completed. The backup now exists; autorename=false makes a delayed initial request fail on destination conflict instead of replacing that backup. The first acknowledgement itself is not reported as completed."
+  },
+  "writeMethod": "Dropbox documented absolute-local-file-path upload after verified same-directory rename; GitHub Git Data API fast-forward main with expected head; no force push",
+  "productCodeChanged": false,
+  "inputOrTransformJsChanged": false,
+  "vsixRebuilt": false,
+  "sourceArchiveRebuilt": false,
+  "automatedTestsRerun": false,
+  "cliInstallRerun": false,
+  "guiIntegrationRun": false,
+  "releasePublished": false,
+  "marketplacePublished": false,
+  "projectUiSettingsChanged": false,
+  "remainingWork": [
+    "GUI integration remains unexecuted",
+    "M2 remains not applicable; no custom-settings/keybinding migration was demonstrated",
+    "External instruction self-references and ChatGPT project settings alignment remain separate",
+    "User PC git status, local commits and fetching the updated remote were not inspected"
+  ],
+  "historicalReceiptInterpretation": "The original acceptance save receipt remains a byte-identical historical record. Its githubWritesPerformed=false describes the earlier acceptance task; subsequent GitHub writes and the seven changed status-document hashes are recorded here.",
+  "receiptPublicationBoundary": "The two document commits and all document/backup readbacks above were verified before serializing this receipt. This new receipt is subsequently uploaded, independently downloaded, committed by itself and read back from GitHub. Its own hash, own commit SHA and post-serialization verification are excluded from its bytes to avoid a self-changing receipt; those final checks are reported in the completion response.",
+  "recovery": "Preserve any current file by renaming it to an unused same-directory backup name; after confirming the original path is vacant, rename the matching .backup-2026-10-25-03 original back. Never overwrite or delete either version. If GitHub rollback is needed, create a scoped forward revert commit against the then-current head; do not reset or force-push other changes."
+}
