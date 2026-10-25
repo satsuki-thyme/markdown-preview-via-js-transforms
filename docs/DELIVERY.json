@@ -5,7 +5,7 @@
   "displayName": "Markdown Preview via JS Transforms",
   "extensionId": "satsuki-thyme.markdown-preview-via-js-transforms",
   "baselineGitCommit": "ce8991ae0834ae6c6fa3f99223a254ce22cfe678",
-  "status": "Rename implemented and automated checks passed; 0.2.0 migration M1-M6 and 16 continuing acceptance checks remain unexecuted",
+  "status": "0.2.0 user acceptance recorded: migration 5 passed, M2 not applicable; 16 continuing checks passed including follow-up. Stage 5 complete; Stage 6 completion requires all-success independent save receipt. GUI integration and this documentation sync to GitHub remain unexecuted.",
   "tests": {
     "node24": {
       "version": "24.22.1",
@@ -60,16 +60,56 @@
     },
     "migrationAcceptance": {
       "appliesToVersion": "0.2.0",
-      "M1": "unexecuted",
-      "M2": "unexecuted",
-      "M3": "unexecuted",
-      "M4": "unexecuted",
-      "M5": "unexecuted",
-      "M6": "unexecuted"
+      "evidence": "docs/USER_TESTING_0.2.0.md",
+      "M1": "passed",
+      "M2": "not_applicable",
+      "M3": "passed",
+      "M4": "passed",
+      "M5": "passed",
+      "M6": "passed",
+      "passed": 5,
+      "notApplicable": 1
     },
     "furtherAcceptance": {
       "count": 16,
-      "status": "unexecuted"
+      "passed": 16,
+      "status": "passed_based_on_user_reports",
+      "primaryReport": "docs/USER_TESTING_0.2.0.md",
+      "followUpReport": "docs/USER_TESTING_0.2.0-2.md",
+      "primaryReportAcceptedCount": 14,
+      "followUpAcceptedCount": 2,
+      "infiniteLoop": "Follow-up #1: timeout after approximately 10 seconds, VS Code remains operable, prior preview retained.",
+      "pendingPromise": "Follow-up #2: cancel command stops the run, then another transform succeeds. No separate real-machine natural-timeout or preview-retention observation reported in this follow-up.",
+      "initialLogs": "Initial log 1 and log 2 report successful outputs, so they are not evidence of stopping an infinite loop or pending Promise.",
+      "repeatedExecution": "User-reported ok accepted; log 3 timeout alone is not direct evidence of rejecting duplicate runs."
+    },
+    "currentDocumentationPass": {
+      "date": "2026-10-25",
+      "automatedTestsRerun": false,
+      "cliInstallRerun": false,
+      "guiIntegrationRun": false,
+      "productCodeChanged": false,
+      "evidenceType": "user reports plus document and artifact inspection; no new agent-run GUI test",
+      "formalAcceptance": "docs/ACCEPTANCE.md",
+      "testMethodRecord": "docs/TESTING.md"
+    },
+    "userReport020": {
+      "files": [
+        "docs/USER_TESTING_0.2.0.md",
+        "docs/USER_TESTING_0.2.0-2.md"
+      ],
+      "environment": {
+        "osEdition": "Windows 11 Pro",
+        "osVersion": "26H2",
+        "osBuild": "26300.9711",
+        "vscode": "1.143.1 (user setup)",
+        "vscodeCommit": "e646868227c3e3a9e3f24277c8c7220be42c0be7",
+        "electron": "43.7.7",
+        "embeddedNode": "24.21.0",
+        "platform": "Windows_NT x64 10.0.26300"
+      },
+      "environmentSource": "docs/USER_TESTING_0.2.0.md; follow-up does not repeat environment details",
+      "originalReportsModified": false
     }
   },
   "package": {
@@ -80,7 +120,8 @@
     "runtimeSourceMatch": "all 8 modules passed",
     "linuxCliInstall": "passed on VS Code 1.105.1; new extension ID, version, and installed runtime source matched",
     "coexistence": "Isolated CLI lists old 0.1.1 and new 0.2.0 as separate extensions; new runtime files remain unchanged. GUI enablement/state not tested.",
-    "readmePackaging": "vsce rewrites relative README links to the renamed repository. Changes have not been pushed; use the source archive for current bundled documents."
+    "readmePackaging": "vsce rewrote relative README links to the repository when packaged. Existing VSIX retains its pre-acceptance bundled README; current acceptance is in the updated development documents. This documentation update has not been pushed by this task.",
+    "rebuiltInCurrentTask": false
   },
   "sourceArchive": {
     "file": "dist/markdown-preview-via-js-transforms-0.2.0-source.zip",
@@ -92,7 +133,11 @@
       "backups",
       "user root input.md and transforms/",
       "user reports and historical save receipts"
-    ]
+    ],
+    "bytes": 72338,
+    "sha256": "9d0dec483759e95fb6192cae4d35c99c55fa85ce554708df42c1d6cba6f54d33",
+    "rebuiltInCurrentTask": false,
+    "bundledDocumentation": "Pre-acceptance snapshot; authoritative current acceptance records are the updated development-root documents."
   },
   "migration": {
     "guide": "docs/MIGRATION_0.2.0.md",
@@ -104,5 +149,40 @@
   },
   "dropboxVerification": "Recorded separately after independent readback in docs/SAVE-VERIFICATION-0.2.0.json",
   "remoteGitPush": false,
-  "chatgptProjectUiInstructions": "Not changed through UI; canonical instructions.md file prepared for project settings"
+  "chatgptProjectUiInstructions": "Not changed in this task. Existing external files are instructions-mpvjt.md and seed-prompt-mpvjt.md; their self-reference/UI alignment remains a separate follow-up.",
+  "currentArtifactInspection": {
+    "date": "2026-10-25",
+    "retrieval": "Independent Dropbox download of both existing artifacts",
+    "dropboxSizeAndContentHash": "matched for both files",
+    "zipCrc": "passed for both files",
+    "runtimeModulesIdenticalBetweenVsixAndSourceArchive": 8,
+    "manifestNameAndVersion": "markdown-preview-via-js-transforms 0.2.0 in both",
+    "identitySamplePresentInBoth": true,
+    "isGuiOrInstallTest": false,
+    "vsixDropboxContentHash": "64ee6152b3468992ef4989aa78a24a4b582abfbc2d0cc168211fecdf21b5cb7e",
+    "sourceDropboxContentHash": "c6570e6ecc6e203eca090d65dc90699cfb5413346a16fa0f3f9f80ca3a0a3274"
+  },
+  "documentationSaveVerification": "docs/SAVE-VERIFICATION-0.2.0-ACCEPTANCE-2026-10-25.json",
+  "stageCompletion": {
+    "stage5": "complete: acceptance and unverified scopes documented",
+    "stage6": "complete only when documentationSaveVerification exists and all document saves and independent readbacks pass",
+    "notIncluded": [
+      "automated GUI integration test",
+      "current documentation push to GitHub",
+      "Release or Marketplace publication",
+      "external instruction self-reference and ChatGPT project UI alignment"
+    ]
+  },
+  "remoteGitStatus": {
+    "scope": "this task only",
+    "writesPerformed": false,
+    "repository": "satsuki-thyme/markdown-preview-via-js-transforms",
+    "branchRead": "main",
+    "observedOriginalReportsPresent": [
+      "docs/USER_TESTING_0.2.0.md",
+      "docs/USER_TESTING_0.2.0-2.md"
+    ],
+    "currentDocumentationUpdatePushed": false,
+    "userPcGitStatusChecked": false
+  }
 }

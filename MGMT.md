@@ -1,28 +1,43 @@
 # 開発・進捗記録
 
-更新: 2026-10-25（Asia/Tokyo）
+更新: 2026-10-25（Asia/Tokyo）。対象: Markdown Preview via JS Transforms 0.2.0。
 
 ## 現在地
 
-Markdown Preview via JS Transforms 0.2.0。旧名MDprev via JSprocから表示名・拡張機能ID・コマンドID・設定ID・URIスキーム・保存キー・開発用識別子を変更した。既存の手動変換、標準プレビューのタブ再利用、失敗時の保持、Worker停止の契約は維持する。自動テストはNode.js 24.22.1とVS Code 1.105.1内蔵Node.js 22.19.0で各24件成功。配布物とCLI導入の詳細は `docs/DELIVERY.json`。
+**0.2.0のユーザー実機受入を正式記録へ反映した。工程5は検証結果・未検証範囲の整理を完了。工程6は既存成果物と文書を整え、今回の保存照合記録で全件成功を確認して完了とする。** GUI統合テストの成功やGitHubへの今回の文書反映を意味しない。
 
-0.1.0初回1〜6と0.1.1再確認A〜Dはユーザー報告ですべてok。タブ増加への修正は旧版で受入済み。報告環境はWindows 11 Pro 26H2（26300.9711）／VS Code 1.143.1／内蔵Node.js 24.21.0。**0.2.0の実機移行M1〜M6と従来の継続確認16項目は未実施。** 合否は `docs/TESTING.md` を正本とする。
+- 移行確認M1〜M6: 5件合格、M2は「対象なし」。6件合格とは数えない。
+- 継続確認16項目: 16件合格。無限ループと未完了Promiseは追試の結果で確定した。
+- 受入正本: [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md)。検証方法別の記録: [docs/TESTING.md](docs/TESTING.md)。結果が食い違う場合は原報告へ戻って確認する。
+- 原報告: [USER_TESTING_0.2.0.md](docs/USER_TESTING_0.2.0.md)、[USER_TESTING_0.2.0-2.md](docs/USER_TESTING_0.2.0-2.md)。原本は変更していない。
+- 本報告の環境: Windows 11 Pro 26H2（26300.9711）、VS Code 1.143.1、内蔵Node.js 24.21.0。追試ファイルには環境の再記載がない。
 
-## 再開時に確認したもの
+初回の無限ループ・未完了Promiseのログはどちらも「成功」であり、停止確認の証拠としては不足していた。追試1で約10秒後のタイムアウト・VS Code操作継続・前回プレビュー保持、追試2で手動中断・中断後の別変換成功を確認したというユーザー報告を受け入れた。未完了Promiseの実機での自然タイムアウトや、中断時の保持を個別に再確認したとの記載はない。報告以上の観測へ拡張しない。
 
-- IDAD、`Dropbox\ai\etc\sources.md`、旧プロジェクト指示書、原案、開発ルートの実ファイルと受入報告。
-- 改名済み開発ルート `Dropbox\www\studio\markdown-preview-via-js-transforms` とGitHub `satsuki-thyme/markdown-preview-via-js-transforms`。mainの `ce8991ae0834ae6c6fa3f99223a254ce22cfe678` と取得した36ファイルが一致した。
-- 指示書フォルダは取得時点で旧名だったため、新しい指定先へフォルダごと改名する。正本は `Dropbox\ai\ChatGPT\project\markdown-preview-via-js-transforms\instructions.md`。旧指示書名は正本への案内、原案は内容不変の `seed-prompt.md` とする。
-- 旧版ユーザー報告 `docs/USER_TESTING.md` の残16行は未のまま。ユーザーの原本と日付付き評価書は変更しない。
+## 今回の実施内容と判断
 
-## 判断と保全
+IDAD、最新のsources.md、現存するプロジェクト指示書・原案、開発ルートの管理・設計・受入・納品文書と2件の原報告を確認した。新しい製品不具合は確認されず、コード・設定・版番号を変更せず、VSIXとソースZIPも再作成しない。自動テストとCLI導入は既存実績を引き継ぎ、今回は再実行していない。
 
-内部識別子も一式変更するという明示依頼に従う。別IDとして導入し、旧版を無効化する。互換エイリアスや他拡張機能の内部DB操作は行わず、設定・キー割当は利用者が対応表に基づき移す。初回は現在のパスで手動選択し、新版の状態を作る。詳細は `docs/MIGRATION_0.2.0.md` と `docs/DESIGN.md`。
+Node.js 24.22.1とVS Code 1.105.1内蔵Node.js 22.19.0で各24件成功という0.2.0作成時の実績は維持する。内蔵Nodeでの実行を拡張機能ホスト／GUI統合テストと読み替えない。GUI統合テストは、以前の表示接続・ソケットの制約により未合格であり、今回も未実施。
 
-既存ファイルは完成・検証済みの新版を用意してから、元そのものを同じディレクトリの未使用の `.backup-2026-10-25-NN` へ改名して保全する。バックアップを検証してから元パスへ新規作成する。旧配布物、ユーザー入力、LICENSE、Git設定は変更しない。配布物にはルートの利用者用 `input.md`・`transforms/`、バックアップ、ユーザー報告・過去の照合記録を含めない。公開サンプルは `examples/` のidentityのみ。
+今回、既存のVSIX（36,636 bytes）とソースZIP（72,338 bytes）をDropboxから取得し、サイズ・Dropbox Content Hash、ZIP CRC、双方の実行用8モジュールの一致、0.2.0のpackage情報、identityサンプルの収録を確認した。詳しくは [docs/DELIVERY.json](docs/DELIVERY.json)。同梱文書は受入前の作成時点のスナップショットであり、最新の受入記録は開発ルートの本書・docsを参照する。
 
-GitHubへのpush、PR、Release、Marketplace公開は今回行わない。改名済みDropbox作業フォルダへ保存し、独立読戻しのサイズ・SHA-256・Dropboxハッシュを照合する。今回の実績は `docs/SAVE-VERIFICATION-0.2.0.json`。以前の同種記録は履歴として保持する。指示書ファイルの更新とChatGPTプロジェクト設定欄への反映は区別する。
+## 保存・保全
 
-## 次の作業
+保存先は `Dropbox\www\studio\markdown-preview-via-js-transforms`。更新は `MGMT.md`、`README.md`、`CHANGELOG.md`、`docs/TESTING.md`、`docs/ACCEPTANCE.md`、`docs/PROCESS_CHART.md`、`docs/DELIVERY.json`、`docs/DESIGN.md`、`docs/MIGRATION_0.2.0.md` の9文書。
 
-`docs/MIGRATION_0.2.0.md` に従って旧版を無効化し新版を導入。`docs/ACCEPTANCE.md` のM1〜M6と残り16項目をユーザー実機で確認し、新しい `docs/USER_TESTING_0.2.0.md` に結果を記録する。工程5は継続中。GUI統合テストは表示可能な環境でのみ実施し、未実施を合格にしない。
+更新版をUTF-8実ファイルとして完成・検証し、Dropboxの正規アップロード仕様が受け付ける絶対ローカルパスを使う。元ファイルそのものを同じディレクトリの未使用の `.backup-2026-10-25-NN` 名へ改名し、存在・ID・サイズを確認してから元パスへ新版を新規作成する。保存後は別の読戻しで内容・サイズ・SHA-256・Dropbox Content Hashを照合する。
+
+今回の対象別バックアップ名と照合実績は [SAVE-VERIFICATION-0.2.0-ACCEPTANCE-2026-10-25.json](docs/SAVE-VERIFICATION-0.2.0-ACCEPTANCE-2026-10-25.json)。この記録が存在しない、または全件成功でなければ工程6の保存は未完了と扱う。過去の `docs/SAVE-VERIFICATION-0.2.0.json` は当時の配布・改名作業の履歴として保持する。
+
+原報告、旧版受入履歴、既存配布物、ユーザー入力・変換処理、LICENSE、Git設定には変更を加えない。復旧が必要なときは現行新版を別の未使用名へ改名して保全し、元パスが空いていることを確認してから対応するバックアップを元名へ戻す。直接上書き・削除はしない。
+
+## GitHubと外部指示書の状態
+
+索引で確認した対応先は `satsuki-thyme/markdown-preview-via-js-transforms`。今回の読取確認ではmainに2件の0.2.0原報告があり、取得した本文はDropbox原本と一致した。したがって0.2.0全体を「GitHub未反映」とは扱わない。一方、本作業の9文書更新と新しい保存照合記録はpushしていない。PR・Release・Marketplace公開も行っていない。ユーザーPC側のgit statusや未pushコミットの全体は確認していない。
+
+指示書フォルダの現存ファイルは `Dropbox\ai\ChatGPT\project\markdown-preview-via-js-transforms\instructions-mpvjt.md` と `seed-prompt-mpvjt.md`。開発文書の参照先はこの実名へ修正した。指示書本文には旧自己参照の `instructions.md` / `seed-prompt.md` が残っている。外部指示書とChatGPTプロジェクト設定欄は今回変更しておらず、その整合は別の残課題とする。
+
+## 次の工程
+
+0.2.0は確認済みの環境・対応範囲で通常利用・保守へ移行できる。合格済みの実機試験を一律にやり直す必要はない。後続作業は、今回の文書のGitHub同期、表示可能な環境でのGUI統合テスト、外部指示書の参照先・プロジェクト設定の整合。詳細と実行用指示は [docs/PROCESS_CHART.md](docs/PROCESS_CHART.md)。GUI統合未実施やM2対象なしを合格へ変更しない。

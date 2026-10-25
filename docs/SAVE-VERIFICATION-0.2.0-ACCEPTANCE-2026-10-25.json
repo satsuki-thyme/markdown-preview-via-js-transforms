@@ -1,0 +1,334 @@
+{
+  "schema": "markdown-preview-via-js-transforms.acceptance-document-save-verification.v1",
+  "date": "2026-10-25",
+  "timezone": "Asia/Tokyo",
+  "verificationCompletedAt": "2026-10-25T11:49:30.833600+09:00",
+  "version": "0.2.0",
+  "scope": "9 documentation updates and their renamed originals; 2 user reports and 2 existing distribution artifacts preserved",
+  "status": "all_document_updates_and_backups_verified",
+  "documentCount": 9,
+  "backupCount": 9,
+  "saveRoot": "Dropbox\\www\\studio\\markdown-preview-via-js-transforms",
+  "writeMethod": "Dropbox upload_file using its documented absolute-local-path input; only new files after verified rename",
+  "verificationMethod": "Fresh Dropbox downloads, byte-for-byte comparisons, sizes, SHA-256 and Dropbox Content Hash comparisons. This receipt is separately read back after upload; its own hash is not embedded.",
+  "acceptance": {
+    "migrationPassed": 5,
+    "migrationNotApplicable": [
+      "M2"
+    ],
+    "continuingPassed": 16,
+    "followUpResolved": [
+      "infinite loop timeout and preview retention",
+      "pending Promise manual cancellation and later successful transform"
+    ],
+    "evidence": [
+      "docs/USER_TESTING_0.2.0.md",
+      "docs/USER_TESTING_0.2.0-2.md"
+    ]
+  },
+  "documents": [
+    {
+      "path": "MGMT.md",
+      "status": "verified",
+      "backup": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/MGMT.backup-2026-10-25-02.md",
+        "method": "rename original file in same directory; no copy or overwrite",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_yQ",
+        "originalFileId": "id:pdXqx4wRBdMAAAAAAAK_yQ",
+        "identityPreserved": true,
+        "bytes": 3500,
+        "sha256": "ef030e767fbec6f0c8ca9aaebb75bd5785b197885b02d4c64ecfe278c261ed55",
+        "dropboxContentHash": "640dfeefd3ee27fb6abd14117d096d84cb1732b365d5fc265dcad1cf2b45750a",
+        "independentReadbackMatchesOriginalBytes": true
+      },
+      "saved": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/MGMT.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFtA",
+        "revision": "65ea1343a95911bc8f115",
+        "bytes": 5947,
+        "sha256": "15983def9976dd514809d1f5ce81718dbaea5c6aac97f43797e9a0b6d750a721",
+        "dropboxContentHash": "c279ef538646c3dd6e32885d3a5144f7e83508beab403af8631252990f08d1f5",
+        "independentReadbackMatchesPreparedBytes": true,
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "README.md",
+      "status": "verified",
+      "backup": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/README.backup-2026-10-25-02.md",
+        "method": "rename original file in same directory; no copy or overwrite",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_yg",
+        "originalFileId": "id:pdXqx4wRBdMAAAAAAAK_yg",
+        "identityPreserved": true,
+        "bytes": 11149,
+        "sha256": "8e9c62734c015a2a4f917a3cd7d4a6ea8bd7868fefb2e48c765e299302e268c4",
+        "dropboxContentHash": "0fa427227ae8c158fc1b4841167a2cc00e3eaccb6b3ef037c9245888837986d4",
+        "independentReadbackMatchesOriginalBytes": true
+      },
+      "saved": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/README.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFtQ",
+        "revision": "65ea135905ab11bc8f115",
+        "bytes": 11984,
+        "sha256": "31633d9be889c82b105ec24d7cb237a15c3eafb98e0f5af0dda476994f996bdc",
+        "dropboxContentHash": "727fb5b5d40a48dc587d57e3010ac0753df673bcc8bc93bf5307ad3767dae214",
+        "independentReadbackMatchesPreparedBytes": true,
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "status": "verified",
+      "backup": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/docs/ACCEPTANCE.backup-2026-10-25-02.md",
+        "method": "rename original file in same directory; no copy or overwrite",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_zQ",
+        "originalFileId": "id:pdXqx4wRBdMAAAAAAAK_zQ",
+        "identityPreserved": true,
+        "bytes": 6652,
+        "sha256": "37f4e68149989c333f569dff223a005110fe3754e0eb80410d652bb4a4efe0aa",
+        "dropboxContentHash": "eefb484812a9a240f4daf41cad7cb1d5eca523c44f1a031df2bf9f9ab502f106",
+        "independentReadbackMatchesOriginalBytes": true
+      },
+      "saved": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/docs/ACCEPTANCE.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFtg",
+        "revision": "65ea136f0e3791bc8f115",
+        "bytes": 9912,
+        "sha256": "1c8f8878872a7329d17e7a9066fadd625df46cade68c810c3a5f29806698603a",
+        "dropboxContentHash": "e5cb1a1136e50865e8e1ffbb015b97f46b130a1edcd404e73fe3eae04d4e9d25",
+        "independentReadbackMatchesPreparedBytes": true,
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "docs/TESTING.md",
+      "status": "verified",
+      "backup": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/docs/TESTING.backup-2026-10-25-02.md",
+        "method": "rename original file in same directory; no copy or overwrite",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_4g",
+        "originalFileId": "id:pdXqx4wRBdMAAAAAAAK_4g",
+        "identityPreserved": true,
+        "bytes": 8453,
+        "sha256": "b9d19f36878b3ce0bb8ce8e3200cc0f93bc35baf121c2ebe148bcc08a81f1bda",
+        "dropboxContentHash": "9cd8fadf9540f1c2377530f81c50f74868c70ba9de598d81779acbb2b85d0e8e",
+        "independentReadbackMatchesOriginalBytes": true
+      },
+      "saved": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/docs/TESTING.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFtw",
+        "revision": "65ea1388795991bc8f115",
+        "bytes": 12230,
+        "sha256": "5174e619a141c66cd332be42967ae832fd05a4e8d325e3e65af0fd13bb4cf24c",
+        "dropboxContentHash": "749a0183a8c30fcc7c905bcacf14233da9d708b13fee1120c9fcf8f949d86c05",
+        "independentReadbackMatchesPreparedBytes": true,
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "docs/PROCESS_CHART.md",
+      "status": "verified",
+      "backup": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.backup-2026-10-25-02.md",
+        "method": "rename original file in same directory; no copy or overwrite",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_4Q",
+        "originalFileId": "id:pdXqx4wRBdMAAAAAAAK_4Q",
+        "identityPreserved": true,
+        "bytes": 2577,
+        "sha256": "3576d050c8b09088bed40fc063a283119dc90081016796cbe779c9fafaaf9784",
+        "dropboxContentHash": "2ae9be9b423f80ac8769b4d7330abd35b8a6f3553789e3fe5f4cd56ee4bf3f00",
+        "independentReadbackMatchesOriginalBytes": true
+      },
+      "saved": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFuA",
+        "revision": "65ea139e054fd1bc8f115",
+        "bytes": 5767,
+        "sha256": "bf169bc101d0a61ecf6524112ca7b5c923b53501129bcb0162959aef4c8ce0fc",
+        "dropboxContentHash": "4ee2a3010dac291ec05ba84ab2fb4ec41e5f277a199e0049779cc9995ec9d9eb",
+        "independentReadbackMatchesPreparedBytes": true,
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "docs/DESIGN.md",
+      "status": "verified",
+      "backup": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/docs/DESIGN.backup-2026-10-25-02.md",
+        "method": "rename original file in same directory; no copy or overwrite",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_zw",
+        "originalFileId": "id:pdXqx4wRBdMAAAAAAAK_zw",
+        "identityPreserved": true,
+        "bytes": 11999,
+        "sha256": "8022289e08700c6fbf0f2eda84c450b4b5788e12ed02aa46862015b421924952",
+        "dropboxContentHash": "9ee424d0bbac3f983dd41427907ef60c10c03d8ea29e24036381a6a1513096e3",
+        "independentReadbackMatchesOriginalBytes": true
+      },
+      "saved": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/docs/DESIGN.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFuQ",
+        "revision": "65ea13b3ac7761bc8f115",
+        "bytes": 12314,
+        "sha256": "3f072145af41c829a01fe2f6494730aee404433dab7c601f6efdb72629578adb",
+        "dropboxContentHash": "636816e13a03d41f713b4f6eb768b54614f8c515450e2e5f264afbddc2ca608d",
+        "independentReadbackMatchesPreparedBytes": true,
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "docs/MIGRATION_0.2.0.md",
+      "status": "verified",
+      "backup": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/docs/MIGRATION_0.2.0.backup-2026-10-25-01.md",
+        "method": "rename original file in same directory; no copy or overwrite",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_0A",
+        "originalFileId": "id:pdXqx4wRBdMAAAAAAAK_0A",
+        "identityPreserved": true,
+        "bytes": 7184,
+        "sha256": "191cc5adcfb7bb19b451f733383b8b5097545cfc7d826e391e5d1855fb427b4f",
+        "dropboxContentHash": "9bb6e896b5c023cb1ccbe7bb3c8c4b61119a8ee463d694563d9751770ec58c98",
+        "independentReadbackMatchesOriginalBytes": true
+      },
+      "saved": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/docs/MIGRATION_0.2.0.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFug",
+        "revision": "65ea13cd54ef61bc8f115",
+        "bytes": 7684,
+        "sha256": "be9a23fe67fdf4d56f23142ff5c8aa95afadfa7a3df3d69c61cd947131ea8cb7",
+        "dropboxContentHash": "890fd5db6180e8735cf160b1c0b554ae7234ebc38c6a2c869659b5d8f7719c0f",
+        "independentReadbackMatchesPreparedBytes": true,
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "CHANGELOG.md",
+      "status": "verified",
+      "backup": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/CHANGELOG.backup-2026-10-25-02.md",
+        "method": "rename original file in same directory; no copy or overwrite",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_yA",
+        "originalFileId": "id:pdXqx4wRBdMAAAAAAAK_yA",
+        "identityPreserved": true,
+        "bytes": 1922,
+        "sha256": "ca21711e8cf78606920e3a3d669a3eff28affffde7be65e60bae1d4ec0601484",
+        "dropboxContentHash": "a19bdc672c6c3b2404e3b55d0587e1a850867fb1a299a46e0c19bac699cab79b",
+        "independentReadbackMatchesOriginalBytes": true
+      },
+      "saved": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/CHANGELOG.md",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFuw",
+        "revision": "65ea13e2c44851bc8f115",
+        "bytes": 2695,
+        "sha256": "85e36a8e05c823711b47a0fcd36f70f81e78381a6f7a597d646f989fe3c7fb67",
+        "dropboxContentHash": "1ae916cadd188f8e15f33a79dbf2c00a492311093e763767c7df80cf73da128d",
+        "independentReadbackMatchesPreparedBytes": true,
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    },
+    {
+      "path": "docs/DELIVERY.json",
+      "status": "verified",
+      "backup": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/docs/DELIVERY.backup-2026-10-25-02.json",
+        "method": "rename original file in same directory; no copy or overwrite",
+        "fileId": "id:pdXqx4wRBdMAAAAAAAK_zg",
+        "originalFileId": "id:pdXqx4wRBdMAAAAAAAK_zg",
+        "identityPreserved": true,
+        "bytes": 3941,
+        "sha256": "074ab603f2bfb6d0ec16f1772ea89b981ac18f9db8029c889ee72b8191620203",
+        "dropboxContentHash": "7adaf7599220f0b7a18c4abe3a59ca349b9ce4ca48995708cee17e3c3d5f177c",
+        "independentReadbackMatchesOriginalBytes": true
+      },
+      "saved": {
+        "path": "/www/studio/markdown-preview-via-js-transforms/docs/DELIVERY.json",
+        "fileId": "id:pdXqx4wRBdMAAAAAAALFvA",
+        "revision": "65ea13f93c6821bc8f115",
+        "bytes": 8124,
+        "sha256": "34b2d9af58b2a2378beec8a7dac0db1a0698b908af36b7635fe46f266a2d0594",
+        "dropboxContentHash": "77b1ad1574ddee0e9a546ca5f608e6b4333f4d660e41bd763b3dc9d72ce14ea4",
+        "independentReadbackMatchesPreparedBytes": true,
+        "sizeMatches": true,
+        "sha256Matches": true,
+        "dropboxContentHashMatches": true
+      }
+    }
+  ],
+  "unchangedFiles": [
+    {
+      "path": "docs/USER_TESTING_0.2.0.md",
+      "fileId": "id:pdXqx4wRBdMAAAAAAALEjQ",
+      "bytes": 2986,
+      "sha256": "2e79ebd40f87236db85aeb1b22c7499792c60e006faa6e1d64f1faf5efb3eab7",
+      "dropboxContentHash": "893fe62eb541c33ef7a61508791071d238198572b75542c9b5e1d705a31b6cff",
+      "matchesInitialBytes": true
+    },
+    {
+      "path": "docs/USER_TESTING_0.2.0-2.md",
+      "fileId": "id:pdXqx4wRBdMAAAAAAALFEQ",
+      "bytes": 434,
+      "sha256": "b644264fedd711bc55fb7b9759322f9202cfde12d52d9a8defc5c395e3b34889",
+      "dropboxContentHash": "6e5389181afc8ae0ec6b2382c51a9349bf8f5e9414c21088472986c5c81c6591",
+      "matchesInitialBytes": true
+    },
+    {
+      "path": "dist/markdown-preview-via-js-transforms-0.2.0.vsix",
+      "fileId": "id:pdXqx4wRBdMAAAAAAAK_zA",
+      "bytes": 36636,
+      "sha256": "27c19864ffd07c930223a939544b462f0da444cebec1cf5d6c544aed4f60338d",
+      "dropboxContentHash": "64ee6152b3468992ef4989aa78a24a4b582abfbc2d0cc168211fecdf21b5cb7e",
+      "matchesInitialBytes": true
+    },
+    {
+      "path": "dist/markdown-preview-via-js-transforms-0.2.0-source.zip",
+      "fileId": "id:pdXqx4wRBdMAAAAAAAK_yw",
+      "bytes": 72338,
+      "sha256": "9d0dec483759e95fb6192cae4d35c99c55fa85ce554708df42c1d6cba6f54d33",
+      "dropboxContentHash": "c6570e6ecc6e203eca090d65dc90699cfb5413346a16fa0f3f9f80ca3a0a3274",
+      "matchesInitialBytes": true
+    }
+  ],
+  "documentValidation": {
+    "status": "passed",
+    "documents": 9,
+    "relative_links_checked": 38,
+    "migration_passed": 5,
+    "migration_not_applicable": 1,
+    "continuing_passed": 16,
+    "prior_test_results_preserved": true,
+    "report_bytes_match_github": true,
+    "product_tests_rerun": false,
+    "gui_integration_run": false
+  },
+  "productCodeChanged": false,
+  "vsixRebuilt": false,
+  "sourceArchiveRebuilt": false,
+  "automatedTestsRerun": false,
+  "cliInstallRerun": false,
+  "guiIntegrationRun": false,
+  "githubWritesPerformed": false,
+  "remainingWork": [
+    "GUI integration test remains unexecuted",
+    "Current documentation update has not been pushed to GitHub; original reports were already observed on main",
+    "External instruction self-references and ChatGPT project UI alignment remain a separate follow-up"
+  ],
+  "recovery": "Preserve the current updated file by renaming it to an unused name, confirm the original path is absent, then rename the corresponding backup back to the original path. Do not delete or overwrite either copy.",
+  "previousReleaseReceipt": "docs/SAVE-VERIFICATION-0.2.0.json"
+}

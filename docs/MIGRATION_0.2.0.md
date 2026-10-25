@@ -2,6 +2,10 @@
 
 更新: 2026-10-25（Asia/Tokyo）。「MDprev via JSproc」を **Markdown Preview via JS Transforms** へ改名し、内部識別子も一式変更した。旧IDの互換エイリアスは登録しない。旧版0.1.1からの通常の上書き更新ではなく、別IDの拡張機能として導入する。
 
+## 受入状況
+
+2026-10-25、0.2.0ユーザー報告と追試を正式記録へ反映した。M1・M3〜M6は合格、M2はカスタム設定・キー割当の対象なし。継続確認16項目も追試を含め合格。以下は別環境への導入にも使う移行手順として保持し、今回合格済みの試験を再度要求しない。根拠と未検証範囲は [ACCEPTANCE.md](ACCEPTANCE.md)。自動GUI統合テストは未実施。
+
 ## 名称と識別子の対応
 
 | 対象 | 旧 | 新 |
@@ -32,7 +36,7 @@ Publisher `satsuki-thyme`、MITライセンス、VS Code標準エディターID�
 4. カスタム設定があれば、下の手順で新設定へ同じ値を移す。初期値のままなら `transforms` と10000msなので変更不要。
 5. キー割当があれば上表の新コマンドへ付け替える。旧割当を同じキーで残すと競合するため、新版を使うプロファイルの有効な割当は新版に揃える。
 6. 利用ワークスペースの入力を開き、`Markdown Preview via JS Transforms: 変換処理を選択して実行` で処理を選ぶ。初回は旧版の「前回の組」を引き継がない。開発フォルダを改名していた場合も、現在のパスで選び直す。
-7. [ACCEPTANCE.md](ACCEPTANCE.md) のM1〜M6、その後に従来から残る16項目を確認する。
+7. [ACCEPTANCE.md](ACCEPTANCE.md) のM1〜M6、その後に継続確認16項目を確認する。
 
 設定・ショートカットを編集する前に、対象の実ファイル（ユーザー／プロファイルの `settings.json`・`keybindings.json`、フォルダの `.vscode/settings.json`、複数ルートの `.code-workspace` など）の所在とスコープを確認する。元そのものを同じフォルダの未使用の `settings.backup-YYYY-MM-DD-NN.json` 等へ改名し、元パスへ更新版を作成してから再読み込みする。設定UIを使う場合も、背後の既存設定ファイルを変更する前にこの保全を行う。コピーだけや直接上書きで代用しない。
 
@@ -50,10 +54,10 @@ Publisher `satsuki-thyme`、MITライセンス、VS Code標準エディターID�
 
 - リポジトリ: `satsuki-thyme/markdown-preview-via-js-transforms`
 - 開発ルート: `Dropbox\www\studio\markdown-preview-via-js-transforms`
-- 指示書: `Dropbox\ai\ChatGPT\project\markdown-preview-via-js-transforms\instructions.md`
-- 原案: 同フォルダの `seed-prompt.md`（元の内容を改変せず改名）
+- 指示書: `Dropbox\ai\ChatGPT\project\markdown-preview-via-js-transforms\instructions-mpvjt.md`
+- 原案: 同フォルダの `seed-prompt-mpvjt.md`（現存ファイル名。今回内容変更なし）
 - 索引: `Dropbox\ai\etc\sources.md`
 
-旧ユーザー報告、日付付き評価書、過去の保存照合記録、旧配布物、改名バックアップ内の旧名称は歴史的事実として残す。現行の実行コードは旧IDを登録しない。旧指示書名 `instructions-mdpjsp.md` は新しい正本への案内だけを置く。ChatGPTのプロジェクト設定欄をこのファイルから自動更新する機能はないため、設定欄に旧指示を貼っている場合は `instructions.md` の内容へ差し替える。
+旧ユーザー報告、日付付き評価書、過去の保存照合記録、旧配布物、改名バックアップ内の旧名称は歴史的事実として残す。現行の実行コードは旧IDを登録しない。現存する `instructions-mpvjt.md` の本文には、自己参照として `instructions.md` / `seed-prompt.md` が残っている。外部指示書とChatGPTプロジェクト設定欄の整合は後続課題とし、今回更新済みとは扱わない。旧指示書名 `instructions-mdpjsp.md` も保全する。
 
 方針の根拠: [Extension Manifest](https://code.visualstudio.com/api/references/extension-manifest) に従いpublisherとnameを組み合わせたIDが変わる。[ExtensionContext](https://code.visualstudio.com/api/references/vscode-api#ExtensionContext) と [Data Storage](https://code.visualstudio.com/api/extension-capabilities/common-capabilities) の公開APIに基づき、他の拡張機能の私有状態に依存しない。別ID間の状態を自動移行しないことは本製品の設計判断である。
