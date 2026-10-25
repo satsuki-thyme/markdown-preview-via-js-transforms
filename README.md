@@ -8,7 +8,7 @@ YAML・Markdown・Plaintextを、自分で書いたJavaScriptでMarkdownへ変�
 
 **0.2.0の実機受入を記録済みです（2026-10-25）。** 移行確認は5件合格・M2は対象なし、継続確認16項目は追試を含め全件合格です。報告環境はWindows 11 Pro 26H2／VS Code 1.143.1／内蔵Node.js 24.21.0。これはユーザー報告に基づく受入であり、自動GUI統合テストは未実施です。判定と根拠は [ACCEPTANCE.md](docs/ACCEPTANCE.md)、検証方法ごとの範囲は [TESTING.md](docs/TESTING.md) を参照してください。
 
-今回の更新は文書のみです。既存の [VSIX](dist/markdown-preview-via-js-transforms-0.2.0.vsix) と [ソースZIP](dist/markdown-preview-via-js-transforms-0.2.0-source.zip) を引き続き使えます。同梱文書は作成時点の受入前スナップショットなので、最新の結果は開発ルートの文書を参照してください。今回の文書更新はGitHubへ未反映です。
+今回の更新は文書のみです。既存の [VSIX](dist/markdown-preview-via-js-transforms-0.2.0.vsix) と [ソースZIP](dist/markdown-preview-via-js-transforms-0.2.0-source.zip) を引き続き使えます。同梱文書は作成時点の受入前スナップショットなので、最新の結果は開発ルートの文書を参照してください。受入文書と保存照合記録はGitHubへ同期済みです。同期・保存確認は [今回の照合記録](docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json) を参照してください。
 
 ## インストールと最初の実行
 

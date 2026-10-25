@@ -5,7 +5,7 @@
   "displayName": "Markdown Preview via JS Transforms",
   "extensionId": "satsuki-thyme.markdown-preview-via-js-transforms",
   "baselineGitCommit": "ce8991ae0834ae6c6fa3f99223a254ce22cfe678",
-  "status": "0.2.0 user acceptance recorded: migration 5 passed, M2 not applicable; 16 continuing checks passed including follow-up. Stage 5 complete; Stage 6 completion requires all-success independent save receipt. GUI integration and this documentation sync to GitHub remain unexecuted.",
+  "status": "0.2.0 user acceptance complete: migration 5 passed, M2 not applicable; 16 continuing checks passed including follow-up. Stages 5 and 6 complete within the documented acceptance/delivery scope. Acceptance documents and save receipt synchronized to GitHub and independently read back. GUI integration remains unexecuted.",
   "tests": {
     "node24": {
       "version": "24.22.1",
@@ -120,7 +120,7 @@
     "runtimeSourceMatch": "all 8 modules passed",
     "linuxCliInstall": "passed on VS Code 1.105.1; new extension ID, version, and installed runtime source matched",
     "coexistence": "Isolated CLI lists old 0.1.1 and new 0.2.0 as separate extensions; new runtime files remain unchanged. GUI enablement/state not tested.",
-    "readmePackaging": "vsce rewrote relative README links to the repository when packaged. Existing VSIX retains its pre-acceptance bundled README; current acceptance is in the updated development documents. This documentation update has not been pushed by this task.",
+    "readmePackaging": "vsce rewrote relative README links to the repository when packaged. Existing VSIX retains its pre-acceptance bundled README; current acceptance is in the development documents, now synchronized separately to GitHub. The VSIX was not rebuilt.",
     "rebuiltInCurrentTask": false
   },
   "sourceArchive": {
@@ -148,7 +148,7 @@
     "settingsAndKeybindings": "Explicit user migration; same scope and values"
   },
   "dropboxVerification": "Recorded separately after independent readback in docs/SAVE-VERIFICATION-0.2.0.json",
-  "remoteGitPush": false,
+  "remoteGitPush": true,
   "chatgptProjectUiInstructions": "Not changed in this task. Existing external files are instructions-mpvjt.md and seed-prompt-mpvjt.md; their self-reference/UI alignment remains a separate follow-up.",
   "currentArtifactInspection": {
     "date": "2026-10-25",
@@ -165,24 +165,31 @@
   "documentationSaveVerification": "docs/SAVE-VERIFICATION-0.2.0-ACCEPTANCE-2026-10-25.json",
   "stageCompletion": {
     "stage5": "complete: acceptance and unverified scopes documented",
-    "stage6": "complete only when documentationSaveVerification exists and all document saves and independent readbacks pass",
+    "stage6": "complete: original acceptance save receipt verified for all 9 documents; subsequent GitHub synchronization is recorded separately",
     "notIncluded": [
       "automated GUI integration test",
-      "current documentation push to GitHub",
       "Release or Marketplace publication",
       "external instruction self-reference and ChatGPT project UI alignment"
     ]
   },
   "remoteGitStatus": {
-    "scope": "this task only",
-    "writesPerformed": false,
+    "scope": "0.2.0 acceptance documentation synchronization only",
+    "writesPerformed": true,
+    "writeMethod": "GitHub Git Data API; fast-forward main with expected head; no local git push command",
     "repository": "satsuki-thyme/markdown-preview-via-js-transforms",
     "branchRead": "main",
+    "baselineCommit": "863aefaa0426724c3cec4cd5ef15c0158d25b524",
+    "acceptanceDocumentsCommit": "9d14d548e247c9e2ac54f60b83652ad1041bc7ee",
+    "acceptanceDocumentsReadBack": 10,
+    "readBackMatchesDropboxBytes": true,
+    "unrelatedGitHubFilesPreserved": 102,
     "observedOriginalReportsPresent": [
       "docs/USER_TESTING_0.2.0.md",
       "docs/USER_TESTING_0.2.0-2.md"
     ],
-    "currentDocumentationUpdatePushed": false,
+    "currentDocumentationUpdatePushed": true,
+    "statusUpdateAndSaveVerification": "docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json",
     "userPcGitStatusChecked": false
-  }
+  },
+  "documentationSyncSaveVerification": "docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json"
 }
