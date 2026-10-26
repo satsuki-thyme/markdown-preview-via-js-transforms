@@ -1,0 +1,257 @@
+{
+  "schema": "mpjst-documentation-save-verification-v1",
+  "date": "2026-10-27",
+  "timezone": "Asia/Tokyo",
+  "version": "0.2.0",
+  "purpose": "Record the additional formal GUI integration run from 2026-10-26 13:18 JST; preserve earlier 07:07 run history.",
+  "status": "all_seven_documents_saved_and_independently_verified",
+  "root": "/www/studio/markdown-preview-via-js-transforms",
+  "formal_result": {
+    "log": "test-results/gui-integration-formal-0.2.0-20261026-131806.log",
+    "pass_marker": "MPJST_INTEGRATION_PASS vscode=1.105.1 node=22.19.0",
+    "extension_host_exit_code": 0,
+    "runner_exit_code": 0,
+    "outer_exit_code": 0,
+    "log_bytes": 1815,
+    "log_sha256": "3255ab434228bebd2f559c9eff766c19279b349edb2850301bc7bfaff66bfb4d",
+    "log_content_hash": "a8c69c7e1fffbe02047dd04cf6248797dee48c869ebef66e55d0145bd9e8d5c9",
+    "test_sha256": "9c51bc2d48f767a424e06fad2a88da9cde6d4837bc8346fa5c7998c52bffd848",
+    "formal_test_sha256_matches_current_source": true,
+    "executed_by": "user",
+    "executed_by_ai_in_this_task": false,
+    "runner_node_version_in_log": null,
+    "exact_os_version_in_log": null,
+    "errors_retained": [
+      "Error: Error mutex already exists"
+    ],
+    "deprecation_warnings_retained": [
+      "DEP0190",
+      "DEP0040"
+    ],
+    "causes_resolved": false
+  },
+  "save_method": "Current Dropbox upload_file schema explicitly accepts absolute local file path; adapter performs the file handoff. UTF-8 real files validated before original-file renames.",
+  "verification_method": "Independent Dropbox fetch after each upload compared with the intended UTF-8 text (allowing only the extractor's one appended LF); independently obtained remote size and Dropbox Content Hash matched the complete local bytes. Local SHA-256 recorded; remote ordinary SHA-256 not exposed. Six original file IDs, sizes and Content Hashes verified at backup paths before replacements were created.",
+  "files": [
+    {
+      "path": "MGMT.md",
+      "bytes": 11780,
+      "sha256": "b6400322987885461edbcf055f12e6a3ee3f220d2a387434e85115df71050a93",
+      "dropbox_content_hash": "4b6ee4cedb1fefbb0554a727009ac47f055a66f423cfc7109645798a78d020ab",
+      "new_file_id": "id:pdXqx4wRBdMAAAAAAAL_qg",
+      "upload_status": "completed",
+      "independent_readback": {
+        "content_equal": true,
+        "size_equal": true,
+        "dropbox_content_hash_equal": true
+      },
+      "backup": {
+        "path": "MGMT.backup-2026-10-27-01.md",
+        "file_id": "id:pdXqx4wRBdMAAAAAAAL-PA",
+        "bytes": 9198,
+        "content_hash": "d868a49762959d2cfbb3e7bf3acffe9f1776c8acefc0405498e83f0ebea8adf9",
+        "original_file_renamed": true,
+        "original_identity_and_hash_preserved": true
+      }
+    },
+    {
+      "path": "README.md",
+      "bytes": 13643,
+      "sha256": "9cb3d7a952d49023c4ceb002df044b040dee63057a40564a18e64ca81844b6a6",
+      "dropbox_content_hash": "69a74c15fa4673d6c07b54ea6ff6842b2e4ee667ab201e34d2aee8bdad9bcb43",
+      "new_file_id": "id:pdXqx4wRBdMAAAAAAAL_qw",
+      "upload_status": "completed",
+      "independent_readback": {
+        "content_equal": true,
+        "size_equal": true,
+        "dropbox_content_hash_equal": true
+      },
+      "backup": {
+        "path": "README.backup-2026-10-27-01.md",
+        "file_id": "id:pdXqx4wRBdMAAAAAAAL-PQ",
+        "bytes": 12760,
+        "content_hash": "8185d3efe46202e139d370ce3e76e96ac08ea4ba0e93dd1b6c7acd6ebe373655",
+        "original_file_renamed": true,
+        "original_identity_and_hash_preserved": true
+      }
+    },
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "bytes": 12719,
+      "sha256": "1093d76ef522a1542d1bf340bbb45d5c358933924a5bf6cdcb8a11fc1959c0bf",
+      "dropbox_content_hash": "bfdff21ee95077b88c41f44fd5702ebf6a63b71a3c481ab980050b72b6c173fb",
+      "new_file_id": "id:pdXqx4wRBdMAAAAAAAL_rA",
+      "upload_status": "completed",
+      "independent_readback": {
+        "content_equal": true,
+        "size_equal": true,
+        "dropbox_content_hash_equal": true
+      },
+      "backup": {
+        "path": "docs/ACCEPTANCE.backup-2026-10-27-01.md",
+        "file_id": "id:pdXqx4wRBdMAAAAAAAL-QA",
+        "bytes": 10931,
+        "content_hash": "5d7117c3a2d76d4905d0ca441908ec0870184cf21c6ed14ea8890b767ff3c2f2",
+        "original_file_renamed": true,
+        "original_identity_and_hash_preserved": true
+      }
+    },
+    {
+      "path": "docs/DELIVERY.json",
+      "bytes": 14756,
+      "sha256": "acf74183aca6df75f568b09efc7b968708b1a73746fa2702fcdb67cc488fc500",
+      "dropbox_content_hash": "ee8bbfff7c675d65dce65e8bc0918b2ae881014baeeae59ccecc5d740755e01d",
+      "new_file_id": "id:pdXqx4wRBdMAAAAAAAL_rQ",
+      "upload_status": "completed",
+      "independent_readback": {
+        "content_equal": true,
+        "size_equal": true,
+        "dropbox_content_hash_equal": true
+      },
+      "backup": {
+        "path": "docs/DELIVERY.backup-2026-10-27-01.json",
+        "file_id": "id:pdXqx4wRBdMAAAAAAAL-RA",
+        "bytes": 11340,
+        "content_hash": "103c48e8b5c3d5a3cfaf4aca0d068b9873498f5a61f2be55da2460ec01b536e4",
+        "original_file_renamed": true,
+        "original_identity_and_hash_preserved": true
+      }
+    },
+    {
+      "path": "docs/GUI-INTEGRATION-RECHECK-0.2.0-2026-10-26-131806.md",
+      "bytes": 6094,
+      "sha256": "da6de1ed8344bd1643b8d544d2b69280a72d2645af7d48dd9e54e1c403b78373",
+      "dropbox_content_hash": "02ee1c9edd8cbc0da83dcd6de3a64a38749c3a40f83dd7977bece5f546d4de1b",
+      "new_file_id": "id:pdXqx4wRBdMAAAAAAAL_qQ",
+      "upload_status": "completed",
+      "independent_readback": {
+        "content_equal": true,
+        "size_equal": true,
+        "dropbox_content_hash_equal": true
+      },
+      "backup": null
+    },
+    {
+      "path": "docs/PROCESS_CHART.md",
+      "bytes": 8397,
+      "sha256": "aad0b5e754b41af9e0d24dc419423324f5e9a305401e2465249fa6e1440b352b",
+      "dropbox_content_hash": "eb262979b4bf95df927d786a65ba4bfca6508701199bde175fdc0a5347bef5a6",
+      "new_file_id": "id:pdXqx4wRBdMAAAAAAAL_rg",
+      "upload_status": "completed",
+      "independent_readback": {
+        "content_equal": true,
+        "size_equal": true,
+        "dropbox_content_hash_equal": true
+      },
+      "backup": {
+        "path": "docs/PROCESS_CHART.backup-2026-10-27-01.md",
+        "file_id": "id:pdXqx4wRBdMAAAAAAAL-QQ",
+        "bytes": 6693,
+        "content_hash": "094b0bb34abdc2988a361b34aa7a7c7dfa38ce6cd7405cbd09e8ad559356c66b",
+        "original_file_renamed": true,
+        "original_identity_and_hash_preserved": true
+      }
+    },
+    {
+      "path": "docs/TESTING.md",
+      "bytes": 18063,
+      "sha256": "6e01a07d214a34140f217d4deb04273d2afad8b37f95be3559f42d6deb86255d",
+      "dropbox_content_hash": "14d957cf2f0171b31e82c6abc858a7e0fa9f6338fefa76089107c0158d5bc3d7",
+      "new_file_id": "id:pdXqx4wRBdMAAAAAAAL_rw",
+      "upload_status": "completed",
+      "independent_readback": {
+        "content_equal": true,
+        "size_equal": true,
+        "dropbox_content_hash_equal": true
+      },
+      "backup": {
+        "path": "docs/TESTING.backup-2026-10-27-01.md",
+        "file_id": "id:pdXqx4wRBdMAAAAAAAL-Pw",
+        "bytes": 15546,
+        "content_hash": "12bb9973a59af4569e1c0c37072298ab1fadab1ba283cba50e4fc8eb06256b62",
+        "original_file_renamed": true,
+        "original_identity_and_hash_preserved": true
+      }
+    }
+  ],
+  "protected_formal_sources": [
+    {
+      "path": "test/integration.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAL96A",
+      "bytes": 3320,
+      "content_hash": "f022e87ee12eb870daf4c46fb835f7f326c29afbe952d40f70e2c85a428a427e",
+      "unchanged": true
+    },
+    {
+      "path": "test/run-integration.cjs",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK__Q",
+      "bytes": 1166,
+      "content_hash": "0161d026f17fd57a4be862807c36a4bca65b7470300ab7786d4929909a1d1fb5",
+      "unchanged": true
+    },
+    {
+      "path": "test-results/gui-integration-formal-0.2.0-20261026-131806.log",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAL-0A",
+      "bytes": 1815,
+      "content_hash": "a8c69c7e1fffbe02047dd04cf6248797dee48c869ebef66e55d0145bd9e8d5c9",
+      "unchanged": true
+    }
+  ],
+  "existing_artifacts": [
+    {
+      "path": "dist/markdown-preview-via-js-transforms-0.2.0.vsix",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_zA",
+      "bytes": 36636,
+      "content_hash": "64ee6152b3468992ef4989aa78a24a4b582abfbc2d0cc168211fecdf21b5cb7e",
+      "matches_prior_verified_delivery_record": true,
+      "rebuilt": false,
+      "archive_crc_or_installation_rerun": false
+    },
+    {
+      "path": "dist/markdown-preview-via-js-transforms-0.2.0-source.zip",
+      "file_id": "id:pdXqx4wRBdMAAAAAAAK_yw",
+      "bytes": 72338,
+      "content_hash": "c6570e6ecc6e203eca090d65dc90699cfb5413346a16fa0f3f9f80ca3a0a3274",
+      "matches_prior_verified_delivery_record": true,
+      "rebuilt": false,
+      "archive_crc_or_installation_rerun": false
+    }
+  ],
+  "scope": {
+    "existing_documents_updated": 6,
+    "new_result_records": 1,
+    "source_or_test_code_changed": false,
+    "version_changed": false,
+    "vsix_or_source_archive_rebuilt": false,
+    "automated_tests_rerun": false,
+    "cli_install_rerun": false,
+    "user_reports_modified": false,
+    "prior_result_and_save_receipts_modified": false,
+    "external_instructions_changed": false,
+    "chatgpt_project_settings_changed": false,
+    "github_writes": false,
+    "github_live_state_checked": false,
+    "release_published": false,
+    "marketplace_published": false,
+    "unrelated_files_mutated": false
+  },
+  "acceptance": {
+    "migration_passed": 5,
+    "M2": "not_applicable",
+    "continuing_checks_passed": 16,
+    "unexecuted_gui_scope_expanded": false
+  },
+  "stage_completion": {
+    "stage5": "complete within documented evidence and environments; limitations retained",
+    "stage6": "complete for existing artifacts and current documentation: 7 of 7 saves and independent readbacks passed; 6 of 6 original-file rename backups verified",
+    "github_sync": "not performed, explicitly excluded by user"
+  },
+  "remaining": [
+    "Optional later GitHub synchronization of this documentation update; no writes authorized in this task.",
+    "External instruction self-reference and ChatGPT project setting alignment remain separate work.",
+    "mutex/DEP0190/DEP0040 causes and remediation not investigated.",
+    "M2 and previously unexecuted GUI behaviors/environments retain their prior status."
+  ],
+  "recovery": "Preserve the current replacement under a new unused name; verify original path is free, then rename the corresponding backup back to its original name. Do not overwrite or delete either version.",
+  "self_verification": "This receipt is created after the 7 document saves and readbacks; it is saved and independently checked separately. Its own result is reported in the conversation to avoid a self-referential hash."
+}

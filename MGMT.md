@@ -1,10 +1,12 @@
 # 開発・進捗記録
 
-更新: 2026-10-26（Asia/Tokyo）。対象: Markdown Preview via JS Transforms 0.2.0。
+**最新の記録（2026-10-27）:** 2026-10-26 13:18 JSTの追加正式実行もPASS・終了コード0。07:07の先行合格とは別の原ログで確認した。移行5件合格・M2対象なし、継続16件合格と既存の未検証範囲は維持する。 [追加実行結果](docs/GUI-INTEGRATION-RECHECK-0.2.0-2026-10-26-131806.md)を参照。今回の更新は文書のみで、コード・テストコード・VSIX・ソースZIPの変更や再試験、GitHub反映、Release・Marketplace公開は行っていない。従来の同期済み記録は過去の履歴であり、今回分はGitHub未反映。今回の保存・独立読戻しの成否は [保存照合記録](docs/SAVE-VERIFICATION-0.2.0-GUI-RECHECK-2026-10-27.json)に分けて記録する。
+
+更新: 2026-10-27（Asia/Tokyo）。対象: Markdown Preview via JS Transforms 0.2.0。
 
 ## 現在地
 
-**0.2.0のユーザー実機受入を正式記録へ反映し、工程5・6の受入・納品整理を完了した。受入文書9件と保存照合記録1件はGitHubのmainへ同期し、10件の独立読戻しを確認した。** 2026-10-26に正式GUI統合テストの合格を確認した（Windows 11／VS Code 1.105.1／内蔵Node.js 22.19.0）。[正式結果](docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md)と[今回の保存・GitHub同期記録](docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json)を参照する。GitHub同期は受入試験と別に記録する。
+**0.2.0のユーザー実機受入を正式記録へ反映し、工程5・6の受入・納品整理を完了した。受入文書9件と保存照合記録1件はGitHubのmainへ同期し、10件の独立読戻しを確認した。** 2026-10-26に正式GUI統合テストの合格を確認した（Windows 11／VS Code 1.105.1／内蔵Node.js 22.19.0）。[正式結果](docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md)と[先行する07:07実行分の保存・GitHub同期記録](docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json)を参照する。GitHub同期は受入試験と別に記録する。
 
 - 移行確認M1〜M6: 5件合格、M2は「対象なし」。6件合格とは数えない。
 - 継続確認16項目: 16件合格。無限ループと未完了Promiseは追試の結果で確定した。
@@ -40,7 +42,7 @@ Node.js 24.22.1とVS Code 1.105.1内蔵Node.js 22.19.0で各24件成功という
 
 指示書フォルダの現存ファイルは `Dropbox\ai\ChatGPT\project\markdown-preview-via-js-transforms\instructions-mpvjt.md` と `seed-prompt-mpvjt.md`。開発文書の参照先はこの実名へ修正した。指示書本文には旧自己参照の `instructions.md` / `seed-prompt.md` が残っている。外部指示書とChatGPTプロジェクト設定欄は今回変更しておらず、その整合は別の残課題とする。
 
-## GUI統合テストの正式完了（2026-10-26）
+## GUI統合テストの正式完了（2026-10-26 07:07実行の履歴）
 
 正式な `npm.cmd run test:integration` → `test/run-integration.cjs` → `test/integration.cjs` をユーザーのWindows実機で実行した。Dropboxの原ログ `test-results/gui-integration-formal-0.2.0-20261026-070712.log` を独立取得し、テストのSHA-256、`MPJST_INTEGRATION_PASS vscode=1.105.1 node=22.19.0`、拡張ホストとランナーの終了コード0、`MPJST_FORMAL_EXIT_CODE=0` を照合した。起動側Node.js 24.21.0はユーザーの端末出力、内蔵22.19.0はPASS行に基づく。
 
@@ -48,6 +50,16 @@ Node.js 24.22.1とVS Code 1.105.1内蔵Node.js 22.19.0で各24件成功という
 
 診断用4ファイルは元のtest/に保持し、削除・上書き・改名・今回のGitHub同期の対象にしない。正式テストの元ファイルは `test/integration.backup-2026-10-26-01.cjs` に改名済み。文書9件も同じディレクトリの未使用の `.backup-2026-10-26-01` へ元そのものを改名してから新規保存する。詳細な合格範囲・未検証範囲・ログ中の警告は [正式結果](docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md)、保存照合と限定同期の結果は [SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json](docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json) を参照する。記録に実際の成功があることを完了条件とする。
 
+## 13:18追加実行の反映と工程再評価（2026-10-27）
+
+指定原ログ `test-results/gui-integration-formal-0.2.0-20261026-131806.log` を読み戻し、1,815 bytes、SHA-256 `3255ab434228bebd2f559c9eff766c19279b349edb2850301bc7bfaff66bfb4d`、Dropbox Content Hashを照合した。記録された正式テストSHA-256は現行 `test/integration.cjs` と一致し、PASS行、拡張ホスト終了コード0、ランナー終了コード0、`MPJST_FORMAL_EXIT_CODE=0` を確認した。今回ログで確認できる実行環境はWindowsパス、VS Code 1.105.1、拡張ホストNode.js 22.19.0。起動側Node.jsの版とOS詳細は今回ログにないため先行実行から転記しない。
+
+mutexエラー、DEP0190、DEP0040、進捗記号の文字化けは残っている。正式assertと終了コードの合格とは分離し、原因特定・解消・常時無害のいずれも未確認として記録する。今回新たな失敗はログで確認されず、製品変更を行う根拠にはしない。
+
+工程5は確認済み環境・範囲で完了を維持。工程6は既存成果物の存在・既記録ハッシュとの整合、今回の文書保存・改名保全・独立読戻し全件成功を条件に完了を維持する。今回の詳細は [追加実行結果](docs/GUI-INTEGRATION-RECHECK-0.2.0-2026-10-26-131806.md)、保存の実績は [保存照合記録](docs/SAVE-VERIFICATION-0.2.0-GUI-RECHECK-2026-10-27.json)を参照する。
+
 ## 次の工程
 
-0.2.0は確認済みの環境・対応範囲で通常利用・保守へ移行できる。合格済みの実機試験を一律にやり直す必要はない。従来の受入文書同期に加え、正式GUI統合テストも確認済みの環境・スクリプト範囲で完了した。今回差分の同期・読戻しは [保存・同期記録](docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json) を参照する。後続課題は外部指示書の参照先・プロジェクト設定の整合。詳細と実行用指示は [docs/PROCESS_CHART.md](docs/PROCESS_CHART.md)。M2対象なし、未検証の環境・機能を維持する。
+0.2.0は確認済みの環境・対応範囲で通常利用・保守へ移行できる。合格済みの実機試験を一律にやり直す必要はない。従来の受入文書同期に加え、正式GUI統合テストも確認済みの環境・スクリプト範囲で完了した。先行する07:07実行分の同期・読戻しは [過去の保存・同期記録](docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json) を参照する。後続課題は外部指示書の参照先・プロジェクト設定の整合。詳細と実行用指示は [docs/PROCESS_CHART.md](docs/PROCESS_CHART.md)。M2対象なし、未検証の環境・機能を維持する。
+
+今回分のGitHub反映はユーザー指定により未実施。必要になった時に今回の文書差分だけを別途同期する。外部指示書の自己参照とプロジェクト設定欄の整合は別課題で、今回は変更していない。

@@ -1,5 +1,7 @@
 # Markdown Preview via JS Transforms
 
+**最新の記録（2026-10-27）:** 2026-10-26 13:18 JSTの追加正式実行もPASS・終了コード0。07:07の先行合格とは別の原ログで確認した。移行5件合格・M2対象なし、継続16件合格と既存の未検証範囲は維持する。 [追加実行結果](docs/GUI-INTEGRATION-RECHECK-0.2.0-2026-10-26-131806.md)を参照。今回の更新は文書のみで、コード・テストコード・VSIX・ソースZIPの変更や再試験、GitHub反映、Release・Marketplace公開は行っていない。従来の同期済み記録は過去の履歴であり、今回分はGitHub未反映。今回の保存・独立読戻しの成否は [保存照合記録](docs/SAVE-VERIFICATION-0.2.0-GUI-RECHECK-2026-10-27.json)に分けて記録する。
+
 YAML・Markdown・Plaintextを、自分で書いたJavaScriptでMarkdownへ変換し、VS Code標準のMarkdownプレビューに表示する拡張機能です。
 
 **変換はコマンド実行時だけ。入力やJavaScriptを保存・自動保存しても、変換しません。**
@@ -8,7 +10,7 @@ YAML・Markdown・Plaintextを、自分で書いたJavaScriptでMarkdownへ変�
 
 **0.2.0の実機受入を記録済みです（2026-10-25）。** 移行確認は5件合格・M2は対象なし、継続確認16項目は追試を含め全件合格です。報告環境はWindows 11 Pro 26H2／VS Code 1.143.1／内蔵Node.js 24.21.0。この手動受入とは別に、2026-10-26、Windows 11／VS Code 1.105.1／内蔵Node.js 22.19.0で正式GUI統合テストもPASS・終了コード0を確認しました。[正式結果](docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md)に検証範囲と原ログの照合結果を記録しています。判定と根拠は [ACCEPTANCE.md](docs/ACCEPTANCE.md)、検証方法ごとの範囲は [TESTING.md](docs/TESTING.md) を参照してください。
 
-今回の更新は統合テストのWindowsルート表記修正と結果文書です。製品本体と版番号は変更していません。既存の [VSIX](dist/markdown-preview-via-js-transforms-0.2.0.vsix) と [ソースZIP](dist/markdown-preview-via-js-transforms-0.2.0-source.zip) を引き続き使えます。同梱文書は作成時点の受入前スナップショットなので、最新の結果は開発ルートの文書を参照してください。受入文書と保存照合記録はGitHubへ同期済みです。従来の受入文書同期は [2026-10-25の照合記録](docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json)、今回のGUI検証関連差分の保存・同期結果は [SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json](docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json) を参照してください。ソースZIP内のテストは修正前のスナップショットで、再実行には開発ルートの正式テストを使います。
+先行する2026-10-26 07:07実行までの更新は統合テストのWindowsルート表記修正と結果文書です。製品本体と版番号は変更していません。既存の [VSIX](dist/markdown-preview-via-js-transforms-0.2.0.vsix) と [ソースZIP](dist/markdown-preview-via-js-transforms-0.2.0-source.zip) を引き続き使えます。同梱文書は作成時点の受入前スナップショットなので、最新の結果は開発ルートの文書を参照してください。先行記録では受入文書と保存照合記録をGitHubへ同期済みです（今回の追加結果は未反映）。従来の受入文書同期は [2026-10-25の照合記録](docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json)、先行する07:07実行分のGUI検証関連差分の保存・同期結果は [SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json](docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json) を参照してください。ソースZIP内のテストは修正前のスナップショットで、再実行には開発ルートの正式テストを使います。
 
 ## インストールと最初の実行
 
