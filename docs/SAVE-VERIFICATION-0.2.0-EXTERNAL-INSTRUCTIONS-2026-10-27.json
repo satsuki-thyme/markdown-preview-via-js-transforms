@@ -1,0 +1,224 @@
+{
+  "schema": "external-instructions-save-verification-v1",
+  "recorded_date": "2026-10-27",
+  "timezone": "Asia/Tokyo",
+  "project": "Markdown Preview via JS Transforms",
+  "scope": "External instruction references and progress documentation only",
+  "result": "PASS",
+  "updated_files": [
+    {
+      "name": "instructions-mpvjt.md",
+      "destination": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mpvjt.md",
+      "backup": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mpvjt.backup-2026-10-27-01.md",
+      "old_id": "id:pdXqx4wRBdMAAAAAAALAAQ",
+      "old_size": 17432,
+      "old_content_hash": "0e614a327ff9e7893d0297bfe737229a09e58dab31fbaf99e74766eed475654a",
+      "local_path": "/workspace/scratch/9c4b59a54158/updated/instructions-mpvjt.md",
+      "new_size": 17565,
+      "new_sha256": "cd8cb5911af73d8fda932dbf3b8565eb5386d46e6a77409ab04e6a48e98460ae",
+      "new_content_hash": "2898139193fd342f1d8fd9dd5b6d36e20185799c1bb3feb3b86120d9f5c5e1d8"
+    },
+    {
+      "name": "instructions-mdpjsp.md",
+      "destination": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mdpjsp.md",
+      "backup": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mdpjsp.backup-2026-10-27-01.md",
+      "old_id": "id:pdXqx4wRBdMAAAAAAALAAA",
+      "old_size": 670,
+      "old_content_hash": "23e721bd6629c69549c23e2810288622f77403fd09396f6669d156f4ab91b3f8",
+      "local_path": "/workspace/scratch/9c4b59a54158/updated/instructions-mdpjsp.md",
+      "new_size": 731,
+      "new_sha256": "5eb1aeebf689972108a512b335d8bee6f4d15e04e50516f4e37cd88a62686729",
+      "new_content_hash": "bf9440f2b3a79b8866a785a8eb3b425ac27b2ea240f45e93e6170a42ed24278a"
+    },
+    {
+      "name": "MGMT.md",
+      "destination": "/www/studio/markdown-preview-via-js-transforms/MGMT.md",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/MGMT.backup-2026-10-27-02.md",
+      "old_id": "id:pdXqx4wRBdMAAAAAAAL_qg",
+      "old_size": 11780,
+      "old_content_hash": "4b6ee4cedb1fefbb0554a727009ac47f055a66f423cfc7109645798a78d020ab",
+      "local_path": "/workspace/scratch/9c4b59a54158/updated/MGMT.md",
+      "new_size": 15340,
+      "new_sha256": "295e979b1fde7494058f31b6754b62b3a1229dfe1749ad4dfd439d2465401747",
+      "new_content_hash": "0237fd202e7d3f87d6562e19e0d2a0e53371e71751abe5beb1a6c904ac5264f1"
+    },
+    {
+      "name": "PROCESS_CHART.md",
+      "destination": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.md",
+      "backup": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.backup-2026-10-27-02.md",
+      "old_id": "id:pdXqx4wRBdMAAAAAAAL_rg",
+      "old_size": 8397,
+      "old_content_hash": "eb262979b4bf95df927d786a65ba4bfca6508701199bde175fdc0a5347bef5a6",
+      "local_path": "/workspace/scratch/9c4b59a54158/updated/PROCESS_CHART.md",
+      "new_size": 9853,
+      "new_sha256": "0b9e69f13fc31517a632d78a6de129e684fa70d80186e9e91af58b87c54061f7",
+      "new_content_hash": "266333a6756971b2266c7c60fa96d61696a49e1c901babf3eba2c991e5d2ab3e"
+    }
+  ],
+  "independent_readback": [
+    {
+      "content_hash": "2898139193fd342f1d8fd9dd5b6d36e20185799c1bb3feb3b86120d9f5c5e1d8",
+      "id": "id:pdXqx4wRBdMAAAAAAAL_4Q",
+      "name": "instructions-mpvjt.md",
+      "path": "ns:466153749//ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mpvjt.md",
+      "path_display": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mpvjt.md",
+      "size": 17565,
+      "sha256": "cd8cb5911af73d8fda932dbf3b8565eb5386d46e6a77409ab04e6a48e98460ae",
+      "bytes_equal": true,
+      "size_equal": true,
+      "content_hash_equal": true
+    },
+    {
+      "content_hash": "bf9440f2b3a79b8866a785a8eb3b425ac27b2ea240f45e93e6170a42ed24278a",
+      "id": "id:pdXqx4wRBdMAAAAAAAL_4g",
+      "name": "instructions-mdpjsp.md",
+      "path": "ns:466153749//ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mdpjsp.md",
+      "path_display": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mdpjsp.md",
+      "size": 731,
+      "sha256": "5eb1aeebf689972108a512b335d8bee6f4d15e04e50516f4e37cd88a62686729",
+      "bytes_equal": true,
+      "size_equal": true,
+      "content_hash_equal": true
+    },
+    {
+      "content_hash": "0237fd202e7d3f87d6562e19e0d2a0e53371e71751abe5beb1a6c904ac5264f1",
+      "id": "id:pdXqx4wRBdMAAAAAAAL_4w",
+      "name": "MGMT.md",
+      "path": "ns:466153749//www/studio/markdown-preview-via-js-transforms/MGMT.md",
+      "path_display": "/www/studio/markdown-preview-via-js-transforms/MGMT.md",
+      "size": 15340,
+      "sha256": "295e979b1fde7494058f31b6754b62b3a1229dfe1749ad4dfd439d2465401747",
+      "bytes_equal": true,
+      "size_equal": true,
+      "content_hash_equal": true
+    },
+    {
+      "content_hash": "266333a6756971b2266c7c60fa96d61696a49e1c901babf3eba2c991e5d2ab3e",
+      "id": "id:pdXqx4wRBdMAAAAAAAL_5A",
+      "name": "PROCESS_CHART.md",
+      "path": "ns:466153749//www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.md",
+      "path_display": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.md",
+      "size": 9853,
+      "sha256": "0b9e69f13fc31517a632d78a6de129e684fa70d80186e9e91af58b87c54061f7",
+      "bytes_equal": true,
+      "size_equal": true,
+      "content_hash_equal": true
+    },
+    {
+      "content_hash": "0e614a327ff9e7893d0297bfe737229a09e58dab31fbaf99e74766eed475654a",
+      "id": "id:pdXqx4wRBdMAAAAAAALAAQ",
+      "name": "instructions-mpvjt.backup-2026-10-27-01.md",
+      "path": "ns:466153749//ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mpvjt.backup-2026-10-27-01.md",
+      "path_display": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mpvjt.backup-2026-10-27-01.md",
+      "size": 17432,
+      "sha256": "dc2560fdc7405d726e8fab0ed4b7ac83a01ea88904061923606c5df0eef8a0e4",
+      "bytes_equal": true,
+      "size_equal": true,
+      "content_hash_equal": true
+    },
+    {
+      "content_hash": "23e721bd6629c69549c23e2810288622f77403fd09396f6669d156f4ab91b3f8",
+      "id": "id:pdXqx4wRBdMAAAAAAALAAA",
+      "name": "instructions-mdpjsp.backup-2026-10-27-01.md",
+      "path": "ns:466153749//ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mdpjsp.backup-2026-10-27-01.md",
+      "path_display": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/instructions-mdpjsp.backup-2026-10-27-01.md",
+      "size": 670,
+      "sha256": "2c6f24a631f8fc6312f6977efbef135b956af0203113dcca4e31a40720e29d28",
+      "bytes_equal": true,
+      "size_equal": true,
+      "content_hash_equal": true
+    },
+    {
+      "content_hash": "4b6ee4cedb1fefbb0554a727009ac47f055a66f423cfc7109645798a78d020ab",
+      "id": "id:pdXqx4wRBdMAAAAAAAL_qg",
+      "name": "MGMT.backup-2026-10-27-02.md",
+      "path": "ns:466153749//www/studio/markdown-preview-via-js-transforms/MGMT.backup-2026-10-27-02.md",
+      "path_display": "/www/studio/markdown-preview-via-js-transforms/MGMT.backup-2026-10-27-02.md",
+      "size": 11780,
+      "sha256": "b6400322987885461edbcf055f12e6a3ee3f220d2a387434e85115df71050a93",
+      "bytes_equal": true,
+      "size_equal": true,
+      "content_hash_equal": true
+    },
+    {
+      "content_hash": "eb262979b4bf95df927d786a65ba4bfca6508701199bde175fdc0a5347bef5a6",
+      "id": "id:pdXqx4wRBdMAAAAAAAL_rg",
+      "name": "PROCESS_CHART.backup-2026-10-27-02.md",
+      "path": "ns:466153749//www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.backup-2026-10-27-02.md",
+      "path_display": "/www/studio/markdown-preview-via-js-transforms/docs/PROCESS_CHART.backup-2026-10-27-02.md",
+      "size": 8397,
+      "sha256": "aad0b5e754b41af9e0d24dc419423324f5e9a305401e2465249fa6e1440b352b",
+      "bytes_equal": true,
+      "size_equal": true,
+      "content_hash_equal": true
+    },
+    {
+      "content_hash": "a58fd152ccc9afe552c1f67912cd8031f1aaf8656f6871fb9d7fe1eca7d84a78",
+      "id": "id:pdXqx4wRBdMAAAAAAAK-Mg",
+      "name": "seed-prompt-mpvjt.md",
+      "path": "ns:466153749//ai/ChatGPT/project/markdown-preview-via-js-transforms/seed-prompt-mpvjt.md",
+      "path_display": "/ai/ChatGPT/project/markdown-preview-via-js-transforms/seed-prompt-mpvjt.md",
+      "size": 7853,
+      "sha256": "98f6a518c9aed34d307ee250d1c7e8452a44bd24e396663e911cfbd0a79392f6",
+      "bytes_equal": true,
+      "size_equal": true,
+      "content_hash_equal": true
+    }
+  ],
+  "untouched_directory_children_metadata_checks": [
+    {
+      "folder": "/ai/ChatGPT/project/markdown-preview-via-js-transforms",
+      "checked": 2,
+      "unchanged": true,
+      "bad": []
+    },
+    {
+      "folder": "/www/studio/markdown-preview-via-js-transforms",
+      "checked": 34,
+      "unchanged": true,
+      "bad": []
+    },
+    {
+      "folder": "/www/studio/markdown-preview-via-js-transforms/docs",
+      "checked": 59,
+      "unchanged": true,
+      "bad": []
+    }
+  ],
+  "checks": {
+    "instructions_only_three_reference_edits": true,
+    "requirements_section_and_later_unchanged": true,
+    "seed_unchanged_byte_for_byte": true,
+    "backup_original_ids_preserved": true,
+    "updated_files_readback_count": 4,
+    "backups_readback_count": 4,
+    "seed_readback_count": 1
+  },
+  "project_settings": {
+    "status": "not_applied",
+    "readback": "not_performed",
+    "reason": "Cloud browser opening https://chatgpt.com was rejected because automatic approval review could not complete due to usage limit. No settings screen reached; no browser workaround attempted.",
+    "handoff": "Open target project instructions, inspect unrelated changes, replace with full instructions-mpvjt.md, save, reopen and compare the full text. Menu labels were not verified."
+  },
+  "preserved_acceptance": {
+    "gui_environment": "Windows 11 / VS Code 1.105.1 / extension-host Node.js 22.19.0",
+    "scope": "Existing formal integration script assertions only; not pixel/DOM/actual image rendering or all supported versions/features",
+    "additional_1318_environment_limits": "OS details and launcher Node.js version are not present in that log",
+    "migration_pass_count": 5,
+    "M2": "not_applicable",
+    "continuation_pass_count": 16,
+    "warnings": "mutex, DEP0190, DEP0040 causes unresolved; distinct from PASS and exit code 0"
+  },
+  "not_performed": [
+    "product or test code modification",
+    "input or transform JS modification",
+    "seed requirement modification",
+    "existing distribution or backup modification",
+    "test rerun",
+    "VSIX/source ZIP rebuild",
+    "GitHub write",
+    "Release/Marketplace publish"
+  ],
+  "verification_record_self_check": "This JSON is uploaded after the above results. Its own independent readback is reported separately in the final response, avoiding a self-referential hash.",
+  "recovery": "Preserve current replacement by renaming it to a new unused name, verify original path vacant, then move the matching backup to original path. Do not overwrite or delete."
+}
