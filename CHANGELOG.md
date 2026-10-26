@@ -19,6 +19,13 @@
 - 受入文書9件と保存照合記録1件をmainへ反映し、10件を独立読戻しでDropbox原本と照合。対象外102ファイルは不変。同期後の状態記録と保存照合を追加。
 - 移行5件合格・M2対象なし、継続16項目合格、自動GUI統合未実施を維持。コード変更、VSIX／ソースZIP再作成、Release／Marketplace公開は実施しない。旧保存記録は当時の証拠として保持。詳細は [docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json](docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json)。
 
+### 正式GUI統合テストの完了 — 2026-10-26（テスト・文書）
+
+- `test/integration.cjs` の最初のrunPairに、VS Codeが返す所属ルートを渡すよう最小修正。Windowsのドライブ文字の大小差による試験側の不一致を解消し、ルート未取得はassertで失敗させる。既存のGUI検証項目は維持。
+- Windows 11／VS Code 1.105.1／内蔵Node.js 22.19.0で正式ランナーのPASSと終了コード0を、ユーザー報告・Dropbox原ログ・テストのSHA-256で照合。起動側Node.jsは24.21.0。準備時のLinux／Node.js 24.22.1の既存24件も合格。
+- 診断4ファイル、既存バックアップ、原ログ、製品本体、VSIX、ソースZIPを保全。M2対象なしを維持。ログのDEP0190／DEP0040／mutexメッセージは残し、警告解消や全環境の検証済みとは扱わない。
+- [正式結果](docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md)、[保存・限定同期記録](docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json)を追加。旧版・受入時・準備時の記録は当時の履歴として保持する。
+
 ## 0.1.1 — 2026-10-24
 
 - 再実行時にプレビューのさらに横へ新しいタブが開く問題へ対応。VS Code内蔵のMarkdown PreviewエディターをURIとエディター種別で探し、既存タブのグループで開くよう変更。

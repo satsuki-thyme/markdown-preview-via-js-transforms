@@ -1,0 +1,810 @@
+{
+  "schema": "mpjst-formal-gui-save-and-github-verification-v1",
+  "recorded_at": "2026-10-26T12:33:52.751890+09:00",
+  "version": "0.2.0",
+  "status": "formal_gui_passed_management_documents_saved_and_project_sync_verified",
+  "formal_gui": {
+    "executed_by": "user on Windows hardware; not remotely executed by the assistant",
+    "os": "Windows 11 (user report)",
+    "vscode": "1.105.1",
+    "runner_node": "24.21.0",
+    "runner_node_evidence": "User terminal node --version; absent from the saved log",
+    "extension_host_node": "22.19.0",
+    "extension_host_node_evidence": "Formal PASS marker",
+    "command": "npm.cmd run test:integration",
+    "runner": "test/run-integration.cjs",
+    "test": "test/integration.cjs",
+    "test_sha256": "9c51bc2d48f767a424e06fad2a88da9cde6d4837bc8346fa5c7998c52bffd848",
+    "pass_marker": "MPJST_INTEGRATION_PASS vscode=1.105.1 node=22.19.0",
+    "extension_host_exit_code": 0,
+    "runner_exit_code": 0,
+    "powershell_exit_code": 0,
+    "saved_log": {
+      "path": "test-results/gui-integration-formal-0.2.0-20261026-070712.log",
+      "bytes": 1812,
+      "sha256": "f1fc0c2ebceaedcf48c3de3c2e451b5c9700988fd174deb53199684111045aa1",
+      "dropbox_content_hash": "ef6805f0f671979e22eca68f8bfc1147b435c6a5be6988f01b5808f7fa6e5352",
+      "git_blob": "055822732d2aa1293bef56e83cf3dfb649ee2b4e",
+      "independent_raw_download_verified": true,
+      "formal_test_hash_matches": true,
+      "preserved": true,
+      "published_to_github": false
+    },
+    "log_messages_retained": [
+      "DEP0190",
+      "DEP0040",
+      "Error: Error mutex already exists",
+      "garbled progress symbols"
+    ],
+    "warning_resolution_claimed": false,
+    "scope": "Existing integration assertions: activation, transformation, virtual Markdown content, preview tabs/reuse/reopen, explicit rerun, cancellation and retained previous result",
+    "not_newly_verified": [
+      "Pixel or Webview DOM rendering",
+      "Candidate-selection UI",
+      "Restricted Mode",
+      "Multi-root workspaces",
+      "Restart restoration",
+      "Natural timeout",
+      "Pending Promise behavior",
+      "All supported VS Code versions"
+    ]
+  },
+  "test_change": {
+    "file": "test/integration.cjs",
+    "summary": "Use getWorkspaceFolder(Uri.file(input))?.uri.fsPath as the first runPair root; assert root exists. Preserve all existing integration assertions.",
+    "added_lines": 4,
+    "removed_lines": 1,
+    "product_changes": false,
+    "formal_runner_changed": false,
+    "version_changed": false,
+    "vsix_rebuilt": false
+  },
+  "preparation_checks": {
+    "syntax": {
+      "exit_code": 0,
+      "file": "test/integration.cjs"
+    },
+    "root_argument_probe": {
+      "cases": [
+        "Windows C: temporary root vs c: VS Code root",
+        "POSIX case preservation",
+        "Missing workspace fails before runPair"
+      ],
+      "passed": 3,
+      "scope": "VM with stubbed VS Code API; stops before transformation or GUI assertions; not a GUI test"
+    },
+    "existing_unit_tests": {
+      "platform": "Linux",
+      "node": "24.22.1",
+      "command": "node --test --test-concurrency=1 --test-reporter=tap test/*.test.cjs",
+      "total": 24,
+      "passed": 24,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "duration_ms": 5783.93202,
+      "scope": "Unmodified downloaded product/test sources; does not execute test/integration.cjs"
+    },
+    "unit_tests_repeated_after_formal_result": false
+  },
+  "acceptance_preserved": {
+    "migration_passed": 5,
+    "M2": "not_applicable",
+    "continuing_checks_passed": 16,
+    "previous_user_reports_modified": false
+  },
+  "backup_method": "Rename the original file in the same directory; never copy as a substitute, overwrite an existing backup, or delete it",
+  "renamed_backups": [
+    {
+      "source": "test/integration.cjs",
+      "backup": "test/integration.backup-2026-10-26-01.cjs",
+      "same_directory": true,
+      "original_identity_retained": true,
+      "independent_bytes_equal": true,
+      "evidence": "Preparation-phase rename and raw readback; final metadata hash and identity unchanged",
+      "bytes": 3062,
+      "sha256": "13c36a97764a946b8e24e973589fa35c7764e27733087c05a60746b3b899ebde",
+      "dropbox_content_hash": "295c1dd3d92c89cddfab63a83b7338723174aec544ce1330b232f183b85f88b5",
+      "git_blob": "9b43caebdc903b33a465c0c43f2355105d9c16c4"
+    },
+    {
+      "source": "MGMT.md",
+      "backup": "MGMT.backup-2026-10-26-01.md",
+      "same_directory": true,
+      "original_identity_retained": true,
+      "independent_bytes_equal": true,
+      "bytes": 6881,
+      "sha256": "3527c0880c6db14ea2af0fe7f79505a1a254720eecdeba0524e9b0d2a5619b86",
+      "dropbox_content_hash": "b90426b7ff2ebda29219c538c9438c759783dfda070849cb6a7883a568fca9ba",
+      "git_blob": "f739a51ff977f14bd8c53f2f31415c1f9db8b18c"
+    },
+    {
+      "source": "README.md",
+      "backup": "README.backup-2026-10-26-01.md",
+      "same_directory": true,
+      "original_identity_retained": true,
+      "independent_bytes_equal": true,
+      "bytes": 12136,
+      "sha256": "78a3ec098df6694d81fb6dbcf42f403c3a66d55816adf9966c1fe85240f4ffc7",
+      "dropbox_content_hash": "fd8c6eb38d9bf610d85fbadf114cea5dcd5372a9289177ea01c336757f218b4c",
+      "git_blob": "bbc55b19b6070a6a9550f385506e045525264e45"
+    },
+    {
+      "source": "CHANGELOG.md",
+      "backup": "CHANGELOG.backup-2026-10-26-01.md",
+      "same_directory": true,
+      "original_identity_retained": true,
+      "independent_bytes_equal": true,
+      "bytes": 3356,
+      "sha256": "88bc4f2cef0f66d78a53aa046c15c010bf8ba285992f739e630041f9102bc858",
+      "dropbox_content_hash": "4bf5c6d79a1aff996af74e9351919b6b72472decf97cf49a75f7cc07344f6c23",
+      "git_blob": "ce0634076cf411c4a06f64e6cee0847b4f770bd9"
+    },
+    {
+      "source": "docs/TESTING.md",
+      "backup": "docs/TESTING.backup-2026-10-26-01.md",
+      "same_directory": true,
+      "original_identity_retained": true,
+      "independent_bytes_equal": true,
+      "bytes": 13330,
+      "sha256": "b13f97385715aa0ad95cd9d73593ae0884ec34fb02d1c6c7b47a797aacc4eeaa",
+      "dropbox_content_hash": "7f7a0b4b6cb885107e2ba59ba16baf20f1b11aa3cc56ea92d361c95c27f3d6f3",
+      "git_blob": "6cd57e757d061cfad29dcd14034d973960291347"
+    },
+    {
+      "source": "docs/ACCEPTANCE.md",
+      "backup": "docs/ACCEPTANCE.backup-2026-10-26-01.md",
+      "same_directory": true,
+      "original_identity_retained": true,
+      "independent_bytes_equal": true,
+      "bytes": 10025,
+      "sha256": "2b9774a433ec855ca043a5bfceaf1c659d18ac27cb65483661df0ed456d0f142",
+      "dropbox_content_hash": "5b6e748c81d0226b8dedad64668a571e4b4a829a7645d66a0da61c594c25dbea",
+      "git_blob": "24b626034f0adfdce6b79501babd3e3e438b9373"
+    },
+    {
+      "source": "docs/PROCESS_CHART.md",
+      "backup": "docs/PROCESS_CHART.backup-2026-10-26-01.md",
+      "same_directory": true,
+      "original_identity_retained": true,
+      "independent_bytes_equal": true,
+      "bytes": 6175,
+      "sha256": "3a56ac5a2ba789a4070626f4784f5a050c6beacba15e665bb918a71af5a1e834",
+      "dropbox_content_hash": "f768e2245b14626d35bc41f3eed1b40f391efd5b8a2654fbd8951f0bf9811dc3",
+      "git_blob": "267cb9048fc9f7391ed18e16195f289c1093f7d5"
+    },
+    {
+      "source": "docs/DESIGN.md",
+      "backup": "docs/DESIGN.backup-2026-10-26-01.md",
+      "same_directory": true,
+      "original_identity_retained": true,
+      "independent_bytes_equal": true,
+      "bytes": 12314,
+      "sha256": "3f072145af41c829a01fe2f6494730aee404433dab7c601f6efdb72629578adb",
+      "dropbox_content_hash": "636816e13a03d41f713b4f6eb768b54614f8c515450e2e5f264afbddc2ca608d",
+      "git_blob": "40512f8faa8622f984e14f6f3f3226d215a50508"
+    },
+    {
+      "source": "docs/MIGRATION_0.2.0.md",
+      "backup": "docs/MIGRATION_0.2.0.backup-2026-10-26-01.md",
+      "same_directory": true,
+      "original_identity_retained": true,
+      "independent_bytes_equal": true,
+      "bytes": 7684,
+      "sha256": "be9a23fe67fdf4d56f23142ff5c8aa95afadfa7a3df3d69c61cd947131ea8cb7",
+      "dropbox_content_hash": "890fd5db6180e8735cf160b1c0b554ae7234ebc38c6a2c869659b5d8f7719c0f",
+      "git_blob": "27edb5903d34ae336e6a40a645dbc11011ea7caa"
+    },
+    {
+      "source": "docs/DELIVERY.json",
+      "backup": "docs/DELIVERY.backup-2026-10-26-01.json",
+      "same_directory": true,
+      "original_identity_retained": true,
+      "independent_bytes_equal": true,
+      "bytes": 8741,
+      "sha256": "fe08917763203208c24df63f29df7166749fdf06188f32e6bd41a722582d70c0",
+      "dropbox_content_hash": "1796d5c79ab9185fb49c17139b305c5847c7d2f6bf2e5f03f577647e9f23af3b",
+      "git_blob": "8e83509b7b401306dc792a2c9ac299005fa088db"
+    },
+    {
+      "source": "docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md",
+      "backup": "docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.backup-2026-10-26-01.md",
+      "same_directory": true,
+      "original_identity_retained": true,
+      "independent_bytes_equal": true,
+      "reason": "Preserve the first saved report before linking the public preparation view",
+      "bytes": 8203,
+      "sha256": "9a65e50a2b9eddc53a6094f1ad96a8084e729b7605180bc01cd26f616e4ebcff",
+      "dropbox_content_hash": "4412c3acf6d6a879dcf94ca20f4369e16fe7ec40d6d744197b879cb88ff7ab05",
+      "git_blob": "a84602b4520c90be5a6621e5a9133eca402dbf8e"
+    }
+  ],
+  "rollback": "Rename any current file to a fresh unused backup name first; verify the original path is empty, then rename the selected preserved original back. Do not overwrite or delete either file.",
+  "saved_and_independently_read_back": [
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 4489,
+      "sha256": "6f8df407ce37af5224c44589b1bb3d970d609a604e17845963a1e9b2aa5dfbfe",
+      "dropbox_content_hash": "8e4f054fcf19abd0315f8b0f7004c789b70250fe436152fb3d479f65a4143226",
+      "git_blob": "09af88d6ed0024df45603f084ffda48ef9bf229c",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    },
+    {
+      "path": "MGMT.md",
+      "bytes": 9198,
+      "sha256": "f3445894d647578d763db35f4703a32450042f73734e0dcbfb314cbb3b7f722e",
+      "dropbox_content_hash": "d868a49762959d2cfbb3e7bf3acffe9f1776c8acefc0405498e83f0ebea8adf9",
+      "git_blob": "8b868443d2191ace7c1a5c3ee55684618fc5e858",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 12760,
+      "sha256": "4e99305e911922611d38d139ff2c8e3e109696212b9b58e678c40dab5f55fbc5",
+      "dropbox_content_hash": "8185d3efe46202e139d370ce3e76e96ac08ea4ba0e93dd1b6c7acd6ebe373655",
+      "git_blob": "a4bcbae48385ddc42bb6de4fa2a930a4ff48a7c8",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    },
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "bytes": 10931,
+      "sha256": "b1e0e63d6af336e8322389c118140efed0a8f38c4fa8c72f3187051a60bd1fc3",
+      "dropbox_content_hash": "5d7117c3a2d76d4905d0ca441908ec0870184cf21c6ed14ea8890b767ff3c2f2",
+      "git_blob": "f69f75557fb6df48ed1c1cefd63655a2796dba71",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    },
+    {
+      "path": "docs/DELIVERY.json",
+      "bytes": 11340,
+      "sha256": "54d5a240392c54505c4aa936a47874c375989f4801edc60932680622472472b2",
+      "dropbox_content_hash": "103c48e8b5c3d5a3cfaf4aca0d068b9873498f5a61f2be55da2460ec01b536e4",
+      "git_blob": "7fe1a962455e361ab496a59d44e6f0e21bef6058",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    },
+    {
+      "path": "docs/DESIGN.md",
+      "bytes": 13688,
+      "sha256": "2cddb67a775dbf7522c242083a2708b251e2c606275fa30e4a02fe82e1a8a362",
+      "dropbox_content_hash": "44d43875bec90f301717c861d0c3a5d015df8afc254ead5e74a5c496d32bcec5",
+      "git_blob": "a70d0fa5f51f31a3978be2eb40a09ad45d94c157",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    },
+    {
+      "path": "docs/GUI-INTEGRATION-RERUN-0.2.0-2026-10-26.md",
+      "bytes": 8527,
+      "sha256": "e3349c1c54470e4db3949456e9bd9e25592503a38cd7ac214195a2a27a3b4474",
+      "dropbox_content_hash": "1ac0fb6e3ddb6317d725f9477094adbaae41be9ea57bb4b309411368bf2feaa8",
+      "git_blob": "dbb5b52f1b0d7cd2c182419f52b4881fa070e15f",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    },
+    {
+      "path": "docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md",
+      "bytes": 8558,
+      "sha256": "64ccc646893cc0cba2120777cb51a0fd6eac83fa21d9bade3b6c554a65834da5",
+      "dropbox_content_hash": "6728d5b972c56e84497f6cc7cd90f15d6135a8799f761f83cfb763c52fca6f32",
+      "git_blob": "8ffd14a37309d48b62a48fc7572bcb79e90acc70",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    },
+    {
+      "path": "docs/MIGRATION_0.2.0.md",
+      "bytes": 7884,
+      "sha256": "944d9b36e58b795a86c6448f7edb8b5b0b2fc207ebed9f916b2ff9a7fc15bfec",
+      "dropbox_content_hash": "91d0f5b0b1a31b87cae30e107660de2257be6ab3c9d2e6a76b06fb88f750996d",
+      "git_blob": "2152f7c3a7852b65e9beb69d5695017afb57d48a",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    },
+    {
+      "path": "docs/PROCESS_CHART.md",
+      "bytes": 6693,
+      "sha256": "267a9c851fd851b2561985cc64c1f4991bb489cc0dd23d1495a399f8fb71ba7e",
+      "dropbox_content_hash": "094b0bb34abdc2988a361b34aa7a7c7dfa38ce6cd7405cbd09e8ad559356c66b",
+      "git_blob": "459c08726cb738aff4766f549eda666fbc70c57e",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    },
+    {
+      "path": "docs/SAVE-VERIFICATION-0.2.0-GUI-PREP-PUBLIC-2026-10-26.json",
+      "bytes": 10518,
+      "sha256": "1f9f621001a3217d3e8571cd2bb4cd8c057b9858cfc0a8e665ceb97811780ec5",
+      "dropbox_content_hash": "c5b818e8e3f1e9677c6553c4c3a69f758a34c7749d7417b16ca17456dd6b777b",
+      "git_blob": "517d732e5aa9e70cff5f02781b4b0dd0ad370a70",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    },
+    {
+      "path": "docs/TESTING.md",
+      "bytes": 15546,
+      "sha256": "4015ff19acbd95152dc2adde8d13573f46c610b0276ca08bfd5cb1ccfc060fb0",
+      "dropbox_content_hash": "12bb9973a59af4569e1c0c37072298ab1fadab1ba283cba50e4fc8eb06256b62",
+      "git_blob": "3b2c520896ae491c106a0f568a20a13b3a5b69bd",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    },
+    {
+      "path": "test/integration.cjs",
+      "bytes": 3320,
+      "sha256": "9c51bc2d48f767a424e06fad2a88da9cde6d4837bc8346fa5c7998c52bffd848",
+      "dropbox_content_hash": "f022e87ee12eb870daf4c46fb835f7f326c29afbe952d40f70e2c85a428a427e",
+      "git_blob": "45eda7f4bcc1e985eadd209b15fb26d9c945f1ed",
+      "independent_raw_readback": true,
+      "byte_equal_to_candidate": true
+    }
+  ],
+  "protected_metadata_comparisons": [
+    {
+      "path": "test/run-integration-diagnostic.cjs",
+      "bytes": 1177,
+      "dropbox_content_hash": "8cb3270ed08705d2e222f247a552e3a2d59c2f188a2c32b04def233a794c12a1",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "test/run-integration-root-check.cjs",
+      "bytes": 1177,
+      "dropbox_content_hash": "ab5386911143da23ae0591a8caa8aad3f6d3cd3fcdf4b37a04b82bbabead3538",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "test/runner.test.cjs",
+      "bytes": 5896,
+      "dropbox_content_hash": "d3b07c48f0f17b87e3413fc6f29c6114b4abb59df7d237b4821c5043d9b46beb",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "test/integration-diagnostic.cjs",
+      "bytes": 3124,
+      "dropbox_content_hash": "7bba93e6fe85951cb7f8fa719755eb2e68100a5b244fee95bec2f82758d16641",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "test/integration-root-check.cjs",
+      "bytes": 3309,
+      "dropbox_content_hash": "78634a7d38e42bfc2bc5ca5e40857d89ed1def47539d66e53ae99b189978d109",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "test/open-preview.test.cjs",
+      "bytes": 4404,
+      "dropbox_content_hash": "73509183217ec320bfd1ba8f5d00513ef2a62b768e2a788e6e2db5ffa47cb203",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "test/controller.test.cjs",
+      "bytes": 12128,
+      "dropbox_content_hash": "5120a8c78b618dd4797f602a1ec095e2993817be4dbc79bd8c1843cb17d86d1a",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "test/run-integration.cjs",
+      "bytes": 1166,
+      "dropbox_content_hash": "0161d026f17fd57a4be862807c36a4bca65b7470300ab7786d4929909a1d1fb5",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "test/identity.test.cjs",
+      "bytes": 3112,
+      "dropbox_content_hash": "eca08827d658ca227a8afb27596d8b4e28d02b3f0853d4f655349112b6734300",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "test/integration.backup-2026-10-26-01.cjs",
+      "bytes": 3062,
+      "dropbox_content_hash": "295c1dd3d92c89cddfab63a83b7338723174aec544ce1330b232f183b85f88b5",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "src/preview.cjs",
+      "bytes": 2189,
+      "dropbox_content_hash": "9cab11d39f9db1a9d3ee79c34358136f0d80433b2aae0af0cfe5d21b25c9e8d9",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "src/paths.cjs",
+      "bytes": 2834,
+      "dropbox_content_hash": "6798dea596ac33857f981b5fb07b3915e6fb5233cdecf012c3e38a62ba0067c8",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "src/runner.cjs",
+      "bytes": 2648,
+      "dropbox_content_hash": "b30fcc5f79c62acd9d53958af634067c3ea5b20745248e61148776e430e9d81c",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "src/open-preview.cjs",
+      "bytes": 1021,
+      "dropbox_content_hash": "7b718fcc0285713bde9f035f191c72a60c705a7ab9167e954122834acbd5e845",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "src/worker.cjs",
+      "bytes": 1267,
+      "dropbox_content_hash": "15eff439990c2e7011039070272e101953cccad9528aa43575cb820cfab774cf",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "src/controller.cjs",
+      "bytes": 7677,
+      "dropbox_content_hash": "86710b5ff895fe43adaaad5def6a201f7e815a8347bc35a235265948675d64a9",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "src/extension.cjs",
+      "bytes": 1103,
+      "dropbox_content_hash": "0c670eac808ae888087dd6a474c8d45c3ff9f361ecc95ccb223a278ca985ac94",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "src/identity.cjs",
+      "bytes": 385,
+      "dropbox_content_hash": "aca6b7c780a68209e8d2fb646c99a7e24536490b6c029e74f269e63dfad233b5",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "package.json",
+      "bytes": 3165,
+      "dropbox_content_hash": "649ff673fb5608ec69cae22d0875e8a1285705a1566b26c24cfde6ec5c87ea0a",
+      "identity_size_and_content_hash_unchanged": true
+    },
+    {
+      "path": "test-results/gui-integration-formal-0.2.0-20261026-070712.log",
+      "bytes": 1812,
+      "dropbox_content_hash": "ef6805f0f671979e22eca68f8bfc1147b435c6a5be6988f01b5808f7fa6e5352",
+      "identity_size_and_content_hash_unchanged": true
+    }
+  ],
+  "diagnostics": {
+    "files": [
+      "test/run-integration-diagnostic.cjs",
+      "test/run-integration-root-check.cjs",
+      "test/integration-diagnostic.cjs",
+      "test/integration-root-check.cjs"
+    ],
+    "count": 4,
+    "renamed_overwritten_or_deleted": false,
+    "synchronized_to_github": false,
+    "formal_runner_references_them": false
+  },
+  "distributions": [
+    {
+      "path": "dist/mdprev-via-jsproc-0.1.0-source.zip",
+      "bytes": 56869,
+      "sha256": "5224c9a22bcf4ca293261a303e340bab726c3f2191195fa92634a8e3ddaff301",
+      "dropbox_content_hash": "f4dfc3ba72e855d6906d509ace6988b63e891590e601d92a3f301fd012a1e087",
+      "git_blob": "dc15f7b15a4152c292126e47c0283b760e6795ce",
+      "read_only_download": true,
+      "size_and_dropbox_content_hash_verified": true,
+      "modified_or_rebuilt": false,
+      "prior_delivery_sha256_compared": false
+    },
+    {
+      "path": "dist/mdprev-via-jsproc-0.1.0.vsix",
+      "bytes": 27508,
+      "sha256": "27622965ea5d226f94221ec03fb9c007890afe8e644d4503533eb3050f107e54",
+      "dropbox_content_hash": "7f82c7da6c6438b2d6c954c43c5fc7ec4000f0d769fc513a1a67f63754435e42",
+      "git_blob": "4f054b61366546657edb646431e587bae1cbf4d2",
+      "read_only_download": true,
+      "size_and_dropbox_content_hash_verified": true,
+      "modified_or_rebuilt": false,
+      "prior_delivery_sha256_compared": false
+    },
+    {
+      "path": "dist/markdown-preview-via-js-transforms-0.2.0.vsix",
+      "bytes": 36636,
+      "sha256": "27c19864ffd07c930223a939544b462f0da444cebec1cf5d6c544aed4f60338d",
+      "dropbox_content_hash": "64ee6152b3468992ef4989aa78a24a4b582abfbc2d0cc168211fecdf21b5cb7e",
+      "git_blob": "f6f8bf9195120d127f31c5cb428a9087e84c2f90",
+      "read_only_download": true,
+      "size_and_dropbox_content_hash_verified": true,
+      "modified_or_rebuilt": false,
+      "prior_delivery_sha256_compared": true,
+      "prior_delivery_sha256_equal": true
+    },
+    {
+      "path": "dist/mdprev-via-jsproc-0.1.1.vsix",
+      "bytes": 30248,
+      "sha256": "9f2bb1d6dd208b65a9e49df7613ae0e904fea9f654d4b301e316d313fea0d76c",
+      "dropbox_content_hash": "9c8f28e485391469faffd05917f2348f8a93ab39907d3f7d1304fec2817149fd",
+      "git_blob": "d65bcfc3f61c05bac46046ba3ed0f5f88db7f329",
+      "read_only_download": true,
+      "size_and_dropbox_content_hash_verified": true,
+      "modified_or_rebuilt": false,
+      "prior_delivery_sha256_compared": false
+    },
+    {
+      "path": "dist/mdprev-via-jsproc-0.1.1-source.zip",
+      "bytes": 68422,
+      "sha256": "90cbbb733ce17e8d6369484d44461b5134504e3ede37170613b845ef3f16ac7f",
+      "dropbox_content_hash": "ad5d9de804453df5836dd7861b0203282990d8e489c7ac1bef59d07b88c90310",
+      "git_blob": "b625c5b46f3bef718cfa32270cbd885eec26288b",
+      "read_only_download": true,
+      "size_and_dropbox_content_hash_verified": true,
+      "modified_or_rebuilt": false,
+      "prior_delivery_sha256_compared": false
+    },
+    {
+      "path": "dist/markdown-preview-via-js-transforms-0.2.0-source.zip",
+      "bytes": 72338,
+      "sha256": "9d0dec483759e95fb6192cae4d35c99c55fa85ce554708df42c1d6cba6f54d33",
+      "dropbox_content_hash": "c6570e6ecc6e203eca090d65dc90699cfb5413346a16fa0f3f9f80ca3a0a3274",
+      "git_blob": "8c67794e37a19856c86f0020de5c32469dc721ec",
+      "read_only_download": true,
+      "size_and_dropbox_content_hash_verified": true,
+      "modified_or_rebuilt": false,
+      "prior_delivery_sha256_compared": true,
+      "prior_delivery_sha256_equal": true
+    }
+  ],
+  "other_protected_scope": {
+    "product_source_modified": false,
+    "version_changed": false,
+    "user_input_or_transform_javascript_modified": false,
+    "pre_existing_backups_modified": false,
+    "historical_distributions_modified": false,
+    "external_instructions_or_project_settings_modified": false
+  },
+  "publication_scope": {
+    "full_preparation_receipt": {
+      "path": "docs/SAVE-VERIFICATION-0.2.0-GUI-PREP-2026-10-26.json",
+      "bytes": 12093,
+      "sha256": "c23818cf6614ded3ee5584e48839138480fd9bec602fb71e0738a27d8c193b04",
+      "dropbox_content_hash": "368d827aaac8ac6ae9050ac420a61e21ad9a2067aa74e94f60a9a433212713e0",
+      "git_blob": "5b5124026a81f28c58e5f359d682f79f52262955",
+      "unchanged_raw_readback": true,
+      "synchronized_to_github": false
+    },
+    "public_preparation_view": "docs/SAVE-VERIFICATION-0.2.0-GUI-PREP-PUBLIC-2026-10-26.json",
+    "reason": "Automatic review rejected publication of the full preparation receipt because of private storage metadata. The original remains unchanged; a separate public view omits storage identifiers, absolute storage paths and non-project references.",
+    "public_view_tests_and_hashes_retained": true,
+    "raw_user_log_diagnostics_and_backups_excluded": true
+  },
+  "github": {
+    "repository": "satsuki-thyme/markdown-preview-via-js-transforms",
+    "branch": "main",
+    "baseline_commit": "e53d4fb186085b87ef8cb101f1306d87593ed715",
+    "verified_project_commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5",
+    "commit_url": "https://github.com/satsuki-thyme/markdown-preview-via-js-transforms/commit/a0af18a2587e1d7d930727f54170fbb9fd9fc0b5",
+    "force_push": false,
+    "expected_head_guard_used": true,
+    "main_head_independently_verified": true,
+    "tree_comparison": {
+      "before_tree": "43ab43c02c9a4647c5add0c838f441f41141d6fa",
+      "after_tree": "1d0716d694e8e464d9ba8683ebd2b5130efeaf36",
+      "changed": [
+        "CHANGELOG.md",
+        "MGMT.md",
+        "README.md",
+        "docs/ACCEPTANCE.md",
+        "docs/DELIVERY.json",
+        "docs/DESIGN.md",
+        "docs/MIGRATION_0.2.0.md",
+        "docs/PROCESS_CHART.md",
+        "docs/TESTING.md",
+        "test/integration.cjs"
+      ],
+      "added": [
+        "docs/GUI-INTEGRATION-RERUN-0.2.0-2026-10-26.md",
+        "docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md",
+        "docs/SAVE-VERIFICATION-0.2.0-GUI-PREP-PUBLIC-2026-10-26.json"
+      ],
+      "unchanged": [
+        ".gitignore",
+        ".vscode/launch.json",
+        ".vscodeignore",
+        "LICENSE",
+        "docs/SAVE-VERIFICATION-0.1.1-RECHECK-2026-10-24.json",
+        "docs/SAVE-VERIFICATION-0.1.1.json",
+        "docs/SAVE-VERIFICATION-0.2.0-ACCEPTANCE-2026-10-25.json",
+        "docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json",
+        "docs/SAVE-VERIFICATION-0.2.0.json",
+        "docs/SAVE-VERIFICATION.json",
+        "docs/USER_TESTING.md",
+        "docs/USER_TESTING_0.2.0-2.md",
+        "docs/USER_TESTING_0.2.0.md",
+        "docs/USER_TESTING_RECHECK-0.1.1-2026-10-24.md",
+        "docs/USER_TESTING_REVIEW-2026-10-24.md",
+        "docs/images/2026-10-25 07_14_54.png",
+        "docs/images/2026-10-25 07_18_00.png",
+        "docs/images/2026-10-25 07_18_49.png",
+        "docs/images/2026-10-25 07_22_03.png",
+        "docs/images/2026-10-25 07_23_51.png",
+        "docs/images/2026-10-25 07_26_48.png",
+        "docs/images/2026-10-25 07_27_49.png",
+        "docs/images/2026-10-25 07_28_25.png",
+        "docs/images/2026-10-25 07_32_15.png",
+        "docs/images/2026-10-25 07_35_22.png",
+        "docs/images/2026-10-25 07_35_40.png",
+        "docs/images/2026-10-25 07_37_58.png",
+        "docs/images/2026-10-25 07_38_13.png",
+        "docs/images/2026-10-25 07_38_40.png",
+        "docs/images/2026-10-25 07_38_52.png",
+        "docs/images/2026-10-25 07_39_25.png",
+        "docs/images/2026-10-25 07_39_34.png",
+        "docs/images/2026-10-25 07_40_56.png",
+        "docs/images/2026-10-25 07_41_02.png",
+        "docs/images/2026-10-25 07_41_30.png",
+        "docs/images/2026-10-25 07_41_35.png",
+        "docs/images/2026-10-25 07_41_57.png",
+        "docs/images/2026-10-25 07_41_59.png",
+        "docs/images/2026-10-25 07_42_30.png",
+        "docs/images/2026-10-25 07_42_40.png",
+        "docs/images/2026-10-25 07_42_44.png",
+        "docs/images/2026-10-25 07_57_05.png",
+        "docs/images/2026-10-25 07_57_21.png",
+        "docs/images/2026-10-25 07_57_36.png",
+        "docs/images/2026-10-25 07_57_47.png",
+        "docs/images/2026-10-25 08_11_32.png",
+        "docs/images/2026-10-25 08_14_35.png",
+        "docs/images/2026-10-25 08_16_21.png",
+        "docs/images/2026-10-25 08_16_51.png",
+        "docs/images/2026-10-25 08_17_01.png",
+        "docs/images/2026-10-25 08_19_12.png",
+        "docs/images/2026-10-25 08_21_23.png",
+        "docs/images/2026-10-25 08_23_08.png",
+        "docs/images/2026-10-25 08_25_33.png",
+        "docs/images/2026-10-25 08_37_36.png",
+        "docs/images/2026-10-25 08_37_49.png",
+        "docs/images/2026-10-25 08_37_52.png",
+        "docs/images/2026-10-25 08_38_33.png",
+        "docs/images/2026-10-25 08_45_07.png",
+        "docs/images/2026-10-25 08_48_52.png",
+        "docs/images/2026-10-25 08_49_17.png",
+        "docs/images/2026-10-25 08_49_23.png",
+        "docs/images/2026-10-25 09_53_09.png",
+        "docs/images/2026-10-25 10_57_21.png",
+        "docs/images/2026-10-25 10_57_43.png",
+        "docs/images/2026-10-25 10_58_26.png",
+        "docs/images/2026-10-25 10_59_09.png",
+        "docs/images/2026-10-25 10_59_24.png",
+        "examples/input.md",
+        "examples/transforms/identity.cjs",
+        "package-lock.json",
+        "package.json",
+        "scripts/package.cjs",
+        "src/controller.cjs",
+        "src/extension.cjs",
+        "src/identity.cjs",
+        "src/open-preview.cjs",
+        "src/paths.cjs",
+        "src/preview.cjs",
+        "src/runner.cjs",
+        "src/worker.cjs",
+        "test/controller.test.cjs",
+        "test/identity.test.cjs",
+        "test/open-preview.test.cjs",
+        "test/run-integration.cjs",
+        "test/runner.test.cjs"
+      ],
+      "removed": [],
+      "all_selected_blob_and_mode_matches": true
+    },
+    "independent_file_readback": [
+      {
+        "path": "CHANGELOG.md",
+        "bytes": 4489,
+        "sha256": "6f8df407ce37af5224c44589b1bb3d970d609a604e17845963a1e9b2aa5dfbfe",
+        "git_blob": "09af88d6ed0024df45603f084ffda48ef9bf229c",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      },
+      {
+        "path": "MGMT.md",
+        "bytes": 9198,
+        "sha256": "f3445894d647578d763db35f4703a32450042f73734e0dcbfb314cbb3b7f722e",
+        "git_blob": "8b868443d2191ace7c1a5c3ee55684618fc5e858",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      },
+      {
+        "path": "README.md",
+        "bytes": 12760,
+        "sha256": "4e99305e911922611d38d139ff2c8e3e109696212b9b58e678c40dab5f55fbc5",
+        "git_blob": "a4bcbae48385ddc42bb6de4fa2a930a4ff48a7c8",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      },
+      {
+        "path": "docs/ACCEPTANCE.md",
+        "bytes": 10931,
+        "sha256": "b1e0e63d6af336e8322389c118140efed0a8f38c4fa8c72f3187051a60bd1fc3",
+        "git_blob": "f69f75557fb6df48ed1c1cefd63655a2796dba71",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      },
+      {
+        "path": "docs/DELIVERY.json",
+        "bytes": 11340,
+        "sha256": "54d5a240392c54505c4aa936a47874c375989f4801edc60932680622472472b2",
+        "git_blob": "7fe1a962455e361ab496a59d44e6f0e21bef6058",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      },
+      {
+        "path": "docs/DESIGN.md",
+        "bytes": 13688,
+        "sha256": "2cddb67a775dbf7522c242083a2708b251e2c606275fa30e4a02fe82e1a8a362",
+        "git_blob": "a70d0fa5f51f31a3978be2eb40a09ad45d94c157",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      },
+      {
+        "path": "docs/GUI-INTEGRATION-RERUN-0.2.0-2026-10-26.md",
+        "bytes": 8527,
+        "sha256": "e3349c1c54470e4db3949456e9bd9e25592503a38cd7ac214195a2a27a3b4474",
+        "git_blob": "dbb5b52f1b0d7cd2c182419f52b4881fa070e15f",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      },
+      {
+        "path": "docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md",
+        "bytes": 8558,
+        "sha256": "64ccc646893cc0cba2120777cb51a0fd6eac83fa21d9bade3b6c554a65834da5",
+        "git_blob": "8ffd14a37309d48b62a48fc7572bcb79e90acc70",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      },
+      {
+        "path": "docs/MIGRATION_0.2.0.md",
+        "bytes": 7884,
+        "sha256": "944d9b36e58b795a86c6448f7edb8b5b0b2fc207ebed9f916b2ff9a7fc15bfec",
+        "git_blob": "2152f7c3a7852b65e9beb69d5695017afb57d48a",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      },
+      {
+        "path": "docs/PROCESS_CHART.md",
+        "bytes": 6693,
+        "sha256": "267a9c851fd851b2561985cc64c1f4991bb489cc0dd23d1495a399f8fb71ba7e",
+        "git_blob": "459c08726cb738aff4766f549eda666fbc70c57e",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      },
+      {
+        "path": "docs/SAVE-VERIFICATION-0.2.0-GUI-PREP-PUBLIC-2026-10-26.json",
+        "bytes": 10518,
+        "sha256": "1f9f621001a3217d3e8571cd2bb4cd8c057b9858cfc0a8e665ceb97811780ec5",
+        "git_blob": "517d732e5aa9e70cff5f02781b4b0dd0ad370a70",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      },
+      {
+        "path": "docs/TESTING.md",
+        "bytes": 15546,
+        "sha256": "4015ff19acbd95152dc2adde8d13573f46c610b0276ca08bfd5cb1ccfc060fb0",
+        "git_blob": "3b2c520896ae491c106a0f568a20a13b3a5b69bd",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      },
+      {
+        "path": "test/integration.cjs",
+        "bytes": 3320,
+        "sha256": "9c51bc2d48f767a424e06fad2a88da9cde6d4837bc8346fa5c7998c52bffd848",
+        "git_blob": "45eda7f4bcc1e985eadd209b15fb26d9c945f1ed",
+        "base64_bytes_equal": true,
+        "commit": "a0af18a2587e1d7d930727f54170fbb9fd9fc0b5"
+      }
+    ],
+    "prior_tracked_file_count": 96,
+    "project_commit_tracked_file_count": 99,
+    "changed_existing_files": 10,
+    "new_files": 3,
+    "unchanged_existing_files": 86,
+    "deleted_files": 0,
+    "prior_user_changes_preserved": true,
+    "private_preparation_record_absent_from_public_tree": true
+  },
+  "remaining": [
+    "External instruction self-references and ChatGPT project setting alignment remain separate follow-up work.",
+    "M2 remains not applicable; unexecuted environments and GUI behaviors are not marked passed.",
+    "The causes of the retained log warnings/messages are not claimed resolved."
+  ],
+  "record_self_verification": "This record was created after the 13 project files were saved, read back, synchronized and independently read back from GitHub. This record itself is saved and checked separately, then committed alone; its own final readback and commit are reported in the conversation to avoid a self-referential hash."
+}

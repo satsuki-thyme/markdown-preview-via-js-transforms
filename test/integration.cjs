@@ -11,7 +11,10 @@ exports.run = async () => {
   const input = path.join(root, 'input.md'), script = path.join(root, 'transforms', 'identity.cjs');
   const inputDocument = await v.workspace.openTextDocument(v.Uri.file(input));
   await v.window.showTextDocument(inputDocument);
-  const first = await api.controller.runPair({ root, input, script });
+  // Use the same workspace root as normal commands, including Windows drive casing.
+  const workspaceRoot = v.workspace.getWorkspaceFolder(v.Uri.file(input))?.uri.fsPath;
+  assert.ok(workspaceRoot, 'Input must belong to the test workspace');
+  const first = await api.controller.runPair({ root: workspaceRoot, input, script });
   assert.equal(first.status, 'success');
   const resultDocument = await v.workspace.openTextDocument(first.uri);
   assert.equal(resultDocument.languageId, 'markdown');
