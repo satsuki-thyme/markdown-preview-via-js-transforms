@@ -1,10 +1,10 @@
 # 開発・進捗記録
 
-更新: 2026-10-25（Asia/Tokyo）。対象: Markdown Preview via JS Transforms 0.2.0。
+更新: 2026-10-26（Asia/Tokyo）。対象: Markdown Preview via JS Transforms 0.2.0。
 
 ## 現在地
 
-**0.2.0のユーザー実機受入を正式記録へ反映し、工程5・6の受入・納品整理を完了した。受入文書9件と保存照合記録1件はGitHubのmainへ同期し、10件の独立読戻しを確認した。** GUI統合テストは未実施のまま。GitHub同期は受入試験と別に記録する。
+**0.2.0のユーザー実機受入を正式記録へ反映し、工程5・6の受入・納品整理を完了した。受入文書9件と保存照合記録1件はGitHubのmainへ同期し、10件の独立読戻しを確認した。** 2026-10-26に正式GUI統合テストの合格を確認した（Windows 11／VS Code 1.105.1／内蔵Node.js 22.19.0）。[正式結果](docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md)と[今回の保存・GitHub同期記録](docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json)を参照する。GitHub同期は受入試験と別に記録する。
 
 - 移行確認M1〜M6: 5件合格、M2は「対象なし」。6件合格とは数えない。
 - 継続確認16項目: 16件合格。無限ループと未完了Promiseは追試の結果で確定した。
@@ -14,7 +14,7 @@
 
 初回の無限ループ・未完了Promiseのログはどちらも「成功」であり、停止確認の証拠としては不足していた。追試1で約10秒後のタイムアウト・VS Code操作継続・前回プレビュー保持、追試2で手動中断・中断後の別変換成功を確認したというユーザー報告を受け入れた。未完了Promiseの実機での自然タイムアウトや、中断時の保持を個別に再確認したとの記載はない。報告以上の観測へ拡張しない。
 
-## 受入整理での実施内容と判断
+## 2026-10-25の受入整理での実施内容と判断（履歴）
 
 IDAD、最新のsources.md、現存するプロジェクト指示書・原案、開発ルートの管理・設計・受入・納品文書と2件の原報告を確認した。新しい製品不具合は確認されず、コード・設定・版番号を変更せず、VSIXとソースZIPも再作成しない。自動テストとCLI導入は既存実績を引き継ぎ、今回は再実行していない。
 
@@ -22,7 +22,7 @@ Node.js 24.22.1とVS Code 1.105.1内蔵Node.js 22.19.0で各24件成功という
 
 今回、既存のVSIX（36,636 bytes）とソースZIP（72,338 bytes）をDropboxから取得し、サイズ・Dropbox Content Hash、ZIP CRC、双方の実行用8モジュールの一致、0.2.0のpackage情報、identityサンプルの収録を確認した。詳しくは [docs/DELIVERY.json](docs/DELIVERY.json)。同梱文書は受入前の作成時点のスナップショットであり、最新の受入記録は開発ルートの本書・docsを参照する。
 
-## 保存・保全
+## 2026-10-25の保存・保全（履歴）
 
 保存先は `Dropbox\www\studio\markdown-preview-via-js-transforms`。受入整理での更新は `MGMT.md`、`README.md`、`CHANGELOG.md`、`docs/TESTING.md`、`docs/ACCEPTANCE.md`、`docs/PROCESS_CHART.md`、`docs/DELIVERY.json`、`docs/DESIGN.md`、`docs/MIGRATION_0.2.0.md` の9文書。
 
@@ -32,7 +32,7 @@ Node.js 24.22.1とVS Code 1.105.1内蔵Node.js 22.19.0で各24件成功という
 
 原報告、旧版受入履歴、既存配布物、ユーザー入力・変換処理、LICENSE、Git設定には変更を加えない。復旧が必要なときは現行新版を別の未使用名へ改名して保全し、元パスが空いていることを確認してから対応するバックアップを元名へ戻す。直接上書き・削除はしない。
 
-## GitHubと外部指示書の状態
+## 2026-10-25のGitHub同期と外部指示書の状態（履歴）
 
 索引で確認した対応先は `satsuki-thyme/markdown-preview-via-js-transforms`。同期前のmainは `863aefaa0426724c3cec4cd5ef15c0158d25b524`。2件の原報告とユーザーの別変更を含む最新ツリーを土台に、受入文書9件と保存照合記録1件だけを [コミット 9d14d54](https://github.com/satsuki-thyme/markdown-preview-via-js-transforms/commit/9d14d548e247c9e2ac54f60b83652ad1041bc7ee) で反映した。GitHubから10件を独立に読み戻し、Dropbox原本とのサイズ・バイト列・SHA-256一致を確認。対象外の102ファイルはGit blob・モードとも不変。GitHubの既存9文書はDropboxの改名済みバックアップ9件とバイト一致も確認した。
 
@@ -40,6 +40,14 @@ Node.js 24.22.1とVS Code 1.105.1内蔵Node.js 22.19.0で各24件成功という
 
 指示書フォルダの現存ファイルは `Dropbox\ai\ChatGPT\project\markdown-preview-via-js-transforms\instructions-mpvjt.md` と `seed-prompt-mpvjt.md`。開発文書の参照先はこの実名へ修正した。指示書本文には旧自己参照の `instructions.md` / `seed-prompt.md` が残っている。外部指示書とChatGPTプロジェクト設定欄は今回変更しておらず、その整合は別の残課題とする。
 
+## GUI統合テストの正式完了（2026-10-26）
+
+正式な `npm.cmd run test:integration` → `test/run-integration.cjs` → `test/integration.cjs` をユーザーのWindows実機で実行した。Dropboxの原ログ `test-results/gui-integration-formal-0.2.0-20261026-070712.log` を独立取得し、テストのSHA-256、`MPJST_INTEGRATION_PASS vscode=1.105.1 node=22.19.0`、拡張ホストとランナーの終了コード0、`MPJST_FORMAL_EXIT_CODE=0` を照合した。起動側Node.js 24.21.0はユーザーの端末出力、内蔵22.19.0はPASS行に基づく。
+
+修正は正式テストのルート取得と未取得時のassertだけ。環境変数の `C:` 表記をそのまま渡す代わりに、通常コマンドと同じ `getWorkspaceFolder(Uri.file(input))?.uri.fsPath` を渡す。製品本体・正式ランナー・版番号・VSIX・ソースZIPは変更しない。準備時のLinux／Node.js 24.22.1で既存24件合格、構文検査と引数確認3例も合格。診断版成功と正式版成功を分け、後者を今回の完了根拠にする。
+
+診断用4ファイルは元のtest/に保持し、削除・上書き・改名・今回のGitHub同期の対象にしない。正式テストの元ファイルは `test/integration.backup-2026-10-26-01.cjs` に改名済み。文書9件も同じディレクトリの未使用の `.backup-2026-10-26-01` へ元そのものを改名してから新規保存する。詳細な合格範囲・未検証範囲・ログ中の警告は [正式結果](docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md)、保存照合と限定同期の結果は [SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json](docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json) を参照する。記録に実際の成功があることを完了条件とする。
+
 ## 次の工程
 
-0.2.0は確認済みの環境・対応範囲で通常利用・保守へ移行できる。合格済みの実機試験を一律にやり直す必要はない。受入文書のGitHub同期は完了。後続作業は、表示可能な環境でのGUI統合テストと、外部指示書の参照先・プロジェクト設定の整合。詳細と実行用指示は [docs/PROCESS_CHART.md](docs/PROCESS_CHART.md)。GUI統合未実施やM2対象なしを合格へ変更しない。
+0.2.0は確認済みの環境・対応範囲で通常利用・保守へ移行できる。合格済みの実機試験を一律にやり直す必要はない。従来の受入文書同期に加え、正式GUI統合テストも確認済みの環境・スクリプト範囲で完了した。今回差分の同期・読戻しは [保存・同期記録](docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json) を参照する。後続課題は外部指示書の参照先・プロジェクト設定の整合。詳細と実行用指示は [docs/PROCESS_CHART.md](docs/PROCESS_CHART.md)。M2対象なし、未検証の環境・機能を維持する。

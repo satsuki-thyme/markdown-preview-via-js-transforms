@@ -6,9 +6,9 @@ YAML・Markdown・Plaintextを、自分で書いたJavaScriptでMarkdownへ変�
 
 バージョン: **0.2.0**。デスクトップVS Code 1.105.0以降、ローカルフォルダのワークスペースが対象です。正式名称と内部識別子を一式変更しました。旧版を使っている場合は、先に [0.2.0への移行手順](docs/MIGRATION_0.2.0.md) を参照してください。拡張機能IDが変わるため、旧版とは別の拡張機能として導入されます。旧設定・ショートカット・前回結果は自動移行しません。
 
-**0.2.0の実機受入を記録済みです（2026-10-25）。** 移行確認は5件合格・M2は対象なし、継続確認16項目は追試を含め全件合格です。報告環境はWindows 11 Pro 26H2／VS Code 1.143.1／内蔵Node.js 24.21.0。これはユーザー報告に基づく受入であり、自動GUI統合テストは未実施です。判定と根拠は [ACCEPTANCE.md](docs/ACCEPTANCE.md)、検証方法ごとの範囲は [TESTING.md](docs/TESTING.md) を参照してください。
+**0.2.0の実機受入を記録済みです（2026-10-25）。** 移行確認は5件合格・M2は対象なし、継続確認16項目は追試を含め全件合格です。報告環境はWindows 11 Pro 26H2／VS Code 1.143.1／内蔵Node.js 24.21.0。この手動受入とは別に、2026-10-26、Windows 11／VS Code 1.105.1／内蔵Node.js 22.19.0で正式GUI統合テストもPASS・終了コード0を確認しました。[正式結果](docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md)に検証範囲と原ログの照合結果を記録しています。判定と根拠は [ACCEPTANCE.md](docs/ACCEPTANCE.md)、検証方法ごとの範囲は [TESTING.md](docs/TESTING.md) を参照してください。
 
-今回の更新は文書のみです。既存の [VSIX](dist/markdown-preview-via-js-transforms-0.2.0.vsix) と [ソースZIP](dist/markdown-preview-via-js-transforms-0.2.0-source.zip) を引き続き使えます。同梱文書は作成時点の受入前スナップショットなので、最新の結果は開発ルートの文書を参照してください。受入文書と保存照合記録はGitHubへ同期済みです。同期・保存確認は [今回の照合記録](docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json) を参照してください。
+今回の更新は統合テストのWindowsルート表記修正と結果文書です。製品本体と版番号は変更していません。既存の [VSIX](dist/markdown-preview-via-js-transforms-0.2.0.vsix) と [ソースZIP](dist/markdown-preview-via-js-transforms-0.2.0-source.zip) を引き続き使えます。同梱文書は作成時点の受入前スナップショットなので、最新の結果は開発ルートの文書を参照してください。受入文書と保存照合記録はGitHubへ同期済みです。従来の受入文書同期は [2026-10-25の照合記録](docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json)、今回のGUI検証関連差分の保存・同期結果は [SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json](docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json) を参照してください。ソースZIP内のテストは修正前のスナップショットで、再実行には開発ルートの正式テストを使います。
 
 ## インストールと最初の実行
 

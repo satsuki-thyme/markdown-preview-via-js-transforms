@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "timezone": "Asia/Tokyo",
   "version": "0.2.0",
   "displayName": "Markdown Preview via JS Transforms",
   "extensionId": "satsuki-thyme.markdown-preview-via-js-transforms",
   "baselineGitCommit": "ce8991ae0834ae6c6fa3f99223a254ce22cfe678",
-  "status": "0.2.0 user acceptance complete: migration 5 passed, M2 not applicable; 16 continuing checks passed including follow-up. Stages 5 and 6 complete within the documented acceptance/delivery scope. Acceptance documents and save receipt synchronized to GitHub and independently read back. GUI integration remains unexecuted.",
+  "status": "0.2.0 user acceptance complete: migration 5 passed, M2 not applicable; 16 continuing checks passed. Formal GUI integration passed on Windows 11 / VS Code 1.105.1 / embedded Node.js 22.19.0 on 2026-10-26. Product and distribution artifacts unchanged. Current save and GitHub synchronization results are recorded separately.",
   "tests": {
     "node24": {
       "version": "24.22.1",
@@ -24,7 +24,7 @@
     },
     "arguments": "--test --test-concurrency=1 --test-reporter=tap test/*.test.cjs",
     "syntax": "All src, test, and scripts .cjs files passed node --check",
-    "guiIntegration": "New IDs and syntax checked only; not executed. Display/socket environment unavailable.",
+    "guiIntegration": "Passed via formal test/run-integration.cjs -> test/integration.cjs on Windows 11; MPJST_INTEGRATION_PASS vscode=1.105.1 node=22.19.0, exit code 0. User execution; independently retrieved original Dropbox log.",
     "priorUserReport": {
       "file": "docs/USER_TESTING.md",
       "appliesToVersion": "0.1.0",
@@ -84,12 +84,15 @@
       "repeatedExecution": "User-reported ok accepted; log 3 timeout alone is not direct evidence of rejecting duplicate runs."
     },
     "currentDocumentationPass": {
-      "date": "2026-10-25",
-      "automatedTestsRerun": false,
+      "date": "2026-10-26",
+      "automatedTestsRerun": true,
+      "automatedTestsRerunScope": "Preparation phase: Linux / Node.js 24.22.1, existing 24 tests passed; no repeat after receiving formal result",
       "cliInstallRerun": false,
-      "guiIntegrationRun": false,
+      "guiIntegrationRun": true,
+      "guiExecutedBy": "user on Windows",
       "productCodeChanged": false,
-      "evidenceType": "user reports plus document and artifact inspection; no new agent-run GUI test",
+      "testCodeChanged": true,
+      "evidenceType": "formal user execution and independently retrieved log, plus source/hash comparison",
       "formalAcceptance": "docs/ACCEPTANCE.md",
       "testMethodRecord": "docs/TESTING.md"
     },
@@ -110,6 +113,39 @@
       },
       "environmentSource": "docs/USER_TESTING_0.2.0.md; follow-up does not repeat environment details",
       "originalReportsModified": false
+    },
+    "guiIntegration020": {
+      "date": "2026-10-26",
+      "timezone": "Asia/Tokyo",
+      "os": "Windows 11",
+      "vscode": "1.105.1",
+      "runnerNode": "24.21.0",
+      "runnerNodeSource": "user terminal output",
+      "extensionHostNode": "22.19.0",
+      "extensionHostNodeSource": "PASS marker in original log",
+      "command": "npm.cmd run test:integration",
+      "exitCode": 0,
+      "extensionHostExitCode": 0,
+      "formalTestSha256": "9c51bc2d48f767a424e06fad2a88da9cde6d4837bc8346fa5c7998c52bffd848",
+      "log": "test-results/gui-integration-formal-0.2.0-20261026-070712.log",
+      "logSha256": "f1fc0c2ebceaedcf48c3de3c2e451b5c9700988fd174deb53199684111045aa1",
+      "resultRecord": "docs/GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md",
+      "warningsRetained": [
+        "DEP0190",
+        "DEP0040",
+        "Error: Error mutex already exists"
+      ],
+      "scope": "Existing integration assertions only; no pixel/DOM inspection, restart, Restricted Mode or multi-root GUI test in this script."
+    },
+    "previousDocumentationPass20261025": {
+      "date": "2026-10-25",
+      "automatedTestsRerun": false,
+      "cliInstallRerun": false,
+      "guiIntegrationRun": false,
+      "productCodeChanged": false,
+      "evidenceType": "user reports plus document and artifact inspection; no new agent-run GUI test",
+      "formalAcceptance": "docs/ACCEPTANCE.md",
+      "testMethodRecord": "docs/TESTING.md"
     }
   },
   "package": {
@@ -137,7 +173,8 @@
     "bytes": 72338,
     "sha256": "9d0dec483759e95fb6192cae4d35c99c55fa85ce554708df42c1d6cba6f54d33",
     "rebuiltInCurrentTask": false,
-    "bundledDocumentation": "Pre-acceptance snapshot; authoritative current acceptance records are the updated development-root documents."
+    "bundledDocumentation": "Pre-acceptance snapshot; authoritative current acceptance records are the updated development-root documents.",
+    "bundledTestSnapshot": "Historical source ZIP retains the original integration test before the Windows root fix; use current development-root tests for reruns. Archive not rebuilt."
   },
   "migration": {
     "guide": "docs/MIGRATION_0.2.0.md",
@@ -164,10 +201,10 @@
   },
   "documentationSaveVerification": "docs/SAVE-VERIFICATION-0.2.0-ACCEPTANCE-2026-10-25.json",
   "stageCompletion": {
-    "stage5": "complete: acceptance and unverified scopes documented",
+    "stage5": "complete: previous manual acceptance and formal GUI integration passed within documented environments and scope",
     "stage6": "complete: original acceptance save receipt verified for all 9 documents; subsequent GitHub synchronization is recorded separately",
     "notIncluded": [
-      "automated GUI integration test",
+      "all supported VS Code versions and environments",
       "Release or Marketplace publication",
       "external instruction self-reference and ChatGPT project UI alignment"
     ]
@@ -191,5 +228,13 @@
     "statusUpdateAndSaveVerification": "docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json",
     "userPcGitStatusChecked": false
   },
-  "documentationSyncSaveVerification": "docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json"
+  "documentationSyncSaveVerification": "docs/SAVE-VERIFICATION-0.2.0-GITHUB-SYNC-2026-10-25.json",
+  "guiIntegrationSaveAndGitVerification": "docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json",
+  "guiIntegrationGitSynchronization": {
+    "repository": "satsuki-thyme/markdown-preview-via-js-transforms",
+    "branch": "main",
+    "baselineCommit": "e53d4fb186085b87ef8cb101f1306d87593ed715",
+    "resultRecord": "docs/SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json",
+    "completionRule": "Use actual commit and independent readback results from the receipt; prior remoteGitStatus describes the 2026-10-25 acceptance synchronization."
+  }
 }

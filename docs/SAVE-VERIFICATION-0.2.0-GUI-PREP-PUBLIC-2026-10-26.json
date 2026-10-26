@@ -1,0 +1,258 @@
+{
+  "schema": "mpjst-gui-integration-preparation-public-view-v1",
+  "recorded_at": "2026-10-26T05:01:53.841422+09:00",
+  "version": "0.2.0",
+  "status": "formal_gui_rerun_pending",
+  "sources_reviewed": [
+    "MGMT.md",
+    "README.md",
+    "docs/TESTING.md",
+    "docs/ACCEPTANCE.md",
+    "docs/PROCESS_CHART.md",
+    "docs/DESIGN.md",
+    "test/integration.cjs",
+    "test/run-integration.cjs",
+    "test/integration-diagnostic.cjs",
+    "test/run-integration-diagnostic.cjs",
+    "test/integration-root-check.cjs",
+    "test/run-integration-root-check.cjs",
+    "src/controller.cjs",
+    "package.json"
+  ],
+  "change": {
+    "file": "test/integration.cjs",
+    "summary": "Use getWorkspaceFolder(Uri.file(input))?.uri.fsPath as the first runPair root; assert root exists. Preserve all existing integration assertions.",
+    "added_lines": 4,
+    "removed_lines": 1,
+    "product_changes": false,
+    "formal_runner_changed": false,
+    "version_changed": false,
+    "vsix_rebuilt": false
+  },
+  "diagnostic_user_report": {
+    "received_date_jst": "2026-10-26",
+    "os": "Windows 11",
+    "vscode": "1.105.1",
+    "node_in_extension_host": "22.19.0",
+    "marker": "MPJST_INTEGRATION_PASS",
+    "exit_code": 0,
+    "evidence": "Current user message; compared the stored root-check diagnostic source with the formal candidate",
+    "execution_timestamp": "not provided",
+    "formal_test_result": false
+  },
+  "validation": {
+    "syntax": {
+      "command": "node --check mpjst-candidate/test/integration.cjs",
+      "exit_code": 0
+    },
+    "root_argument_check": {
+      "cases": [
+        "Windows C: temporary root vs c: VS Code root",
+        "POSIX case preservation",
+        "Missing workspace fails before runPair"
+      ],
+      "passed": 3,
+      "scope": "VM with stubbed VS Code API; stops before transformation or GUI assertions; not a GUI test"
+    },
+    "existing_unit_tests": {
+      "platform": "Linux",
+      "node": "24.22.1",
+      "command": "node --test --test-concurrency=1 --test-reporter=tap test/*.test.cjs",
+      "total": 24,
+      "passed": 24,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "duration_ms": 5783.93202,
+      "scope": "Unmodified downloaded product/test sources; does not execute test/integration.cjs"
+    },
+    "diagnostic_comparison": "Candidate matches root-check diagnostic after omitting two diagnostic console lines and the added comment/root-presence assertion",
+    "formal_gui": {
+      "status": "awaiting-user-execution",
+      "command": "npm.cmd run test:integration",
+      "target_vscode": "1.105.1",
+      "expected_host_node": "22.19.0",
+      "not_executed_by_assistant": true,
+      "pass_not_claimed": true
+    },
+    "powershell_instructions": "Reviewed, not executed on Linux"
+  },
+  "backup": {
+    "method": "rename-original-not-copy",
+    "source": "test/integration.cjs",
+    "destination": "test/integration.backup-2026-10-26-01.cjs",
+    "same_directory": true,
+    "bytes": 3062,
+    "sha256": "13c36a97764a946b8e24e973589fa35c7764e27733087c05a60746b3b899ebde",
+    "dropbox_content_hash": "295c1dd3d92c89cddfab63a83b7338723174aec544ce1330b232f183b85f88b5",
+    "move_status": "completed",
+    "original_name_absent_before_upload": true,
+    "independent_raw_readback_equal": true,
+    "file_identity_retained": true
+  },
+  "saved_and_independently_read_back": [
+    {
+      "name": "integration.cjs",
+      "bytes": 3320,
+      "sha256": "9c51bc2d48f767a424e06fad2a88da9cde6d4837bc8346fa5c7998c52bffd848",
+      "dropbox_content_hash": "f022e87ee12eb870daf4c46fb835f7f326c29afbe952d40f70e2c85a428a427e",
+      "byte_equal": true,
+      "path": "test/integration.cjs"
+    },
+    {
+      "path": "docs/GUI-INTEGRATION-RERUN-0.2.0-2026-10-26.md",
+      "bytes": 8527,
+      "sha256": "e3349c1c54470e4db3949456e9bd9e25592503a38cd7ac214195a2a27a3b4474",
+      "dropbox_content_hash": "1ac0fb6e3ddb6317d725f9477094adbaae41be9ea57bb4b309411368bf2feaa8",
+      "byte_equal": true
+    }
+  ],
+  "diagnostics": {
+    "policy": "Keep all four at their original paths without rename, overwrite or deletion. Exclude from this task GitHub synchronization. Formal npm script uses only run-integration.cjs -> integration.cjs.",
+    "files": [
+      {
+        "name": "run-integration-diagnostic.cjs",
+        "bytes": 1177,
+        "sha256": "4ce42ebf3fc4b7971f8b92d2bd6c841121e4be86b2ca08321d9a5db9eec70bb0",
+        "dropbox_content_hash": "8cb3270ed08705d2e222f247a552e3a2d59c2f188a2c32b04def233a794c12a1",
+        "byte_equal": true,
+        "path": "test/run-integration-diagnostic.cjs"
+      },
+      {
+        "name": "run-integration-root-check.cjs",
+        "bytes": 1177,
+        "sha256": "390f0b045dc696c5c48221a0d5149a4089925bf7e6993284c497ab0cfc9eeff8",
+        "dropbox_content_hash": "ab5386911143da23ae0591a8caa8aad3f6d3cd3fcdf4b37a04b82bbabead3538",
+        "byte_equal": true,
+        "path": "test/run-integration-root-check.cjs"
+      },
+      {
+        "name": "integration-diagnostic.cjs",
+        "bytes": 3124,
+        "sha256": "1d6492f1d09b187cd0f422f0d1e1899c9fb81bba7e465097c741b45acb925574",
+        "dropbox_content_hash": "7bba93e6fe85951cb7f8fa719755eb2e68100a5b244fee95bec2f82758d16641",
+        "byte_equal": true,
+        "path": "test/integration-diagnostic.cjs"
+      },
+      {
+        "name": "integration-root-check.cjs",
+        "bytes": 3309,
+        "sha256": "86bf19f780637e2f8cea10ad46cb7424f1ba0190e2d60e4ced8f85689300b777",
+        "dropbox_content_hash": "78634a7d38e42bfc2bc5ca5e40857d89ed1def47539d66e53ae99b189978d109",
+        "byte_equal": true,
+        "path": "test/integration-root-check.cjs"
+      }
+    ]
+  },
+  "formal_runner_readback": {
+    "name": "run-integration.cjs",
+    "bytes": 1166,
+    "sha256": "5ee323f06b7d3979699b6ee18ae581be64b05c67fa09dff40ce2b65753e8ff70",
+    "dropbox_content_hash": "0161d026f17fd57a4be862807c36a4bca65b7470300ab7786d4929909a1d1fb5",
+    "byte_equal": true,
+    "path": "test/run-integration.cjs"
+  },
+  "protected_source_hashes_unchanged": [
+    {
+      "content_hash": "9cab11d39f9db1a9d3ee79c34358136f0d80433b2aae0af0cfe5d21b25c9e8d9",
+      "name": "preview.cjs",
+      "path": "src/preview.cjs",
+      "size": 2189
+    },
+    {
+      "content_hash": "6798dea596ac33857f981b5fb07b3915e6fb5233cdecf012c3e38a62ba0067c8",
+      "name": "paths.cjs",
+      "path": "src/paths.cjs",
+      "size": 2834
+    },
+    {
+      "content_hash": "b30fcc5f79c62acd9d53958af634067c3ea5b20745248e61148776e430e9d81c",
+      "name": "runner.cjs",
+      "path": "src/runner.cjs",
+      "size": 2648
+    },
+    {
+      "content_hash": "7b718fcc0285713bde9f035f191c72a60c705a7ab9167e954122834acbd5e845",
+      "name": "open-preview.cjs",
+      "path": "src/open-preview.cjs",
+      "size": 1021
+    },
+    {
+      "content_hash": "15eff439990c2e7011039070272e101953cccad9528aa43575cb820cfab774cf",
+      "name": "worker.cjs",
+      "path": "src/worker.cjs",
+      "size": 1267
+    },
+    {
+      "content_hash": "86710b5ff895fe43adaaad5def6a201f7e815a8347bc35a235265948675d64a9",
+      "name": "controller.cjs",
+      "path": "src/controller.cjs",
+      "size": 7677
+    },
+    {
+      "content_hash": "0c670eac808ae888087dd6a474c8d45c3ff9f361ecc95ccb223a278ca985ac94",
+      "name": "extension.cjs",
+      "path": "src/extension.cjs",
+      "size": 1103
+    },
+    {
+      "content_hash": "aca6b7c780a68209e8d2fb646c99a7e24536490b6c029e74f269e63dfad233b5",
+      "name": "identity.cjs",
+      "path": "src/identity.cjs",
+      "size": 385
+    },
+    {
+      "content_hash": "649ff673fb5608ec69cae22d0875e8a1285705a1566b26c24cfde6ec5c87ea0a",
+      "name": "package.json",
+      "path": "package.json",
+      "size": 3165
+    }
+  ],
+  "other_untouched_scope": [
+    "User input files and transform JavaScript",
+    "Existing backups and historical distributions",
+    "VSIX and source ZIP",
+    "Existing management and acceptance documents",
+    "Git configuration, license, project settings, external instruction files"
+  ],
+  "github": {
+    "repository": "satsuki-thyme/markdown-preview-via-js-transforms",
+    "branch": "main",
+    "observed_head": "e53d4fb186085b87ef8cb101f1306d87593ed715",
+    "original_integration_blob": "9b43caebdc903b33a465c0c43f2355105d9c16c4",
+    "original_dropbox_git_blob_match": true,
+    "write_performed": false,
+    "new_commit": null,
+    "reason": "Waiting for actual formal GUI result before acceptance-document updates and verified-difference synchronization. Refresh branch and file states before writing.",
+    "diagnostics_and_backups_excluded": true
+  },
+  "remaining": [
+    "Receive the real formal-run PASS line, exit code and log; keep failure details if unsuccessful",
+    "Update management/acceptance documents only after result confirmation; retain M2 not applicable",
+    "Synchronize only verified changes to latest GitHub main and independently read back"
+  ],
+  "rollback": "Preserve the current new integration.cjs by renaming it to another unused name; confirm the original path is empty; only then rename integration.backup-2026-10-26-01.cjs back to integration.cjs. Do not overwrite or delete either file.",
+  "record_self_verification": "The original preparation record self-verification belongs to the preserved source record. This derived public view is verified separately in the final receipt.",
+  "public_view": {
+    "created_at": "2026-10-26T12:28:19.656171+09:00",
+    "source_record": "docs/SAVE-VERIFICATION-0.2.0-GUI-PREP-2026-10-26.json",
+    "source_sha256": "c23818cf6614ded3ee5584e48839138480fd9bec602fb71e0738a27d8c193b04",
+    "source_record_preserved_without_changes": true,
+    "omitted": [
+      "storage file and namespace identifiers",
+      "absolute storage paths",
+      "internal non-project source references",
+      "storage transfer implementation details"
+    ],
+    "retained": [
+      "project-relative paths",
+      "file sizes and content hashes",
+      "observed test results",
+      "rename/readback evidence",
+      "historical preparation status"
+    ],
+    "historical_status_note": "The source records the preparation phase before the formal GUI run. Current PASS and exit code 0 are documented in GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md.",
+    "publication_scope": "This public view is synchronized instead of the full preparation receipt; the full receipt remains in the development documents.",
+    "own_save_verification": "Actual save/readback and Git synchronization are recorded in SAVE-VERIFICATION-0.2.0-GUI-FINAL-2026-10-26.json."
+  }
+}

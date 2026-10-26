@@ -1,6 +1,6 @@
 # 設計記録 0.2.0
 
-日付: 2026-10-25（Asia/Tokyo）。添付 `seed-prompt.md`、プロジェクト指示、IDAD原文を参照。現在の実装と判断は本書へ記録する。
+更新: 2026-10-26（Asia/Tokyo）。添付 `seed-prompt.md`、プロジェクト指示、IDAD原文を参照。現在の実装と判断は本書へ記録する。
 
 ## 方式選定
 
@@ -18,7 +18,7 @@
 
 `window.tabGroups.all` の `TabInputCustom` をURIとエディター種別で照合する。見つかったタブの `viewColumn` を `vscode.openWith` に渡して再利用し、ない場合のみ `ViewColumn.Beside` に開く。`preview: false` で一時プレビュータブへの置換を避ける。タブ移動や再起動後も毎回探索し、古いTabオブジェクトを保持しない。旧版の動的プレビュータブはURIを取得できないため自動判別・閉鎖せず、初回更新時に利用者が閉じる。
 
-0.1.0の初回確認1〜6はユーザー報告でokとなり、標準プレビュー表示、手動更新、保存時の非更新、再表示、再起動後復元の基礎経路を確認できた。初回提出時の報告にOS・VS Codeのバージョンはなかった。2026-10-24の追加報告ではWindows 11 Pro 26H2／VS Code 1.143.1の環境と0.1.1再確認A〜Dのokを受領し、表示経路の変更を受入済みとした。当時の残り16項目は0.2.0の原報告と追試で全件合格となった。0.2.0の移行確認は5件合格、M2は対象なし。正式な根拠・範囲は [ACCEPTANCE.md](ACCEPTANCE.md) を参照する。 この実行環境のGUI統合テストは画面接続・ソケットの制約で実行できないため、模擬APIの合格と実画面での合格を分ける。
+0.1.0の初回確認1〜6はユーザー報告でokとなり、標準プレビュー表示、手動更新、保存時の非更新、再表示、再起動後復元の基礎経路を確認できた。初回提出時の報告にOS・VS Codeのバージョンはなかった。2026-10-24の追加報告ではWindows 11 Pro 26H2／VS Code 1.143.1の環境と0.1.1再確認A〜Dのokを受領し、表示経路の変更を受入済みとした。当時の残り16項目は0.2.0の原報告と追試で全件合格となった。0.2.0の移行確認は5件合格、M2は対象なし。正式な根拠・範囲は [ACCEPTANCE.md](ACCEPTANCE.md) を参照する。 AI側の旧検証環境では画面接続・ソケット制約があったが、2026-10-26にWindows実機の正式GUI統合テストが合格した。[正式結果](GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md)を参照し、模擬API・拡張ホスト内assert・視覚的な描画確認の範囲を分ける。
 
 ## 0.2.0の識別子移行
 
@@ -26,9 +26,15 @@
 
 旧IDのエイリアスや自動実行・自動移行は登録しない。新しい拡張機能として状態領域を分離し、初回の手動選択で新しい記録を作る。別拡張機能の内部状態DBには触れず、旧版の設定・状態を削除しない。利用者は旧版を無効化し、設定値とキー割当を新IDへ明示的に移す。互換性変更を表すため版を0.2.0とする。0.1.1のタブ再利用方式・Worker実行契約は維持した。
 
-新しい登録IDとmanifestの整合、および旧保存キーを変更せず新保存キーだけで保持・復元するテストを追加した。これらは模擬VS Code APIと実Workerによる検証であり、実エディター上の確認とは区別する。実機の移行・同じフォルダ以下の画像表示は、0.2.0ユーザー報告によって別途受入済み。M2は対象なし、GUI統合テストは未実施。
+新しい登録IDとmanifestの整合、および旧保存キーを変更せず新保存キーだけで保持・復元するテストを追加した。これらは模擬VS Code APIと実Workerによる検証であり、実エディター上の確認とは区別する。実機の移行・同じフォルダ以下の画像表示は、0.2.0ユーザー報告によって別途受入済み。M2は対象なし。正式GUI統合テストは2026-10-26にWindows 11／VS Code 1.105.1／内蔵Node.js 22.19.0で合格。
 
 根拠（2026-10-25確認）: [Extension Manifest](https://code.visualstudio.com/api/references/extension-manifest)、[ExtensionContext API](https://code.visualstudio.com/api/references/vscode-api#ExtensionContext)、[Common Capabilities / Data Storage](https://code.visualstudio.com/api/extension-capabilities/common-capabilities)。公式APIの公開範囲に基づき、他拡張機能の私有状態へ依存しない方針を採用した。
+
+## 統合テストのルート取得（2026-10-26）
+
+Windowsでテスト用環境変数のルートが `C:`、VS Codeの `Uri.fsPath` が `c:` となり、直接runPairへ渡した初回だけルート一致確認に失敗した。正式 `test/integration.cjs` は `workspace.getWorkspaceFolder(Uri.file(input))?.uri.fsPath` を取得してルート存在をassertし、その値をrunPairへ渡す。通常の選択コマンドも所属ルートのuri.fsPathを使用するため、製品の比較処理を変更する必要はない。全パスを小文字化する処理は追加しない。
+
+この変更はテストだけに限定する。正式ランナー・既存検証項目・製品モジュールは維持し、診断4ファイルは調査履歴として元の場所に保持する。公式仕様の根拠は [Uri.fsPath](https://code.visualstudio.com/api/references/vscode-api#Uri) と [getWorkspaceFolder](https://code.visualstudio.com/api/references/vscode-api#workspace.getWorkspaceFolder)（2026-10-26確認）。正式結果・未検証範囲は [GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md](GUI-INTEGRATION-RESULT-0.2.0-2026-10-26.md)。
 
 ## モジュール
 
